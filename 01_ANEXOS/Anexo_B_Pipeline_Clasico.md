@@ -1,14 +1,19 @@
 # Anexo B – Pipeline clásico (ARIMA / ARIMAX)
 
-## Contenido
-- Script reproducible de ARIMA/ARIMAX.
-- Validación tipo walk-forward.
-- Métricas (RMSE, MAE, R², Skill vs persistencia).
-- sessionInfo().
+## B.1 Objetivo
+Implementar modelos clásicos de series de tiempo como línea base reproducible.
 
-## Script asociado
-- `04_CODIGO/cap3_cap3_classics_ml.R` (sección Classical)
+## B.2 Validación
+- Validación temporal tipo walk-forward / rolling origin (según configuración del pipeline)
+- Comparación contra baseline de persistencia
 
-## Outputs esperados
-- Tablas de métricas en `05_RESULTADOS/` (CSV).
-- Figuras publicables en `03_FIGURAS/` (PNG).
+## B.3 Métricas
+RMSE, MAE, R² y Skill Score vs persistencia.
+
+## B.4 Salida
+Resultados consolidados en:
+- `SALIDAS_CONSOLIDADAS_CAP3/`
+y/o `SALIDAS/` (según organización final).
+
+## B.5 Reproducibilidad
+Ver: `06_REPRODUCIBILIDAD/sessionInfo.txt`
