@@ -1,15 +1,13 @@
 # Anexo E – Implementación TDQ–PIESS y cálculo de FNRR
 
-## Contenido
-- Definición matemática del índice FNRR.
-- Penalización estructural.
-- Calibración de PI90 (antes/después).
-- Script de cuantiles y validación de cobertura.
+## E.1 Propósito
+Integrar física + estadística para mejorar predicción y calibración de incertidumbre.
 
-## Scripts asociados
-- `04_CODIGO/cap3_cap3_dl_lstm_bayes.R` (modo TDQ, si aplica)
-- `04_CODIGO/cap4_cap4_tdq_piess_projection.R` (usa tabla global TDQ_PIESS)
+## E.2 Componentes
+- Definición formal de FNRR
+- Penalización estructural
+- Calibración de PI90 (cobertura antes/después)
 
-## Outputs
-- `02_TABLAS/` (cobertura PI90, c_PI90, FNRR)
-- `03_FIGURAS/` (PI90 antes/después, calibración)
+## E.3 Salidas
+- `SALIDAS/` (MiModeloTDQ)
+- `SALIDAS_CAP4_TDQ_FINAL/`
