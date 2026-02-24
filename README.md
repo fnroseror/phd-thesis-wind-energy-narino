@@ -26,3 +26,5 @@ Input data structure is documented in:
 
 Environment configuration:
 06_REPRODUCIBILIDAD/sessionInfo.txt
+
+Last updated: February 2026 – Final defense version.
