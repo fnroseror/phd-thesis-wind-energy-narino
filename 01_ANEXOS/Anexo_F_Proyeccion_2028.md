@@ -1,13 +1,14 @@
-# Anexo E – Implementación TDQ–PIESS y cálculo de FNRR
+# Anexo F – Proyección energética 2028
 
-## E.1 Propósito
-Integrar física + estadística para mejorar predicción y calibración de incertidumbre.
+## F.1 Naturaleza del resultado
+Escenario prospectivo condicionado a estabilidad estructural del sistema (no predicción determinista).
 
-## E.2 Componentes
-- Definición formal de FNRR
-- Penalización estructural
-- Calibración de PI90 (cobertura antes/después)
+## F.2 Supuestos
+- Conservación de relaciones físico-estadísticas observadas en 2017–2022
+- Uso del mejor modelo final para proyección por horizonte
 
-## E.3 Salidas
-- `SALIDAS/` (MiModeloTDQ)
+## F.3 Incertidumbre
+Intervalos predictivos (PI90) para cuantificar incertidumbre.
+
+## F.4 Salidas
 - `SALIDAS_CAP4_TDQ_FINAL/`
