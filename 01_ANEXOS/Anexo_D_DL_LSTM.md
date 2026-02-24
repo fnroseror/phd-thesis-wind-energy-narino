@@ -1,15 +1,13 @@
 # Anexo D – Pipeline Deep Learning (LSTM Bayes)
 
-## Contenido
-- Arquitectura LSTM.
-- Hiperparámetros.
-- Early stopping.
-- Curvas de entrenamiento (loss train/val).
+## D.1 Arquitectura
+Arquitecturas LSTM definidas por zona y horizonte, con configuración reproducible.
 
-## Scripts asociados
-- `04_CODIGO/cap3_cap3_dl_lstm_bayes.R`
-- `04_CODIGO/cap3_run_tdq_wrapper.R` (si se ejecuta modo TDQ)
+## D.2 Entrenamiento
+- Early stopping
+- Curvas de entrenamiento (train/val)
+- Optimización (Bayes) cuando aplica
 
-## Outputs
-- `05_RESULTADOS/` (métricas + predicciones)
-- `03_FIGURAS/` (curvas entrenamiento, series, residuales)
+## D.3 Salidas
+- `SALIDAS/` (Cap3DLFinal)
+- `SALIDAS_CONSOLIDADAS_CAP3/`
