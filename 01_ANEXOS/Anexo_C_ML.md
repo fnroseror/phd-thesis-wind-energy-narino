@@ -1,14 +1,16 @@
 # Anexo C – Pipeline Machine Learning (RF / XGB)
 
-## Contenido
-- Grid search y/o Bayesian optimization.
-- Curvas de aprendizaje.
-- Métricas comparativas.
+## C.1 Modelos
+- Random Forest (RF)
+- XGBoost (XGB)
 
-## Scripts asociados
-- `04_CODIGO/cap3_cap3_ml_only.R`
-- (o sección ML dentro de `cap3_cap3_classics_ml.R`)
+## C.2 Optimización
+- Grid search y/o Bayesian optimization (según configuración final usada)
 
-## Outputs
-- `02_TABLAS/` (hiperparámetros + métricas)
-- `05_RESULTADOS/` (predicciones / métricas)
+## C.3 Diagnóstico
+- Curvas de aprendizaje
+- Comparación por zona y horizonte
+
+## C.4 Salidas
+- `SALIDAS/` (Cap3MLFinal)
+- `SALIDAS_CONSOLIDADAS_CAP3/`
