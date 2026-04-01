@@ -95,7 +95,9 @@ The scripts documented in this folder are responsible for the following tasks:
 - conversion of temperature to Kelvin when needed,
 - estimation of air density `rho`,
 - computation of Wind Power Density `WPD`,
-- and derivation of `Eh` as the integrated energetic quantity used in later stages.
+- and derivation of `Eh` as the hourly energetic base quantity used in later stages.
+
+At this preprocessing level, `Eh` is stored as an hourly derived quantity associated with `WPD`. The horizon-integrated energetic quantity used for forecasting evaluation is computed later within the modeling pipelines.
 
 ### 6. Cache generation
 This preprocessing stage also creates reusable intermediate files that support later chapters without requiring full re-ingestion of the raw source each time.
