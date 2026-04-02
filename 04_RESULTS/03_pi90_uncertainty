@@ -1,1 +1,71 @@
+# 03_pi90_uncertainty
 
+## Purpose
+
+This folder contains the structured outputs associated with probabilistic uncertainty quantification through prediction intervals at the 90% level (PI90).
+
+It corresponds to the probabilistic result layer of Chapter 3.
+
+---
+
+## Scientific content
+
+The thesis explicitly states that uncertainty was quantified through calibrated 90% prediction intervals.
+
+The probabilistic evaluation includes:
+
+- empirical coverage before calibration,
+- empirical coverage after calibration,
+- calibration factors,
+- and the final probabilistic synthesis of the TDQ–PIESS framework.
+
+This folder stores the structured outputs behind those reported results.
+
+---
+
+## Expected outputs
+
+Recommended contents include:
+
+- `coverage_pi90_before.csv`
+- `coverage_pi90_after.csv`
+- `c_pi90_by_zone_horizon.csv`
+- `pi90_summary_tdq_piess.csv`
+- `interval_width_support.csv`
+
+Optional complementary outputs:
+- `raw_interval_bounds_sample.csv`
+- `probabilistic_validation_log.csv`
+
+---
+
+## Thesis linkage
+
+This folder is aligned with:
+
+- probabilistic uncertainty evaluation for WPD,
+- coverage before vs after calibration,
+- and **Table 5**, which reports the probabilistic synthesis of TDQ–PIESS.
+
+It also supports the coverage figures reported in Chapter 3.
+
+---
+
+## Interpretation role
+
+These outputs are critical because the thesis does not evaluate forecasting only through deterministic error.
+
+It also requires probabilistic honesty, meaning that the declared nominal confidence level must be consistent with observed empirical coverage.
+
+This folder therefore preserves the evidence that the framework not only predicts, but quantifies uncertainty in a calibrated and defensible manner.
+
+---
+
+## Traceability
+
+All files in this folder must be reproducible from:
+
+- `03_CODE/06_hybrid_tdq/`
+- `03_CODE/07_energy_projection/` when probabilistic propagation is involved
+
+and must remain coherent with the figures in `05_FIGURES/chapter_3/` and the tables in `06_TABLES/chapter_3/`.
