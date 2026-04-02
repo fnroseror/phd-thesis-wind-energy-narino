@@ -1,1 +1,53 @@
+# 06_extended_results
 
+## Purpose
+
+This folder contains additional result objects required for scientific traceability, reproducibility, and external audit, but not necessarily displayed in the main thesis body.
+
+---
+
+## Scientific content
+
+The thesis explicitly states that the repository should preserve extended results as part of its reproducible support environment.
+
+This includes outputs that are methodologically relevant even when they are not part of the central narrative of the manuscript.
+
+---
+
+## Expected outputs
+
+Recommended contents include:
+
+- complete metric matrices,
+- extended horizon comparisons,
+- residual outputs,
+- additional validation outputs,
+- training support objects,
+- auxiliary result files linked to figures and tables not included in the final thesis body.
+
+Suggested subfolders:
+- `full_metrics/`
+- `residual_support/`
+- `additional_horizons/`
+- `training_support/`
+
+---
+
+## Interpretation role
+
+This folder prevents loss of technical evidence.
+
+Its role is to ensure that the repository remains scientifically auditable even when the thesis PDF presents only the most representative results.
+
+This folder therefore supports transparency, not ornament.
+
+---
+
+## Traceability
+
+All files in this folder must be reproducible from one or more scripts in `03_CODE/` and should be referenced when necessary from:
+
+- `07_APPENDICES_SUPPORT/`
+- `09_REPRODUCIBILITY/`
+
+to maintain full methodological traceability.
