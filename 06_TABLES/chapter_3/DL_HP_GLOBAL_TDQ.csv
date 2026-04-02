@@ -1,0 +1,4 @@
+Horizonte,h,units1,units2,dropout,lr,batch,note,tuning_file
+Corto,1,128,32,0.19727344722487,0.00251258277858089,256,tuned_Z2_transfer_Z3,SALIDAS/TABLAS/DL_TUNING_WPD_Corto_h1.csv
+Medio,12,96,48,0.178157866667196,0.00228603651224125,512,tuned_Z2_transfer_Z3,SALIDAS/TABLAS/DL_TUNING_WPD_Medio_h12.csv
+Largo,72,96,48,0.228157866667196,0.00194313103540506,512,largo_derived_from_medio,""
