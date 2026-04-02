@@ -1,1 +1,72 @@
+# 05_energy_projection
 
+## Purpose
+
+This folder contains the structured outputs associated with the energetic integration and regional projection stage of the thesis.
+
+It corresponds to the core result layer of Chapter 4.
+
+---
+
+## Scientific content
+
+The thesis integrates Wind Power Density (WPD) into annual free energy and annual usable energy, under explicit uncertainty control and with structural modulation through FNRR.
+
+The reported energetic outputs include:
+
+- annual free energy,
+- annual usable energy,
+- PI90 uncertainty bands,
+- and projected scenarios toward 2028.
+
+This folder stores the structured outputs behind those results.
+
+---
+
+## Expected outputs
+
+Recommended contents include:
+
+- `annual_free_energy_2017_2028.csv`
+- `annual_usable_energy_2017_2028.csv`
+- `energy_free_vs_usable_by_zone.csv`
+- `energy_pi90_projection_2023_2028.csv`
+- `scenario_2028.csv`
+
+Optional complementary outputs:
+- `quarterly_wpd_projection.csv`
+- `energy_projection_log.csv`
+
+---
+
+## Thesis linkage
+
+This folder is aligned with:
+
+- the energetic integration reported in Chapter 4,
+- **Table 6**: annual free and usable energy by zone,
+- **Table 8**: projected regional energy scenario for 2028,
+- and the corresponding energetic figures.
+
+---
+
+## Interpretation role
+
+This folder stores one of the main doctoral outputs of the thesis:
+
+the transformation of physical wind characterization into interpretable regional energy projection under uncertainty.
+
+Its role is therefore both scientific and applied.
+
+These outputs preserve the bridge between physical modeling and regional decision-support interpretation.
+
+---
+
+## Traceability
+
+All files in this folder must be reproducible from:
+
+- `03_CODE/06_hybrid_tdq/`
+- `03_CODE/07_energy_projection/`
+
+and must remain coherent with the figures in `05_FIGURES/chapter_4/`, the tables in `06_TABLES/chapter_4/`, and the annexes in `07_APPENDICES_SUPPORT/`.
