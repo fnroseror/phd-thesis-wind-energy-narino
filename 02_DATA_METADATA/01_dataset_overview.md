@@ -86,7 +86,7 @@ It provides the empirical basis for the comparative forecasting framework, inclu
 - classical models such as ARIMA and ARIMAX,
 - machine learning models such as Random Forest and XGBoost,
 - deep learning architectures based on LSTM,
-- and the hybrid TDQ–PIESS implementation.
+- and a hybrid physical–statistical integration approach.
 
 The dataset therefore supports both deterministic and probabilistic evaluation of predictive performance.
 
