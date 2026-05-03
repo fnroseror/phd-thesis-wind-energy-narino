@@ -664,94 +664,57 @@ Let:
 
 ```text
 Y_z(T) = {WPD_z(t) : t ∈ T}
-```
 
-be the WPD sample for zone `z` over a temporal window `T`.
-
-Let:
-
-```text
 Q_25,z(T) = 25th percentile of Y_z(T)
 Q_75,z(T) = 75th percentile of Y_z(T)
-```
 
-The interquartile range is:
+W/m²
 
-```text
 IQR_z(T) = Q_75,z(T) − Q_25,z(T)
-```
 
-The **Factor de No Regularidad Regional (FNRR)** is defined as:
+FNRR_z(T) = IQR_z(T) / [Q_75,z(T) + Q_25,z(T) + ε_z]
 
-```text
-FNRR_z(T) = IQR_z(T) / [Q_75,z(T) + Q_25,z(T) + ε]
-```
+| Symbol      | Meaning                                                              | Unit          |
+| ----------- | -------------------------------------------------------------------- | ------------- |
+| `FNRR_z(T)` | Regional non-regularity factor for zone `z` and temporal window `T`. | Dimensionless |
+| `IQR_z(T)`  | Interquartile range of WPD.                                          | W/m²          |
+| `Q_75,z(T)` | Upper quartile of WPD.                                               | W/m²          |
+| `Q_25,z(T)` | Lower quartile of WPD.                                               | W/m²          |
+| `ε_z`       | Small positive numerical-stability term.                             | W/m²          |
 
-where:
 
-| Symbol | Meaning |
-|---|---|
-| `FNRR_z(T)` | Regional non-regularity factor for zone `z` and window `T`. |
-| `IQR_z(T)` | Interquartile range of WPD. |
-| `Q_75,z(T)` | Upper quartile of WPD. |
-| `Q_25,z(T)` | Lower quartile of WPD. |
-| `ε` | Small positive constant for numerical stability. |
+ε_z > 0
 
-This definition is robust because it is based on quantiles rather than extreme values.
 
 ---
 
 ## G.22 Mathematical properties of FNRR
 
-Assume:
+Assume that Wind Power Density is nonnegative:
 
 ```text
 WPD_z(t) ≥ 0
-```
 
-Then:
-
-```text
 Q_75,z(T) ≥ Q_25,z(T) ≥ 0
-```
 
-Therefore:
-
-```text
 IQR_z(T) = Q_75,z(T) − Q_25,z(T) ≥ 0
-```
 
-Since:
+Q_75,z(T) + Q_25,z(T) + ε_z > 0
 
-```text
-Q_75,z(T) + Q_25,z(T) + ε > 0
-```
-
-then:
-
-```text
 FNRR_z(T) ≥ 0
-```
 
-Also, because:
+Q_75,z(T) − Q_25,z(T) ≤ Q_75,z(T) + Q_25,z(T)
 
-```text
-Q_75,z(T) − Q_25,z(T) ≤ Q_75,z(T) + Q_25,z(T) + ε
-```
+Q_75,z(T) + Q_25,z(T) < Q_75,z(T) + Q_25,z(T) + ε_z
 
-for nonnegative quartiles and `ε > 0`, it follows that:
+FNRR_z(T) < 1
 
-```text
-FNRR_z(T) ≤ 1
-```
+0 ≤ FNRR_z(T) < 1
 
-Thus:
-
-```text
 0 ≤ FNRR_z(T) ≤ 1
-```
 
-This proves that FNRR is bounded and dimensionless.
+
+
 
 ---
 
@@ -870,6 +833,35 @@ It can only reduce the physically available energy according to structural irreg
 ---
 
 ## G.27 Monotonicity of usable energy with respect to FNRR
+## G.27.1 Additional mathematical properties
+
+### Scale behavior of FNRR
+
+If all WPD values are multiplied by a positive constant `a > 0`, then:
+
+```text
+Y'_z(T) = a · Y_z(T)
+
+Q'_25,z(T) = a · Q_25,z(T)
+Q'_75,z(T) = a · Q_75,z(T)
+IQR'_z(T) = a · IQR_z(T)
+
+ε'_z = a · ε_z
+
+FNRR'_z(T) = FNRR_z(T)
+
+E_usable = (1 − FNRR) · E_free
+
+∂E_usable/∂E_free = 1 − FNRR
+
+0 ≤ FNRR < 1
+
+0 < ∂E_usable/∂E_free ≤ 1
+
+1 − FNRR
+
+1 − FNRR → 0
+
 
 From:
 
