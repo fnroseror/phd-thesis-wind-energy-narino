@@ -513,22 +513,33 @@ where:
 | `L_z,m,h(t)` | Lower bound of the prediction interval. |
 | `U_z,m,h(t)` | Upper bound of the prediction interval. |
 
-A generic symmetric residual-based interval may be written as:
+A generic asymmetric residual-based interval may be written as:
 
 ```text
-L_z,m,h(t) = Ŷ_z,m(t+h) − c_PI90 · q_0.95(|R_z,m,h|)
+L_z,m,h(t) = Ŷ_z,m(t+h) + c_PI90 · q_0.05(R_z,m,h)
 ```
 
 ```text
-U_z,m,h(t) = Ŷ_z,m(t+h) + c_PI90 · q_0.95(|R_z,m,h|)
+U_z,m,h(t) = Ŷ_z,m(t+h) + c_PI90 · q_0.95(R_z,m,h)
 ```
 
 where:
 
 | Symbol | Meaning |
 |---|---|
-| `q_0.95(|R|)` | 95th percentile of absolute residuals. |
+| `q_0.05(R)` | 5th percentile of the residual distribution. |
+| `q_0.95(R)` | 95th percentile of the residual distribution. |
 | `c_PI90` | Calibration factor. |
+
+A generic symmetric absolute-residual interval may alternatively be expressed as:
+
+```text
+L_z,m,h(t) = Ŷ_z,m(t+h) − c_PI90 · q_0.90(|R_z,m,h|)
+```
+
+```text
+U_z,m,h(t) = Ŷ_z,m(t+h) + c_PI90 · q_0.90(|R_z,m,h|)
+```
 
 The exact interval construction should follow the implemented code, but the mathematical role is the same: to provide an uncertainty range around the central prediction.
 
@@ -664,27 +675,60 @@ Let:
 
 ```text
 Y_z(T) = {WPD_z(t) : t ∈ T}
+```
 
+be the Wind Power Density sample for zone `z` over a temporal window `T`.
+
+Let:
+
+```text
 Q_25,z(T) = 25th percentile of Y_z(T)
 Q_75,z(T) = 75th percentile of Y_z(T)
+```
 
+where both quantiles are expressed in the same unit as WPD, typically:
+
+```text
 W/m²
+```
 
+The interquartile range is:
+
+```text
 IQR_z(T) = Q_75,z(T) − Q_25,z(T)
+```
 
+The **Factor de No Regularidad Regional (FNRR)** is defined as:
+
+```text
 FNRR_z(T) = IQR_z(T) / [Q_75,z(T) + Q_25,z(T) + ε_z]
+```
 
-| Symbol      | Meaning                                                              | Unit          |
-| ----------- | -------------------------------------------------------------------- | ------------- |
+where:
+
+| Symbol | Meaning | Unit |
+|---|---|---|
 | `FNRR_z(T)` | Regional non-regularity factor for zone `z` and temporal window `T`. | Dimensionless |
-| `IQR_z(T)`  | Interquartile range of WPD.                                          | W/m²          |
-| `Q_75,z(T)` | Upper quartile of WPD.                                               | W/m²          |
-| `Q_25,z(T)` | Lower quartile of WPD.                                               | W/m²          |
-| `ε_z`       | Small positive numerical-stability term.                             | W/m²          |
+| `IQR_z(T)` | Interquartile range of WPD. | W/m² |
+| `Q_75,z(T)` | Upper quartile of WPD. | W/m² |
+| `Q_25,z(T)` | Lower quartile of WPD. | W/m² |
+| `ε_z` | Small positive numerical-stability term. | W/m² |
 
+The term `ε_z` must have the same physical unit as WPD in order to preserve dimensional consistency.
 
+A practical choice is:
+
+```text
 ε_z > 0
+```
 
+with `ε_z` sufficiently small relative to the characteristic WPD scale of the corresponding zone.
+
+This definition is robust because it is based on quantiles rather than extreme values.
+
+The numerator measures robust central dispersion, while the denominator normalizes that dispersion with respect to the robust energetic level of the zone.
+
+Therefore, FNRR is interpreted as a dimensionless structural descriptor of regional irregularity in the WPD distribution.
 
 ---
 
@@ -694,27 +738,69 @@ Assume that Wind Power Density is nonnegative:
 
 ```text
 WPD_z(t) ≥ 0
+```
 
+Then the quartiles satisfy:
+
+```text
 Q_75,z(T) ≥ Q_25,z(T) ≥ 0
+```
 
+Therefore:
+
+```text
 IQR_z(T) = Q_75,z(T) − Q_25,z(T) ≥ 0
+```
 
+Since:
+
+```text
 Q_75,z(T) + Q_25,z(T) + ε_z > 0
+```
 
+for `ε_z > 0`, the denominator is strictly positive.
+
+Thus:
+
+```text
 FNRR_z(T) ≥ 0
+```
 
+Now, because:
+
+```text
 Q_75,z(T) − Q_25,z(T) ≤ Q_75,z(T) + Q_25,z(T)
+```
 
+and:
+
+```text
 Q_75,z(T) + Q_25,z(T) < Q_75,z(T) + Q_25,z(T) + ε_z
+```
 
+it follows that:
+
+```text
 FNRR_z(T) < 1
+```
 
+for `ε_z > 0`.
+
+Therefore, the strict mathematical bound is:
+
+```text
 0 ≤ FNRR_z(T) < 1
+```
 
+A conservative practical statement is:
+
+```text
 0 ≤ FNRR_z(T) ≤ 1
+```
 
+This proves that FNRR is nonnegative, bounded, and dimensionless.
 
-
+The descriptor is mathematically consistent because the numerator and denominator have the same physical unit, and their quotient is dimensionless.
 
 ---
 
@@ -803,13 +889,13 @@ This expression applies a structural penalty to the physically available energy.
 Because:
 
 ```text
-0 ≤ FNRR_z(T) ≤ 1
+0 ≤ FNRR_z(T) < 1
 ```
 
 then:
 
 ```text
-0 ≤ 1 − FNRR_z(T) ≤ 1
+0 < 1 − FNRR_z(T) ≤ 1
 ```
 
 If:
@@ -833,35 +919,6 @@ It can only reduce the physically available energy according to structural irreg
 ---
 
 ## G.27 Monotonicity of usable energy with respect to FNRR
-## G.27.1 Additional mathematical properties
-
-### Scale behavior of FNRR
-
-If all WPD values are multiplied by a positive constant `a > 0`, then:
-
-```text
-Y'_z(T) = a · Y_z(T)
-
-Q'_25,z(T) = a · Q_25,z(T)
-Q'_75,z(T) = a · Q_75,z(T)
-IQR'_z(T) = a · IQR_z(T)
-
-ε'_z = a · ε_z
-
-FNRR'_z(T) = FNRR_z(T)
-
-E_usable = (1 − FNRR) · E_free
-
-∂E_usable/∂E_free = 1 − FNRR
-
-0 ≤ FNRR < 1
-
-0 < ∂E_usable/∂E_free ≤ 1
-
-1 − FNRR
-
-1 − FNRR → 0
-
 
 From:
 
@@ -890,6 +947,102 @@ then:
 Thus, usable energy decreases monotonically as FNRR increases.
 
 This is physically and methodologically coherent: higher irregularity reduces the structurally usable portion of energy.
+
+---
+
+## G.27.1 Additional mathematical properties
+
+### Scale behavior of FNRR
+
+If all WPD values are multiplied by a positive constant `a > 0`, then:
+
+```text
+Y'_z(T) = a · Y_z(T)
+```
+
+and therefore:
+
+```text
+Q'_25,z(T) = a · Q_25,z(T)
+Q'_75,z(T) = a · Q_75,z(T)
+IQR'_z(T) = a · IQR_z(T)
+```
+
+If the numerical-stability term is scaled consistently as:
+
+```text
+ε'_z = a · ε_z
+```
+
+then:
+
+```text
+FNRR'_z(T) = FNRR_z(T)
+```
+
+This shows that FNRR is invariant under positive scaling when the stability term is scaled consistently with the WPD unit.
+
+This is important because FNRR measures relative structural irregularity, not absolute energetic magnitude.
+
+---
+
+### Sensitivity of usable energy to free energy
+
+From:
+
+```text
+E_usable = (1 − FNRR) · E_free
+```
+
+assuming FNRR is fixed:
+
+```text
+∂E_usable/∂E_free = 1 − FNRR
+```
+
+Since:
+
+```text
+0 ≤ FNRR < 1
+```
+
+then:
+
+```text
+0 < ∂E_usable/∂E_free ≤ 1
+```
+
+This means that usable energy increases with free energy, but its rate of increase is reduced by regional irregularity.
+
+---
+
+### Interpretation of the FNRR penalty
+
+The term:
+
+```text
+1 − FNRR
+```
+
+acts as a structural usability factor.
+
+When FNRR is low:
+
+```text
+1 − FNRR ≈ 1
+```
+
+most of the free energy remains structurally usable.
+
+When FNRR is high:
+
+```text
+1 − FNRR → 0
+```
+
+the usable fraction decreases.
+
+This behavior is mathematically coherent with the physical interpretation of regional irregularity.
 
 ---
 
@@ -951,7 +1104,7 @@ Then:
 and:
 
 ```text
-FNRR_z(T_proj) = IQR(ŴPD_z(T_proj)) / [Q_75(ŴPD_z(T_proj)) + Q_25(ŴPD_z(T_proj)) + ε]
+FNRR_z(T_proj) = IQR(ŴPD_z(T_proj)) / [Q_75(ŴPD_z(T_proj)) + Q_25(ŴPD_z(T_proj)) + ε_z]
 ```
 
 Finally:
@@ -1216,6 +1369,7 @@ The formulation depends on the following assumptions:
 8. FNRR is a dimensionless robust descriptor, not a universal constant.
 9. Energy projection is model-based and should not be interpreted as direct observation.
 10. Usable energy is bounded above by free energy.
+11. The numerical-stability term `ε_z` must be expressed in the same physical unit as WPD.
 
 ---
 
@@ -1278,18 +1432,28 @@ Thus, WPD has units of power per unit area.
 
 ---
 
-### Proposition 3 — FNRR is bounded
+### Proposition 3 — FNRR is dimensionless and bounded
 
-For nonnegative WPD:
+For nonnegative WPD and `ε_z > 0` with the same unit as WPD:
 
 ```text
-0 ≤ FNRR ≤ 1
+FNRR_z(T) = [Q_75,z(T) − Q_25,z(T)] / [Q_75,z(T) + Q_25,z(T) + ε_z]
 ```
 
-because:
+The numerator and denominator have the same unit.
+
+Therefore, FNRR is dimensionless.
+
+Additionally:
 
 ```text
-0 ≤ Q_75 − Q_25 ≤ Q_75 + Q_25 + ε
+0 ≤ FNRR_z(T) < 1
+```
+
+A conservative practical statement is:
+
+```text
+0 ≤ FNRR_z(T) ≤ 1
 ```
 
 ---
@@ -1305,7 +1469,7 @@ E_usable = (1 − FNRR) · E_free
 with:
 
 ```text
-0 ≤ FNRR ≤ 1
+0 ≤ FNRR < 1
 ```
 
 and:
@@ -1320,6 +1484,8 @@ then:
 0 ≤ E_usable ≤ E_free
 ```
 
+Thus, usable energy cannot exceed free energy.
+
 ---
 
 ### Proposition 5 — Usable energy decreases with irregularity
@@ -1331,6 +1497,28 @@ If `E_free` is fixed:
 ```
 
 Thus, increasing irregularity decreases usable energy.
+
+---
+
+### Proposition 6 — FNRR measures relative irregularity
+
+If WPD is scaled by a positive factor `a > 0` and the stability term is scaled consistently:
+
+```text
+Y'_z(T) = a · Y_z(T)
+```
+
+```text
+ε'_z = a · ε_z
+```
+
+then:
+
+```text
+FNRR'_z(T) = FNRR_z(T)
+```
+
+Thus, FNRR measures relative structural irregularity rather than absolute energetic magnitude.
 
 ---
 
@@ -1355,7 +1543,7 @@ Free energy:
 E_free,z(T) = (Δt / 1000) · Σ WPD_z(t)
 
 Regional irregularity:
-FNRR_z(T) = [Q_75,z(T) − Q_25,z(T)] / [Q_75,z(T) + Q_25,z(T) + ε]
+FNRR_z(T) = [Q_75,z(T) − Q_25,z(T)] / [Q_75,z(T) + Q_25,z(T) + ε_z]
 
 Usable energy:
 E_usable,z(T) = [1 − FNRR_z(T)] · E_free,z(T)
@@ -1376,7 +1564,7 @@ bounded probabilistically, corrected structurally,
 and interpreted energetically.
 ```
 
-The role of FNRR is to introduce a mathematically bounded and robust structural descriptor that prevents the overinterpretation of free energy as fully usable energy.
+The role of FNRR is to introduce a mathematically bounded, dimensionally consistent, and robust structural descriptor that prevents the overinterpretation of free energy as fully usable energy.
 
 For that reason, this appendix provides the formal support for the final doctoral contribution:
 
