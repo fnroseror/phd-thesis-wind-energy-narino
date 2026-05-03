@@ -1,46 +1,21 @@
-# 08_PRODUCTS
+# 06_PRODUCTS
 
 ## Purpose
 
-This folder contains materials related to the academic and applied products formally associated with the doctoral work.
+This folder contains the academic, technological, pedagogical, and applied products derived from the doctoral thesis:
 
-These products are not part of the core executable pipeline, but emerge from the scientific development of the thesis.
+**“Estudio de la velocidad de viento e inclusión de parámetros físicos para la predicción de energía eléctrica producida por fuentes eólicas”.**
 
----
+The purpose of this section is to organize the products that emerge from the doctoral work beyond the dissertation itself, including articles, patent-oriented material, book development, dashboards, presentations, directed theses, and broader professorial or institutional projects.
 
-## Structure
+This folder should be interpreted as the **projection layer** of the repository.
 
-### `01_articles/`
-Materials associated with scientific article development.
+It is not part of the core evidentiary structure of the thesis. The core scientific support is contained in:
 
-### `02_patent/`
-Materials associated with intellectual property or patent-oriented developments.
-
-### `03_book/`
-Materials associated with extended conceptual or academic book production.
-
-### `04_dashboard/`
-Materials associated with visualization or decision-support interfaces.
-
-### `05_presentations/`
-Slides, summaries, and presentation material derived from the thesis.
-
-### `06_directed_theses/`
-Materials associated with undergraduate or graduate projects derived from this work.
-
-### `07_professorial_project/`
-Materials associated with the broader professorial or institutional research framework.
-
----
-
-## Scientific role
-
-This folder documents the projection capacity of the thesis beyond the dissertation itself.
-
-It shows how the doctoral work supports additional academic, technological, and institutional products.
-
----
-
-## Closure criterion
-
-This folder is considered complete when each declared product is documented in a clear and organized way, even if some products are still under development.
+```text
+01_THESIS/
+02_DATA_METADATA/
+03_CODE/
+04_RESULTS_COMPLETE/
+05_APPENDICES_SUPPORT/
+07_REPRODUCIBILITY/
