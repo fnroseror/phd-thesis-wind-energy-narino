@@ -37,9 +37,10 @@ Repository role: Applied visualization product
 
 ## 3. Public access link
 
+The dashboard is publicly available through Microsoft Power BI:
+
 ```text
 https://app.powerbi.com/view?r=eyJrIjoiZWJkZjE1NzAtNDIzNy00Zjk4LTllM2QtZTQwN2U3NWJlMzQwIiwidCI6ImQ5Y2Q5ZTQ4LTdkNjYtNGRkNC1hMTlkLWJiMGM3MWE2OTU1MCIsImMiOjR9
-```
 
 ---
 
