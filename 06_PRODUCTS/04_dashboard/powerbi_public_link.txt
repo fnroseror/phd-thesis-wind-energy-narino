@@ -1,7 +1,7 @@
 Power BI Dashboard — Public Access Link
 
 Title:
-Dashboard de analítica predictiva del potencial eólico regional basado en modelamiento físico–estadístico y datos meteorológicos
+Dashboard para la visualización del comportamiento de variables meteorológicas en Nariño durante el periodo de estudio doctoral
 
 Public link:
 https://app.powerbi.com/view?r=eyJrIjoiZWJkZjE1NzAtNDIzNy00Zjk4LTllM2QtZTQwN2U3NWJlMzQwIiwidCI6ImQ5Y2Q5ZTQ4LTdkNjYtNGRkNC1hMTlkLWJiMGM3MWE2OTU1MCIsImMiOjR9
@@ -9,11 +9,50 @@ https://app.powerbi.com/view?r=eyJrIjoiZWJkZjE1NzAtNDIzNy00Zjk4LTllM2QtZTQwN2U3N
 Status:
 Published Power BI dashboard
 
+Platform:
+Microsoft Power BI
+
+Access type:
+Public view link
+
+Current scope:
+Visualization of the available meteorological variables over the established doctoral study period.
+
 Repository role:
-Applied visualization and decision-support product derived from the doctoral thesis.
+Applied visualization and academic dissemination product derived from the doctoral research.
 
 Related thesis:
 “Estudio de la velocidad de viento e inclusión de parámetros físicos para la predicción de energía eléctrica producida por fuentes eólicas”.
 
+Author:
+Favio Nicolás Rosero Rodríguez
+
+Institutional context:
+Doctorado en Ciencias — Física
+Universidad Nacional de Colombia, Sede Manizales
+
+Applied context:
+Programa de Ingeniería de Sistemas
+Universidad Mariana
+Pasto – Nariño, Colombia
+
 Scientific connection:
-Wind Power Density, physical–statistical modeling, predictive analytics, PI90 uncertainty, FNRR, free energy, usable energy, and regional energy projection.
+Meteorological variables, wind behavior, temporal data exploration, physical characterization, regional atmospheric analysis, and applied visualization of the observational basis of the doctoral research.
+
+Repository location:
+06_PRODUCTS/04_dashboard/
+
+Related repository sections:
+02_DATA_METADATA/
+03_CODE/01_preprocessing/
+03_CODE/02_physical_characterization/
+04_RESULTS_COMPLETE/01_physical_characterization/
+04_RESULTS_COMPLETE/07_FIGURES/chapter_2/
+04_RESULTS_COMPLETE/08_TABLES/chapter_2/
+05_APPENDICES_SUPPORT/
+07_REPRODUCIBILITY/
+
+Note:
+This file preserves the public access link to the Power BI dashboard as documentary support for the applied visualization product derived from the doctoral research.
+
+The dashboard should be interpreted according to its current scope: visualization of available meteorological variables over the established study period. It should not be overinterpreted as the complete implementation of the full physical–statistical model, FNRR, PI90 uncertainty, free energy, usable energy, or regional energy projection unless those components are explicitly incorporated in future dashboard versions.
