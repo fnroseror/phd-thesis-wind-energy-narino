@@ -1,1 +1,19 @@
+Power BI Dashboard — Public Access Link
 
+Title:
+Dashboard de analítica predictiva del potencial eólico regional basado en modelamiento físico–estadístico y datos meteorológicos
+
+Public link:
+https://app.powerbi.com/view?r=eyJrIjoiZWJkZjE1NzAtNDIzNy00Zjk4LTllM2QtZTQwN2U3NWJlMzQwIiwidCI6ImQ5Y2Q5ZTQ4LTdkNjYtNGRkNC1hMTlkLWJiMGM3MWE2OTU1MCIsImMiOjR9
+
+Status:
+Published Power BI dashboard
+
+Repository role:
+Applied visualization and decision-support product derived from the doctoral thesis.
+
+Related thesis:
+“Estudio de la velocidad de viento e inclusión de parámetros físicos para la predicción de energía eléctrica producida por fuentes eólicas”.
+
+Scientific connection:
+Wind Power Density, physical–statistical modeling, predictive analytics, PI90 uncertainty, FNRR, free energy, usable energy, and regional energy projection.
