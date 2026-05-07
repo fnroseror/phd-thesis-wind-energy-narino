@@ -34,7 +34,7 @@ This document does not guarantee exact bit-level reproduction on every machine.
 
 Instead, it documents the software context required to understand, review, and reproduce the workflow under comparable computational conditions.
 
-This is especially important because the thesis includes:
+This distinction is important because the thesis includes:
 
 - data preprocessing;
 - physical characterization;
@@ -47,6 +47,8 @@ This is especially important because the thesis includes:
 - figure generation;
 - table export;
 - and reproducibility documentation.
+
+The goal is not to claim that every result will be reproduced identically on every computer, but to preserve the computational context that supports scientific review.
 
 ---
 
@@ -72,6 +74,8 @@ R is used for:
 - table generation;
 - and reproducibility documentation.
 
+Some deep learning components may also depend on Python-related backends accessed through R packages such as `reticulate`, `tensorflow`, or `keras`.
+
 ---
 
 ## 3. R version
@@ -84,12 +88,13 @@ The representative R environment is documented in:
 
 This file should be considered the detailed technical record of the R session.
 
-Recommended statement:
+Recommended interpretation:
 
 ```text
 The final reproducibility reference should be based on sessionInfo.txt,
-which preserves the R version, platform, loaded packages, and namespace information
-from the computational environment used during the doctoral workflow.
+which preserves the R version, platform, loaded packages,
+namespace information, and system context from the computational environment
+used during the doctoral workflow.
 ```
 
 If multiple R versions were used during development, the final reproducibility review should prioritize the session recorded in:
@@ -144,7 +149,7 @@ The computational workflow may require packages associated with the following ca
 
 ## 6. Representative R packages
 
-The workflow may involve packages such as:
+The workflow may involve packages such as the following, depending on the execution stage, script version, and specific analysis block:
 
 ```text
 readr
@@ -173,15 +178,12 @@ officer
 flextable
 ```
 
-This list is representative and should be checked against:
+This list should be interpreted as a representative software environment for the doctoral workflow, not as a guarantee that every package is loaded in every script.
+
+The definitive technical evidence should be checked against:
 
 ```text
 07_REPRODUCIBILITY/sessionInfo.txt
-```
-
-and the specific scripts in:
-
-```text
 03_CODE/
 ```
 
@@ -191,145 +193,68 @@ Not every package listed here is necessarily required for every execution stage.
 
 ## 7. Data manipulation packages
 
-Data manipulation may use packages such as:
+Data manipulation may involve packages such as:
 
 ```text
-dplyr
-tidyr
 readr
 readxl
+dplyr
+tidyr
 stringr
-purrr
 janitor
+purrr
 ```
 
 These packages support:
 
 - reading source files;
+- importing tabular data;
 - cleaning column names;
 - filtering variables;
 - grouping by station, zone, and variable;
 - reshaping data;
 - summarizing values;
-- and exporting processed data.
+- and preparing analysis-ready datasets.
+
+These packages are mainly related to:
+
+```text
+03_CODE/01_preprocessing/
+02_DATA_METADATA/
+04_RESULTS_COMPLETE/08_TABLES/
+```
 
 ---
 
 ## 8. Date-time packages
 
-Date-time handling may use packages such as:
+Date-time handling may involve:
 
 ```text
 lubridate
 ```
 
-These packages support:
+This package supports:
 
 - parsing `FechaYHora`;
 - extracting year, month, day, hour, or quarter;
 - organizing time-indexed observations;
-- and supporting temporal aggregation or filtering.
+- supporting temporal aggregation;
+- and preparing data for time-series modeling.
 
 Correct date-time parsing is essential because the thesis depends on temporal analysis, forecasting, and projection.
 
 ---
 
-## 9. Statistical and distributional packages
+## 9. Visualization packages
 
-Statistical and distributional analysis may use packages such as:
-
-```text
-fitdistrplus
-moments
-stats
-tseries
-forecast
-```
-
-These packages support:
-
-- descriptive statistics;
-- distribution fitting;
-- Weibull parameter estimation;
-- Rayleigh comparison;
-- ACF and PACF analysis;
-- time-series modeling;
-- and statistical diagnostics.
-
----
-
-## 10. Machine learning packages
-
-Machine learning workflows may use packages such as:
-
-```text
-randomForest
-ranger
-xgboost
-caret
-yardstick
-```
-
-These packages support:
-
-- model training;
-- feature-based prediction;
-- nonlinear modeling;
-- error metrics;
-- model comparison;
-- and performance evaluation.
-
-Machine learning outputs are connected to:
-
-```text
-04_RESULTS_COMPLETE/02_model_comparison/
-04_RESULTS_COMPLETE/08_TABLES/chapter_3/
-```
-
----
-
-## 11. Deep learning packages
-
-Deep learning workflows may use:
-
-```text
-keras
-tensorflow
-reticulate
-```
-
-These packages support:
-
-- LSTM modeling;
-- neural-network training;
-- sequential learning;
-- hyperparameter configuration;
-- and prediction generation.
-
-Deep learning reproducibility may depend on:
-
-- R version;
-- Python environment;
-- TensorFlow version;
-- Keras version;
-- CPU or GPU execution;
-- random seeds;
-- backend configuration;
-- and numerical-library behavior.
-
-Exact bit-level reproduction is not guaranteed across systems.
-
----
-
-## 12. Visualization packages
-
-Visualization may use packages such as:
+Visualization may involve:
 
 ```text
 ggplot2
 ```
 
-and other plotting utilities.
+and other plotting utilities available through the R environment.
 
 Visualization outputs are stored in:
 
@@ -349,23 +274,20 @@ Figures should be interpreted as part of the scientific evidence layer.
 
 ---
 
-## 13. Table and document export packages
+## 10. Table and spreadsheet export packages
 
-Table and document export may use packages such as:
+Table and spreadsheet export may involve:
 
 ```text
 openxlsx
-officer
-flextable
 ```
 
-These packages support:
+This package supports:
 
 - Excel export;
-- formatted tables;
-- Word document generation;
-- appendix support;
-- and institutional or technical reporting.
+- structured table outputs;
+- reviewable spreadsheets;
+- and evidence organization for thesis tables.
 
 Exported tables are stored in:
 
@@ -373,9 +295,157 @@ Exported tables are stored in:
 04_RESULTS_COMPLETE/08_TABLES/
 ```
 
+Expected table folders:
+
+```text
+04_RESULTS_COMPLETE/08_TABLES/chapter_2/
+04_RESULTS_COMPLETE/08_TABLES/chapter_3/
+04_RESULTS_COMPLETE/08_TABLES/chapter_4/
+```
+
 ---
 
-## 14. Power BI environment
+## 11. Statistical and distributional packages
+
+Statistical and distributional analysis may involve packages such as:
+
+```text
+forecast
+tseries
+fitdistrplus
+moments
+```
+
+These packages support:
+
+- descriptive statistics;
+- distribution fitting;
+- Weibull parameter estimation;
+- Rayleigh comparison;
+- skewness;
+- kurtosis;
+- ACF and PACF analysis;
+- time-series modeling;
+- and statistical diagnostics.
+
+These packages are mainly related to:
+
+```text
+03_CODE/02_physical_characterization/
+03_CODE/03_classical_models/
+04_RESULTS_COMPLETE/01_physical_characterization/
+04_RESULTS_COMPLETE/02_model_comparison/
+```
+
+---
+
+## 12. Machine learning packages
+
+Machine learning workflows may involve packages such as:
+
+```text
+randomForest
+ranger
+xgboost
+caret
+yardstick
+```
+
+These packages support:
+
+- model training;
+- feature-based prediction;
+- nonlinear modeling;
+- Random Forest approaches;
+- XGBoost approaches;
+- model comparison;
+- error metrics;
+- and predictive-performance evaluation.
+
+Machine learning outputs are connected to:
+
+```text
+03_CODE/04_machine_learning/
+04_RESULTS_COMPLETE/02_model_comparison/
+04_RESULTS_COMPLETE/08_TABLES/chapter_3/
+```
+
+The use of each package should be verified in the corresponding scripts before claiming that it is required for a specific execution stage.
+
+---
+
+## 13. Deep learning packages
+
+Deep learning workflows may involve:
+
+```text
+keras
+tensorflow
+reticulate
+```
+
+These packages support:
+
+- LSTM modeling;
+- neural-network training;
+- sequential learning;
+- hyperparameter configuration;
+- TensorFlow backend execution;
+- and R–Python environment interaction.
+
+Deep learning reproducibility may depend on:
+
+- R version;
+- Python environment;
+- TensorFlow version;
+- Keras version;
+- CPU or GPU execution;
+- random seeds;
+- backend configuration;
+- and numerical-library behavior.
+
+Exact bit-level reproduction is not guaranteed across systems.
+
+Deep learning outputs are connected to:
+
+```text
+03_CODE/05_deep_learning/
+04_RESULTS_COMPLETE/02_model_comparison/
+04_RESULTS_COMPLETE/08_TABLES/chapter_3/
+04_RESULTS_COMPLETE/07_FIGURES/chapter_3/
+```
+
+---
+
+## 14. Document and report-generation packages
+
+Document and report-generation workflows may involve:
+
+```text
+officer
+flextable
+```
+
+These packages support:
+
+- Word document generation;
+- formatted table outputs;
+- appendix support;
+- formal report generation;
+- and institutional or technical documentation.
+
+These packages are useful for producing or supporting:
+
+```text
+05_APPENDICES_SUPPORT/
+06_PRODUCTS/
+```
+
+Their use should be verified in the specific scripts or document-generation workflows.
+
+---
+
+## 15. Power BI environment
 
 The dashboard product is developed in:
 
@@ -399,9 +469,15 @@ Power BI is used as an applied visualization and dissemination tool.
 
 It is not the primary computational reproducibility environment for the thesis.
 
+The current dashboard scope is documented in:
+
+```text
+06_PRODUCTS/04_dashboard/dashboard_status.md
+```
+
 ---
 
-## 15. Version-control environment
+## 16. Version-control environment
 
 The repository is hosted on:
 
@@ -423,7 +499,38 @@ GitHub is used to preserve the structure of the doctoral repository, not necessa
 
 ---
 
-## 16. Local path caution
+## 17. Relationship with `sessionInfo.txt`
+
+The file:
+
+```text
+sessionInfo.txt
+```
+
+is the most specific technical record of the computational environment.
+
+It should preserve:
+
+- R version;
+- platform;
+- operating system;
+- loaded packages;
+- attached packages;
+- namespace versions;
+- and locale information.
+
+This file is especially important for reproducibility review.
+
+The package list in this document should therefore be interpreted together with:
+
+```text
+07_REPRODUCIBILITY/sessionInfo.txt
+03_CODE/
+```
+
+---
+
+## 18. Local path caution
 
 Some scripts may contain historical local path references used during development.
 
@@ -440,7 +547,7 @@ For execution on another machine, local paths should be replaced with project-re
 
 Recommended approach:
 
-```text
+```r
 project_root <- "path/to/phd-thesis-wind-energy-narino"
 ```
 
@@ -454,26 +561,26 @@ This improves portability and reduces dependence on personal directory structure
 
 ---
 
-## 17. Random seed caution
+## 19. Random seed caution
 
 Some workflows include stochastic components.
 
-Examples:
+Examples include:
 
 - train-test splitting;
 - machine learning model training;
 - hyperparameter tuning;
 - Bayesian optimization;
 - neural-network initialization;
-- deep learning training.
+- and deep learning training.
 
-Recommended practice:
+Recommended practice in R:
 
-```text
+```r
 set.seed(...)
 ```
 
-and equivalent seed control in Python/TensorFlow when applicable.
+Equivalent seed-control mechanisms should be used for Python/TensorFlow workflows when applicable.
 
 However, even with seeds, exact reproduction may vary across systems due to:
 
@@ -482,11 +589,12 @@ However, even with seeds, exact reproduction may vary across systems due to:
 - TensorFlow behavior;
 - package versions;
 - operating-system differences;
-- and numerical libraries.
+- numerical libraries;
+- and parallel computation.
 
 ---
 
-## 18. Dependency installation note
+## 20. Dependency installation note
 
 A reviewer or future user may need to install missing packages before running the scripts.
 
@@ -515,46 +623,46 @@ and the relevant deep learning scripts.
 
 ---
 
-## 19. Relationship with `sessionInfo.txt`
+## 21. Package-use caution
 
-The file:
+The list of packages in this file is intentionally conservative and representative.
+
+It should not be interpreted as a claim that:
+
+- every package was used in every script;
+- every package is required for every execution stage;
+- all packages were loaded simultaneously;
+- or the package list alone is sufficient to reproduce every result.
+
+The correct interpretation is:
 
 ```text
-sessionInfo.txt
+The listed packages represent the software ecosystem associated with
+the doctoral computational workflow.
+Specific package use should be verified through sessionInfo.txt
+and the scripts stored in 03_CODE/.
 ```
-
-is the most specific technical record of the computational environment.
-
-It should preserve:
-
-- R version;
-- platform;
-- operating system;
-- loaded packages;
-- attached packages;
-- namespace versions;
-- and locale information.
-
-This file is especially important for reproducibility review.
 
 ---
 
-## 20. Minimum software documentation expected
+## 22. Minimum software documentation expected
 
 The reproducibility layer is considered sufficiently documented when it includes:
 
 1. this `software_versions.md` file;
 2. `sessionInfo.txt`;
-3. package information;
-4. operating-system context;
-5. deep learning backend notes when applicable;
-6. local path caution;
-7. randomness and seed caution;
-8. and relationship with the code folders.
+3. package-category information;
+4. representative package information;
+5. operating-system context;
+6. deep learning backend notes when applicable;
+7. Power BI documentation for the dashboard product;
+8. local path caution;
+9. randomness and seed caution;
+10. and relationship with the code folders.
 
 ---
 
-## 21. What this file does not guarantee
+## 23. What this file does not guarantee
 
 This file does not guarantee that:
 
@@ -562,13 +670,14 @@ This file does not guarantee that:
 - every script can run without local configuration;
 - all dependencies are automatically installed;
 - deep learning results reproduce bit-by-bit;
-- or the workflow is containerized.
+- the workflow is containerized;
+- or the listed packages alone fully define the computational environment.
 
 Instead, it documents the software context needed for scientific review and progressive reproducibility.
 
 ---
 
-## 22. Recommended reviewer action
+## 24. Recommended reviewer action
 
 A reviewer interested in software reproducibility should:
 
@@ -579,11 +688,30 @@ A reviewer interested in software reproducibility should:
 4. Confirm package requirements by execution stage.
 5. Verify local paths and input data availability.
 6. Review validation_checks.md.
+7. Review execution_pipeline.md.
 ```
 
 ---
 
-## 23. Final statement
+## 25. Relationship with repository structure
+
+This file is connected to:
+
+```text
+03_CODE/
+04_RESULTS_COMPLETE/
+05_APPENDICES_SUPPORT/
+06_PRODUCTS/04_dashboard/
+07_REPRODUCIBILITY/sessionInfo.txt
+07_REPRODUCIBILITY/execution_pipeline.md
+07_REPRODUCIBILITY/validation_checks.md
+```
+
+It supports the reproducibility interpretation of the computational workflow without replacing the scripts or the recorded session information.
+
+---
+
+## 26. Final statement
 
 The software environment documented here supports the computational traceability of the doctoral thesis.
 
