@@ -1,49 +1,236 @@
-# History files
+# ============================================================
+# Root .gitignore
+# PhD thesis repository — Wind energy forecasting in Nariño
+# ============================================================
+
+# This file excludes local, temporary, sensitive, or heavy files
+# that should not be tracked in the public doctoral repository.
+#
+# The repository intentionally preserves:
+# - documentation
+# - metadata
+# - code
+# - selected results
+# - figures
+# - tables
+# - appendices
+# - product evidence
+# - reproducibility files
+
+# ============================================================
+# R / RStudio
+# ============================================================
+
 .Rhistory
 .Rapp.history
-
-# Session Data files
 .RData
 .RDataTmp
-
-# User-specific files
 .Ruserdata
+.Rproj.user/
+*.Rproj.user
 
-# Example code in package build process
+# R package/check artifacts
+*.tar.gz
+*.Rcheck/
 *-Ex.R
 
-# Output files from R CMD build
-/*.tar.gz
-
-# Output files from R CMD check
-/*.Rcheck/
-
-# RStudio files
-.Rproj.user/
-
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
-
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
-
-# knitr and R markdown default cache directories
+# R markdown / knitr cache
 *_cache/
-/cache/
-
-# Temporary files created by R markdown
+cache/
+*/cache/
 *.utf8.md
 *.knit.md
 
-# R Environment Variables
+# R environment and local configuration
 .Renviron
-
-# pkgdown site
-docs/
-
-# translation temp files
-po/*~
-
-# RStudio Connect folder
+.Rprofile
+.httr-oauth
 rsconnect/
+
+# ============================================================
+# Python / TensorFlow / reticulate local environments
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+conda/
+
+# Local Python environment files
+python_env/
+tensorflow_env/
+keras_env/
+
+# ============================================================
+# Operating system files
+# ============================================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ============================================================
+# IDE / editor files
+# ============================================================
+
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================
+# Logs and temporary files
+# ============================================================
+
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.swp
+*.swo
+~$*
+*.lock
+
+# ============================================================
+# Local data and raw datasets
+# ============================================================
+
+# Raw or local datasets should not be uploaded unless explicitly
+# sanitized and authorized for public release.
+data/raw/
+data/private/
+data/local/
+data/intermediate/
+data/temp/
+
+# Common large local data formats
+*.sqlite
+*.sqlite3
+*.db
+*.parquet
+*.feather
+
+# Very large compressed archives
+*.zip
+*.rar
+*.7z
+*.gz
+*.bz2
+*.xz
+
+# ============================================================
+# Model artifacts and heavy binary objects
+# ============================================================
+
+# These may be large and environment-specific.
+# Upload only if intentionally selected as final evidence.
+*.h5
+*.hdf5
+*.keras
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.ckpt
+
+# TensorFlow checkpoints
+checkpoint
+checkpoints/
+*.index
+*.data-00000-of-00001
+
+# ============================================================
+# Power BI local files
+# ============================================================
+
+# The public dashboard link and documentation are preserved in:
+# 06_PRODUCTS/04_dashboard/
+#
+# The editable PBIX file should not be uploaded unless it is
+# reviewed, sanitized, and intentionally released.
+*.pbix
+*.pbit
+
+# ============================================================
+# Office temporary files
+# ============================================================
+
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.tmp.docx
+*.tmp.xlsx
+*.tmp.pptx
+
+# ============================================================
+# Local credentials and secrets
+# ============================================================
+
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+credentials.json
+token.json
+secrets.json
+config.local.*
+local_config.*
+
+# ============================================================
+# Generated local reports not selected as repository evidence
+# ============================================================
+
+local_reports/
+draft_exports/
+temp_exports/
+debug_outputs/
+scratch/
+sandbox/
+
+# ============================================================
+# Keep selected repository evidence
+# ============================================================
+
+# The following folders are intentionally tracked when files are
+# selected and reviewed as thesis support:
+#
+# 01_THESIS/
+# 02_DATA_METADATA/
+# 03_CODE/
+# 04_RESULTS_COMPLETE/
+# 05_APPENDICES_SUPPORT/
+# 06_PRODUCTS/
+# 07_REPRODUCIBILITY/
+#
+# Do not ignore these folders globally.
+
+# ============================================================
+# Exceptions: keep reproducibility and evidence files
+# ============================================================
+
+!07_REPRODUCIBILITY/sessionInfo.txt
+!07_REPRODUCIBILITY/*.md
+!06_PRODUCTS/**/evidence/*.pdf
+!06_PRODUCTS/**/certificates/*.pdf
+!06_PRODUCTS/04_dashboard/powerbi_public_link.txt
