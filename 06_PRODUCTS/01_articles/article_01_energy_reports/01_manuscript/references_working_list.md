@@ -306,3 +306,14 @@ DOI verification: pending
 Manuscript citation insertion: pending
 Final reference list: pending
 ```
+# 13. Verified references — Block 1  
+## Wind power density and wind-resource assessment
+
+| ID | Block | Reference | DOI / URL | Use in manuscript | Status |
+|---|---|---|---|---|---|
+| R01 | Wind power density / physical basis | Manwell, J.F., McGowan, J.G., Rogers, A.L., 2009. Wind Energy Explained: Theory, Design and Application, 2nd ed. John Wiley & Sons. | https://doi.org/10.1002/9781119994367 | Methodology: physical basis of wind-energy conversion, wind characteristics and WPD formulation. | Verified |
+| R02 | WPD / air density | Carta, J.A., Mentado, D., 2007. A continuous bivariate model for wind power density and wind turbine energy output estimations. Energy Conversion and Management 48, 420–432. | https://doi.org/10.1016/j.enconman.2006.06.019 | Methodology / Discussion: supports WPD estimation and the relevance of air-density treatment. | Verified |
+| R03 | WPD / Weibull-Rayleigh assessment | Pishgar-Komleh, S.H., Keyhani, A., Sefeedpari, P., 2015. Wind speed and power density analysis based on Weibull and Rayleigh distributions (a case study: Firouzkooh county of Iran). Renewable and Sustainable Energy Reviews 42, 313–322. | https://doi.org/10.1016/j.rser.2014.10.028 | Introduction / Methodology: supports WPD analysis using Weibull and Rayleigh distributions. | Verified |
+| R04 | Regional WPD / Colombia | Gil Ruiz, S.A., Cañón Barriga, J.E., Martínez, J.A., 2021. Wind power assessment in the Caribbean region of Colombia, using ten-minute wind observations and ERA5 data. Renewable Energy 172, 158–176. | https://doi.org/10.1016/j.renene.2021.03.033 | Introduction / Discussion: Colombian wind-resource assessment and WPD comparison context. | Verified |
+| R05 | Regional wind-power statistics / Latin America | Cancino-Solórzano, Y., Xiberta-Bernat, J., 2009. Statistical analysis of wind power in the region of Veracruz (Mexico). Renewable Energy 34, 1628–1634. | https://doi.org/10.1016/j.renene.2008.11.018 | Discussion: Latin American statistical wind-power assessment precedent. | Verified |
+| R06 | WPD / South America / climate context | de Souza Ferreira, G.W., Reboita, M.S., Ribeiro, J.G.M., Carvalho, V.S.B., Santiago, M.E.V., Silva, P.L.L.S., Baldoni, T.C., de Souza, C.A., 2024. Assessment of the wind power density over South America simulated by CMIP6 models in the present and future climate. Climate Dynamics 62, 1729–1763. | https://doi.org/10.1007/s00382-023-06993-3 | Introduction / Discussion: South American WPD context and regional climate-energy relevance. | Verified |
