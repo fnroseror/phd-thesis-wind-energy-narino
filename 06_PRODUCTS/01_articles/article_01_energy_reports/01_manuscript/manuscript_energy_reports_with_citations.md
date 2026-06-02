@@ -143,7 +143,7 @@ was selected as the main scenario. This threshold removed a small fraction of ex
 
 Descriptive statistics were computed by analytical zone for wind speed and WPD. These statistics included the number of records, mean, median, selected percentiles and maximum values.
 
-Wind-speed distributions were fitted using Weibull and Rayleigh models. Weibull distributions are widely used in wind-energy analysis because they can represent different wind-speed regimes through their shape and scale parameters (Justus et al., 1978; Seguro and Lambert, 2000; Carta et al., 2009). The Rayleigh distribution was included as a constrained reference model commonly used in wind-resource assessment (Celik, 2004; Pishgar-Komleh et al., 2015).
+Wind-speed distributions were fitted using Weibull and Rayleigh models. Weibull distributions are widely used in wind-energy analysis because they can represent different wind-speed regimes through their shape and scale parameters, while several estimation approaches have been proposed for wind-energy applications (Justus et al., 1978; Seguro and Lambert, 2000; Akdağ and Dinler, 2009; Carta et al., 2009). The Rayleigh distribution was included as a constrained reference model commonly used in wind-resource assessment (Celik, 2004; Pishgar-Komleh et al., 2015).
 
 Model comparison was performed using distribution parameters, information criteria and visual evaluation of density and cumulative distribution fits. The interpretation of Weibull performance was made cautiously, recognizing that alternative distributions may outperform Weibull in some contexts and that distributional selection should be dataset-specific (Drobinski et al., 2015).
 
@@ -253,7 +253,7 @@ The daily autocorrelation analysis revealed substantial temporal persistence in 
 Figure 7. Daily autocorrelation function of wind power density by analytical zone.
 ```
 
-The PACF analysis showed that most direct temporal dependence was concentrated at the first lag, indicating that short-term autoregressive structure plays an important role in WPD dynamics. This result is coherent with the broader use of autoregressive and time-series approaches in wind-speed and wind-power analysis (Brown et al., 1984; Torres et al., 2005; Erdem and Shi, 2011).
+The PACF analysis showed that most direct temporal dependence was concentrated at the first lag, indicating that short-term autoregressive structure plays an important role in WPD dynamics. This persistence is relevant because wind-power behavior may be governed by sustained high- and low-energy regimes rather than isolated independent events (Weber et al., 2019). This result is coherent with the broader use of autoregressive and time-series approaches in wind-speed and wind-power analysis (Brown et al., 1984; Torres et al., 2005; Erdem and Shi, 2011).
 
 ## 4.5 Spectral structure of WPD
 
