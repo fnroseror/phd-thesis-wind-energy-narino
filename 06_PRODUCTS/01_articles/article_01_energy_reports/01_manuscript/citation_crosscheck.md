@@ -75,7 +75,7 @@ references not listed in the final bibliography
 The current manuscript version includes the following in-text citations:
 
 ```text
-Akdağ and Dinler (2009) — pending insertion
+Akdağ and Dinler (2009)
 Ayala et al. (2017)
 Box et al. (2008)
 Brown et al. (1984)
@@ -107,7 +107,7 @@ Telesca et al. (2016)
 Torres et al. (2005)
 Ulazia et al. (2019)
 Van der Hoven (1957)
-Weber et al. (2019) — pending insertion
+Weber et al. (2019) 
 Wilkinson et al. (2016)
 ```
 
@@ -156,12 +156,9 @@ Wilkinson et al. (2016)
 
 # 6. Pending citation insertions
 
-Two final references require explicit insertion in the manuscript text:
-
-```text
-Akdağ and Dinler (2009)
-Weber et al. (2019)
-```
+All final references are cited.
+No pending insertions remain.
+Final crosscheck completed.
 
 ---
 
