@@ -152,59 +152,6 @@ Wilkinson et al. (2016)
 | Weber et al. (2019) | Yes | Yes | OK | No action |
 | Wilkinson et al. (2016) | Yes | Yes | OK | No action |
 
----
-
-# 6. Pending citation insertions
-
-All final references are cited.
-No pending insertions remain.
-Final crosscheck completed.
-
----
-
-## 6.1 Suggested insertion for Akdağ and Dinler (2009)
-
-Recommended location:
-
-```text
-Section 3.4 Descriptive and distributional analysis
-```
-
-Current sentence:
-
-```text
-Weibull distributions are widely used in wind-energy analysis because they can represent different wind-speed regimes through their shape and scale parameters (Justus et al., 1978; Seguro and Lambert, 2000; Carta et al., 2009).
-```
-
-Recommended replacement:
-
-```text
-Weibull distributions are widely used in wind-energy analysis because they can represent different wind-speed regimes through their shape and scale parameters, while several estimation approaches have been proposed for wind-energy applications (Justus et al., 1978; Seguro and Lambert, 2000; Akdağ and Dinler, 2009; Carta et al., 2009).
-```
-
----
-
-## 6.2 Suggested insertion for Weber et al. (2019)
-
-Recommended location:
-
-```text
-Section 4.4 Temporal persistence of WPD
-```
-
-Current sentence:
-
-```text
-The PACF analysis showed that most direct temporal dependence was concentrated at the first lag, indicating that short-term autoregressive structure plays an important role in WPD dynamics.
-```
-
-Recommended replacement:
-
-```text
-The PACF analysis showed that most direct temporal dependence was concentrated at the first lag, indicating that short-term autoregressive structure plays an important role in WPD dynamics. This persistence is relevant because wind-power behavior may be governed by sustained high- and low-energy regimes rather than isolated independent events (Weber et al., 2019).
-```
-
----
 
 # 7. References currently safe
 
@@ -244,24 +191,6 @@ Ulazia et al. (2019)
 Van der Hoven (1957)
 Wilkinson et al. (2016)
 ```
-
----
-
-# 8. References requiring attention
-
-```text
-Akdağ and Dinler (2009)
-Weber et al. (2019)
-```
-
-Status:
-
-```text
-In final reference list: yes
-Current manuscript citation: pending / weak
-Action: insert explicitly
-```
-
 ---
 
 # 9. Final-reference count
