@@ -117,7 +117,7 @@ Wilkinson et al. (2016)
 
 | Reference | In final reference list | Cited in manuscript | Status | Action |
 |---|---|---|---|---|
-| Akdağ and Dinler (2009) | Yes | Pending | Needs insertion | Add to Weibull parameter-estimation paragraph |
+| Akdağ and Dinler (2009) | Yes | Yes | OK | No action |
 | Ayala et al. (2017) | Yes | Yes | OK | No action |
 | Box et al. (2008) | Yes | Yes | OK | No action |
 | Brown et al. (1984) | Yes | Yes | OK | No action |
@@ -149,7 +149,7 @@ Wilkinson et al. (2016)
 | Torres et al. (2005) | Yes | Yes | OK | No action |
 | Ulazia et al. (2019) | Yes | Yes | OK | No action |
 | Van der Hoven (1957) | Yes | Yes | OK | No action |
-| Weber et al. (2019) | Yes | Pending | Needs insertion | Add to temporal persistence discussion |
+| Weber et al. (2019) | Yes | Yes | OK | No action |
 | Wilkinson et al. (2016) | Yes | Yes | OK | No action |
 
 ---
@@ -355,9 +355,9 @@ If a citation does not perform one of these functions, it is removed.
 Citation crosscheck created: yes
 Final references selected: yes
 Reference count: 34
-Uncited final references: 2
-Pending insertions identified: yes
+Uncited final references: 0
+Pending insertions identified: no
 Citation style: author-year
 IEEE style: removed
-Final crosscheck after insertions: pending
+Final crosscheck after insertions: completed
 ```
