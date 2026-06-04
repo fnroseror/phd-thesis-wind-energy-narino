@@ -1,4 +1,4 @@
-# Figure and Table Captions — Article 01 Energy Reports
+# Figure Captions — Article 01 Energy Reports
 
 ## Article identification
 
@@ -7,286 +7,158 @@ Physical–statistical characterization of wind power density in complex Andean 
 
 **Target journal:** Energy Reports  
 **Article type:** Research Article  
-**Current phase:** Manuscript construction and repository consolidation  
+**Author:** Favio Nicolás Rosero Rodríguez
 
 ---
 
-# 1. Main manuscript figures
+# Main figures
 
 ## Figure 1
 
-**Monthly mean wind speed by analytical zone.**  
-Monthly mean wind speed was calculated from quality-controlled meteorological records grouped by analytical zone. The figure shows the temporal variability of wind speed across the study period and allows comparison of the seasonal and interannual behavior among zones.
+**File:**  
+`03_figures/main_text/Fig_01_physiographic_setting_zoning_narino_FINAL.tiff`
 
-**Suggested filename:**
-
-```text
-Fig_01_monthly_mean_wind_speed_by_zone_FINAL
-```
+**Caption:**  
+Figure 1. Physiographic setting, topographic relief, municipal boundaries, IDEAM meteorological stations and analytical zoning used for wind power density assessment in Nariño, Colombia. Station labels S01–S16 correspond to the station key reported in the supplementary material. Transparent colored envelopes represent analytical station groupings and should not be interpreted as administrative or official territorial boundaries.
 
 ---
 
 ## Figure 2
 
-**Monthly mean wind power density by analytical zone.**  
-Monthly mean wind power density was estimated from wind speed and daily zone-level air density. The figure highlights the spatial and temporal contrast in available wind-energy potential among the analytical zones.
+**File:**  
+`03_figures/main_text/Fig_02_monthly_mean_wind_speed_by_zone_FINAL.tiff`
 
-**Suggested filename:**
-
-```text
-Fig_02_monthly_mean_WPD_by_zone_FINAL
-```
+**Caption:**  
+Figure 2. Monthly mean wind speed by analytical zone in Nariño, Colombia, during the 2017–2022 study period. The figure summarizes the seasonal variability of wind speed after temporal validation and quality control, allowing comparison of the mean wind regime across the four analytical zones.
 
 ---
 
 ## Figure 3
 
-**Wind-speed distribution by analytical zone.**  
-Empirical wind-speed distributions are shown for each analytical zone after quality control. The figure supports the comparison of wind-speed regimes and provides the basis for distributional fitting using Weibull and Rayleigh models.
+**File:**  
+`03_figures/main_text/Fig_03_monthly_mean_WPD_by_zone_FINAL.tiff`
 
-**Suggested filename:**
-
-```text
-Fig_03_wind_speed_distribution_by_zone_FINAL
-```
+**Caption:**  
+Figure 3. Monthly mean wind power density by analytical zone in Nariño, Colombia, during the 2017–2022 study period. WPD was calculated using the daily zone-level air-density strategy and quality-controlled wind-speed records. The figure highlights the amplified energetic effect of wind-speed variability due to the cubic dependence of WPD on wind speed.
 
 ---
 
 ## Figure 4
 
-**Wind power density distribution by analytical zone.**  
-Empirical WPD distributions are shown using a pseudo-logarithmic scale to represent both low-energy states and high-energy events. The figure illustrates the strong asymmetry of WPD caused by the cubic dependence on wind speed.
+**File:**  
+`03_figures/main_text/Fig_04_wind_speed_distribution_by_zone_FINAL.tiff`
 
-**Suggested filename:**
-
-```text
-Fig_04_WPD_distribution_by_zone_FINAL
-```
+**Caption:**  
+Figure 4. Empirical wind-speed distribution by analytical zone after quality control. The distributions show the zone-dependent structure of the wind-speed regime and provide the empirical basis for Weibull and Rayleigh distributional fitting.
 
 ---
 
 ## Figure 5
 
-**Weibull and Rayleigh density fits by analytical zone.**  
-Empirical wind-speed density distributions are compared with fitted Weibull and Rayleigh models. The Weibull distribution provides a more flexible representation of zonal wind-speed behavior, particularly in zones with asymmetric or intermittent regimes.
+**File:**  
+`03_figures/main_text/Fig_05_WPD_distribution_by_zone_FINAL.tiff`
 
-**Suggested filename:**
-
-```text
-Fig_05_weibull_rayleigh_density_fit_by_zone_FINAL
-```
+**Caption:**  
+Figure 5. Empirical wind power density distribution by analytical zone after quality control. The distributions reveal the strong asymmetry of WPD and the energetic relevance of high wind-speed events, particularly in zones where intermittent wind regimes produce large WPD values.
 
 ---
 
 ## Figure 6
 
-**Weibull and Rayleigh cumulative distribution fits by analytical zone.**  
-Empirical cumulative distribution functions are compared with fitted Weibull and Rayleigh models. The CDF comparison provides a robust visual assessment of distributional fit across the complete wind-speed range.
+**File:**  
+`03_figures/main_text/Fig_06_weibull_rayleigh_density_fit_by_zone_FINAL.tiff`
 
-**Suggested filename:**
-
-```text
-Fig_06_weibull_rayleigh_CDF_fit_by_zone_FINAL
-```
+**Caption:**  
+Figure 6. Weibull and Rayleigh density fits for wind-speed distributions by analytical zone. The comparison shows the capacity of each theoretical distribution to represent the empirical wind-speed structure under the complex Pacific–Andean physiographic conditions of Nariño.
 
 ---
 
 ## Figure 7
 
-**Daily autocorrelation function of wind power density by analytical zone.**  
-The autocorrelation function was estimated from daily regularized WPD series. Dashed lines indicate approximate 95% significance bounds. The figure shows the persistence structure of WPD and supports the interpretation of wind-energy behavior as a temporally dependent physical process.
+**File:**  
+`03_figures/main_text/Fig_07_weibull_rayleigh_CDF_fit_by_zone_FINAL.tiff`
 
-**Suggested filename:**
-
-```text
-Fig_07_daily_WPD_ACF_by_zone_FINAL
-```
+**Caption:**  
+Figure 7. Weibull and Rayleigh cumulative distribution function fits for wind-speed distributions by analytical zone. The cumulative comparison complements the density-based assessment and supports the selection of the best distributional model for each zone.
 
 ---
 
 ## Figure 8
 
-**Spectral power distribution of daily wind power density by analytical zone.**  
-FFT-based spectral analysis was applied to the longest continuous daily segment available for each zone. The figure shows the relative contribution of physically interpretable period bands to the normalized WPD spectral power.
+**File:**  
+`03_figures/main_text/Fig_08_daily_WPD_ACF_by_zone_FINAL.tiff`
 
-**Suggested filename:**
-
-```text
-Fig_10_daily_WPD_FFT_band_energy_by_zone_FINAL
-```
+**Caption:**  
+Figure 8. Autocorrelation function of daily wind power density by analytical zone. The figure shows the temporal persistence of the WPD signal and indicates zone-dependent differences in the decay of daily memory structures.
 
 ---
 
-# 2. Supplementary figures
+## Figure 9
 
-## Figure S1
+**File:**  
+`03_figures/main_text/Fig_09_daily_WPD_FFT_band_energy_by_zone_FINAL.tiff`
 
-**Sensitivity of mean wind power density to quality-control scenarios.**  
-The figure compares mean WPD under different quality-control criteria. It supports the selection of the main QC scenario based on wind-speed values less than or equal to 20 m s^-1.
-
-**Suggested filename:**
-
-```text
-Fig_S1_QC_sensitivity_mean_WPD_FINAL
-```
+**Caption:**  
+Figure 9. FFT-based spectral-band energy of daily wind power density by analytical zone. The figure summarizes the relative contribution of different temporal bands to the WPD signal and supports the identification of zone-dependent spectral regimes in Nariño.
 
 ---
 
-## Figure S2
-
-**Delta AIC/BIC comparison between Weibull and Rayleigh models.**  
-The figure summarizes the relative information-criterion differences between Weibull and Rayleigh models by analytical zone. It supports the selection of Weibull as the preferred distributional model.
-
-**Suggested filename:**
-
-```text
-Fig_S2_delta_AIC_BIC_weibull_rayleigh_comparison_FINAL
-```
-
----
-
-## Figure S3
-
-**Daily partial autocorrelation function of wind power density by analytical zone.**  
-The PACF was estimated from daily regularized WPD series. Dashed lines indicate approximate 95% significance bounds. The figure supports the interpretation of direct short-lag dependence in WPD dynamics.
-
-**Suggested filename:**
-
-```text
-Fig_08_daily_WPD_PACF_by_zone_FINAL
-```
-
----
-
-## Figure S4
-
-**Daily autocorrelation and partial autocorrelation support for wind speed.**  
-ACF and PACF diagnostics for daily wind speed are provided as supplementary evidence of temporal structure in the underlying wind-speed signal.
-
-**Suggested filenames:**
-
-```text
-Fig_S3_daily_VV_ACF_by_zone_FINAL
-Fig_S4_daily_VV_PACF_by_zone_FINAL
-```
-
----
-
-## Figure S5
-
-**FFT spectrum support for daily wind power density and wind speed.**  
-Raw FFT spectra are provided as supplementary support for the spectral-band analysis presented in the main manuscript. Spectra were estimated from the longest continuous daily segment available by analytical zone.
-
-**Suggested filenames:**
-
-```text
-Fig_09_daily_WPD_FFT_spectrum_by_zone_FINAL
-Fig_S5_daily_VV_FFT_spectrum_by_zone_FINAL
-Fig_S6_daily_VV_FFT_band_energy_by_zone_FINAL
-```
-
----
-
-# 3. Main manuscript tables
-
-## Table 1
-
-**Dataset, analytical zones and temporal coverage.**  
-Summary of the meteorological dataset, analytical zoning, study period and temporal coverage used for WPD estimation and subsequent statistical analysis.
-
----
-
-## Table 2
-
-**Descriptive statistics of wind speed and wind power density by analytical zone.**  
-Summary statistics include the number of records, mean, median, selected percentiles and maximum values of wind speed and WPD after quality control.
-
----
-
-## Table 3
-
-**Weibull and Rayleigh distribution parameters and goodness-of-fit metrics by analytical zone.**  
-The table reports fitted distribution parameters and goodness-of-fit metrics used to compare Weibull and Rayleigh models across analytical zones.
-
----
-
-## Table 4
-
-**Temporal and spectral summary of wind power density by analytical zone.**  
-The table summarizes ACF-based persistence indicators, PACF short-lag structure, FFT dominant periods and spectral-band energy contributions by analytical zone.
-
----
-
-# 4. Supplementary tables
+# Supplementary figure-related material
 
 ## Table S1
 
-**Quality-control scenario comparison.**  
-Summary of WPD records, retention rate, mean WPD, maximum WPD and extreme-value behavior under alternative quality-control scenarios.
+**File:**  
+`06_supplementary_material/Table_S01_station_key_for_Figure_1.csv`
+
+**Caption:**  
+Table S1. Station key for Figure 1. The table links station labels S01–S16 with the corresponding IDEAM station code, station name, analytical zone and geographic information.
 
 ---
 
 ## Table S2
 
-**Full Weibull/Rayleigh fitting metrics.**  
-Complete model-fitting results including distribution parameters, AIC, BIC and additional goodness-of-fit indicators by analytical zone.
+**File:**  
+`06_supplementary_material/Table_S02_zone_station_summary_for_Figure_1.csv`
+
+**Caption:**  
+Table S2. Analytical-zone station summary for Figure 1. The table reports the number of IDEAM meteorological stations grouped within each analytical zone used for the physical–statistical assessment of wind power density.
 
 ---
 
-## Table S3
+# Figure order control
 
-**Daily ACF and PACF values by lag and analytical zone.**  
-Complete temporal-dependence output for daily WPD and wind-speed series.
+The final intended figure order in the manuscript is:
 
----
-
-## Table S4
-
-**FFT top spectral periods by analytical zone and variable.**  
-Dominant spectral periods identified from FFT analysis for WPD and wind speed.
-
----
-
-## Table S5
-
-**FFT spectral-band energy by analytical zone and variable.**  
-Relative contribution of predefined period bands to the normalized spectral power of WPD and wind speed.
+| Figure | Content | Main file |
+|---|---|---|
+| Figure 1 | Physiographic setting and analytical zoning in Nariño | `Fig_01_physiographic_setting_zoning_narino_FINAL.tiff` |
+| Figure 2 | Monthly mean wind speed by analytical zone | `Fig_02_monthly_mean_wind_speed_by_zone_FINAL.tiff` |
+| Figure 3 | Monthly mean WPD by analytical zone | `Fig_03_monthly_mean_WPD_by_zone_FINAL.tiff` |
+| Figure 4 | Wind-speed distribution by analytical zone | `Fig_04_wind_speed_distribution_by_zone_FINAL.tiff` |
+| Figure 5 | WPD distribution by analytical zone | `Fig_05_WPD_distribution_by_zone_FINAL.tiff` |
+| Figure 6 | Weibull/Rayleigh density fits | `Fig_06_weibull_rayleigh_density_fit_by_zone_FINAL.tiff` |
+| Figure 7 | Weibull/Rayleigh CDF fits | `Fig_07_weibull_rayleigh_CDF_fit_by_zone_FINAL.tiff` |
+| Figure 8 | Daily WPD ACF by analytical zone | `Fig_08_daily_WPD_ACF_by_zone_FINAL.tiff` |
+| Figure 9 | FFT spectral-band energy of daily WPD by analytical zone | `Fig_09_daily_WPD_FFT_band_energy_by_zone_FINAL.tiff` |
 
 ---
 
-# 5. Caption control notes
-
-All figure and table captions must remain aligned with the final files used in the manuscript.
-
-Before submission, verify:
+# Traceability
 
 ```text
-1. Figure numbering matches manuscript order.
-2. Supplementary figure numbering matches supplementary material.
-3. All figures are cited in the text.
-4. All tables are cited in the text.
-5. Units are consistent.
-6. Captions do not overclaim beyond the plotted evidence.
-7. Figure files are uploaded separately.
-8. Tables remain editable.
+R scripts
+   ↓
+Generated figures and tables
+   ↓
+Figure captions
+   ↓
+Manuscript figure callouts
+   ↓
+Submission package
 ```
 
 ---
 
-# 6. TDQ caption rule
+# Editorial note
 
-A caption should describe what the figure shows, what method generated it and why it supports the manuscript argument.
-
-A caption should not introduce unsupported conclusions or results that are not visible in the figure.
-
----
-
-# 7. Current status
-
-```text
-Main figure captions: drafted
-Supplementary figure captions: drafted
-Main table captions: drafted
-Supplementary table captions: drafted
-Final numbering: pending after manuscript assembly
-```
+All figures should be submitted as separate high-resolution files. The manuscript should contain figure callouts and captions, but the main figures do not need to be embedded in the editable manuscript file unless required by the journal submission system.
