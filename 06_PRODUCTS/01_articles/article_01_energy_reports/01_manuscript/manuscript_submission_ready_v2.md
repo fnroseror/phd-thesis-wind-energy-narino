@@ -34,7 +34,7 @@ The main contribution of this article is a reproducible framework for characteri
 
 ## 2.1 Study region
 
-The study focuses on the department of Nariño, located in southwestern Colombia. Nariño is part of the Colombian Andes and contains strong topographic variation, which can generate heterogeneous atmospheric and wind-energy conditions. This regional setting justifies the use of a zone-level approach rather than a single aggregated analysis.
+The study focuses on the department of Nariño, located in southwestern Colombia. Nariño is part of the Colombian Andes and contains strong topographic variation, which can generate heterogeneous atmospheric and wind-energy conditions. This regional setting justifies the use of a zone-level approach rather than a single aggregated analysis. Figure 1 presents the physiographic setting, topographic relief, IDEAM meteorological stations and analytical zoning used in this study.
 
 ## 2.2 Meteorological stations and analytical zoning
 
@@ -120,11 +120,11 @@ Spectral power was summarized using physically interpretable period bands: 2–1
 
 Wind-speed behavior showed clear differences among analytical zones. Monthly mean wind speed revealed temporal variability across the study period, indicating that the wind regime was not spatially homogeneous.
 
-**Figure 1. Monthly mean wind speed by analytical zone.**
+**Figure 2. Monthly mean wind speed by analytical zone.**
 
 The empirical wind-speed distributions further showed that the zones differed not only in central tendency but also in distributional shape. This supports the need for zone-level characterization rather than a single regional average.
 
-**Figure 3. Wind-speed distribution by analytical zone.**
+**Figure 4. Wind-speed distribution by analytical zone.**
 
 ## 4.2 Zonal contrast in wind power density
 
@@ -132,13 +132,13 @@ WPD showed stronger zonal contrast than wind speed because of the cubic dependen
 
 Zone 1 exhibited the highest mean WPD, reaching approximately 140.76 W m^-2. In contrast, Zones 2, 3 and 4 showed much lower mean WPD values, with approximately 15.82 W m^-2, 12.96 W m^-2 and 16.95 W m^-2, respectively. Thus, the mean WPD in Zone 1 was about 8.9 times higher than in Zone 2, 10.9 times higher than in Zone 3 and 8.3 times higher than in Zone 4.
 
-**Figure 2. Monthly mean WPD by analytical zone.**
+**Figure 3. Monthly mean wind power density by analytical zone.**
 
 This zonal contrast indicates that the wind-energy signal in Nariño is not spatially homogeneous. Instead, the regional WPD structure is dominated by a localized high-energy regime in Zone 1, while the other zones show lower and more regular energetic behavior. This result also confirms that WPD provides a stronger physical separation among zones than wind speed alone, because energetic differences are amplified by the cubic relationship between wind speed and available power.
 
 The WPD distributions were strongly asymmetric, especially in the zone with the highest energetic contribution. The pseudo-logarithmic representation allowed both low-energy states and high-energy events to be visualized within the same figure.
 
-**Figure 4. Wind power density distribution by analytical zone.**
+**Figure 6. Weibull and Rayleigh density fits by analytical zone.**
 
 **Table 2. Descriptive statistics of wind speed and wind power density by analytical zone.**
 
@@ -146,11 +146,11 @@ The WPD distributions were strongly asymmetric, especially in the zone with the 
 
 Weibull and Rayleigh models were fitted to wind-speed distributions by analytical zone. The Weibull model outperformed the Rayleigh model in all zones, indicating that the additional flexibility of the Weibull distribution was necessary to represent the observed wind-speed regimes. This result is consistent with previous wind-energy studies in which Weibull-based modeling has provided useful representation of empirical wind-speed distributions, while Rayleigh has served as a simpler reference model (Celik, 2004; Carta et al., 2009; Pishgar-Komleh et al., 2015).
 
-**Figure 5. Weibull and Rayleigh density fits by analytical zone.**
+**Figure 6. Weibull and Rayleigh density fits by analytical zone.**
 
 The cumulative distribution comparison confirmed the superiority of the Weibull model across the complete wind-speed range.
 
-**Figure 6. Weibull and Rayleigh cumulative distribution fits by analytical zone.**
+**Figure 7. Weibull and Rayleigh cumulative distribution fits by analytical zone.**
 
 The estimated Weibull shape parameter showed a clear distinction between Zone 1 and the remaining zones. Zone 1 presented a shape parameter k = 0.788, indicating a highly asymmetric and intermittent wind-speed regime. In contrast, Zones 2, 3 and 4 showed shape parameters closer to two, with k = 1.984, k = 2.089 and k = 2.164, respectively. These values suggest more regular wind-speed behavior in Zones 2–4, closer to the Rayleigh assumption, although Weibull remained the best-fitting distribution in all cases.
 
@@ -162,7 +162,7 @@ From a physical perspective, the value k < 1 in Zone 1 is especially relevant be
 
 The daily autocorrelation analysis revealed substantial temporal persistence in WPD across the analytical zones. The lag-1 ACF values were 0.884 in Zone 1, 0.862 in Zone 2, 0.757 in Zone 3 and 0.575 in Zone 4. These values indicate that daily WPD is not an independent random sequence, but a temporally structured physical signal with different memory scales across zones.
 
-**Figure 7. Daily autocorrelation function of wind power density by analytical zone.**
+**Figure 8. Daily autocorrelation function of wind power density by analytical zone.**
 
 Zone 1 showed the strongest persistence. Its ACF did not decrease below 0.2 within the 90-day lag window considered in the analysis. Zone 2 crossed the 0.2 threshold at lag 54, Zone 3 at lag 22 and Zone 4 at lag 13. This progressive reduction in memory suggests that the energetic regime of Zone 1 is governed by longer temporal structures, whereas Zone 4 behaves as a shorter-memory system.
 
@@ -172,13 +172,11 @@ The PACF analysis showed that most direct temporal dependence was concentrated a
 
 FFT-based spectral analysis revealed distinct temporal-energy regimes across zones. Zone 1 was dominated by low-frequency variability, with approximately 70.23% of its WPD spectral power concentrated in periods longer than 365 days. This result indicates that the strongest energetic zone is not only characterized by higher WPD values, but also by a dominant long-period structure.
 
-**Figure 8. Spectral power distribution of daily wind power density by analytical zone.**
+**Figure 9. FFT-based spectral-band energy of daily wind power density by analytical zone.**
 
 In contrast, the remaining zones showed more distributed spectral structures. Zone 2 presented energy distributed between intermediate and low-frequency bands, while Zone 3 showed a more balanced contribution across short-term, intra-monthly and seasonal scales. Zone 4 was more influenced by shorter-period variability, although its interpretation must remain cautious due to lower temporal coverage and shorter continuous segments.
 
 This result supports the interpretation that WPD in complex terrain is not only spatially heterogeneous but also temporally structured. The spectral-band analysis provides a physical view of how wind-energy variability is distributed across characteristic temporal scales, consistent with the use of wind-spectrum analysis for identifying relevant time-scale structures in wind-resource studies (Van der Hoven, 1957; Lopez-Villalobos et al., 2021; Telesca et al., 2016).
-
-**Table 4. Temporal and spectral summary of wind power density by analytical zone.**
 
 **Table 4. Temporal and spectral summary of wind power density by analytical zone.**
 
