@@ -134,16 +134,6 @@ Wind-speed behavior showed clear differences among analytical zones. Monthly mea
 
 **Figure 2. Monthly mean wind speed by analytical zone.**
 
-The empirical wind-speed distributions further showed that the zones differed not only in central tendency but also in distributional shape. This supports the need for zone-level characterization rather than a single regional average.
-
-# 4. Results
-
-## 4.1 Wind-speed variability by analytical zone
-
-Wind-speed behavior showed clear differences among analytical zones. Monthly mean wind speed revealed temporal variability across the study period, indicating that the wind regime was not spatially homogeneous.
-
-**Figure 2. Monthly mean wind speed by analytical zone.**
-
 ## 4.2 Zonal contrast in wind power density
 
 WPD showed stronger zonal contrast than wind speed because of the cubic dependence on wind speed. The global mean WPD after quality control was approximately 53.82 W m^-2, but this value masked a strongly heterogeneous spatial structure across the analytical zones.
