@@ -268,7 +268,7 @@ Juan Carlos Riaño Rojas: Methodology, Validation, Supervision, Writing – revi
 
 # Declaration of competing interest
 
-The author declares that there are no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
 
 # Funding statement
 
@@ -276,7 +276,7 @@ This research did not receive any specific grant from funding agencies in the pu
 
 # Declaration of generative AI and AI-assisted technologies
 
-During the preparation of this work, the author used ChatGPT as an AI-assisted tool to support manuscript organization, editorial planning, language refinement and code-review discussion. All scientific analyses, data processing, statistical calculations, figures and tables were generated from the author-controlled research workflow in R. After using this tool, the author reviewed, edited and verified the content as needed and takes full responsibility for the content of the manuscript.
+During the preparation of this work, the corresponding author used ChatGPT as an AI-assisted tool to support manuscript organization, editorial planning, language refinement and code-review discussion. All scientific analyses, data processing, statistical calculations, figures and tables were generated from the author-controlled research workflow in R. After using this tool, all authors reviewed, edited and verified the content as needed and take full responsibility for the content of the manuscript.
 
 # References
 
