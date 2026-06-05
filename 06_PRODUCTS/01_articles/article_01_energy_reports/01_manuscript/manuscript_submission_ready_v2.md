@@ -134,6 +134,10 @@ Wind-speed behavior showed clear differences among analytical zones. Monthly mea
 
 **Figure 2. Monthly mean wind speed by analytical zone.**
 
+The empirical wind-speed distributions further showed that the zones differed not only in central tendency but also in distributional shape. This supports the need for zone-level characterization rather than a single regional average.
+
+**Figure 4. Wind-speed distribution by analytical zone.**
+
 ## 4.2 Zonal contrast in wind power density
 
 WPD showed stronger zonal contrast than wind speed because of the cubic dependence on wind speed. The global mean WPD after quality control was approximately 53.82 W m^-2, but this value masked a strongly heterogeneous spatial structure across the analytical zones.
@@ -144,13 +148,9 @@ Zone 1 exhibited the highest mean WPD, reaching approximately 140.76 W m^-2. In 
 
 This zonal contrast indicates that the wind-energy signal in Nariño is not spatially homogeneous. Instead, the regional WPD structure is dominated by a localized high-energy regime in Zone 1, while the other zones show lower and more regular energetic behavior. This result also confirms that WPD provides a stronger physical separation among zones than wind speed alone, because energetic differences are amplified by the cubic relationship between wind speed and available power.
 
-The empirical wind-speed distributions further showed that the zones differed not only in central tendency but also in distributional shape. This supports the need for zone-level characterization rather than a single regional average.
-
-**Figure 4. Wind-speed distribution by analytical zone.**
-
 The WPD distributions were strongly asymmetric, especially in the zone with the highest energetic contribution. The pseudo-logarithmic representation allowed both low-energy states and high-energy events to be visualized within the same figure.
 
-**Figure 5. Wind power density distribution by analytical zone.**
+**Figure 6. Weibull and Rayleigh density fits by analytical zone.**
 
 **Table 2. Descriptive statistics of wind speed and wind power density by analytical zone.**
 
