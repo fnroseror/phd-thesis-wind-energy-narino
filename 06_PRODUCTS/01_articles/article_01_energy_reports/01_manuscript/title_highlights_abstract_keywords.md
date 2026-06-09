@@ -8,17 +8,11 @@ Physical–statistical characterization of wind power density in complex Andean 
 
 ## Highlights
 
-* WPD was characterized as a physical state variable in complex Andean terrain.
-  id="51206"}
-
-# Title, Highlights, Abstract and Keywords — Article 01 Energy Reports
-
-## Title
-
-* Zone 1 showed intermittent energetic dominance driven by high-speed tails.
-* Weibull fitting captured zone-dependent wind-speed probability structures.
-* Daily WPD revealed temporal memory rather than independent fluctuations.
-* FFT identified distinct spectral-energy signatures across analytical zones.
+- WPD was characterized as a physical state variable in complex Andean terrain.
+- Zone 1 showed intermittent energetic dominance driven by high-speed tails.
+- Weibull fitting captured zone-dependent wind-speed probability structures.
+- Daily WPD revealed temporal memory rather than independent fluctuations.
+- FFT identified distinct spectral-energy signatures across analytical zones.
 
 ---
 
