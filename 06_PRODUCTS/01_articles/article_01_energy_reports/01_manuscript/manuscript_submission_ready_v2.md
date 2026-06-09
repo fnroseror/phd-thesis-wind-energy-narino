@@ -274,25 +274,25 @@ Future work should extend this framework by incorporating turbine-specific power
 
 # 6. Conclusions
 
-This study presented a physical–statistical characterization of WPD in Nariño, Colombia, using multi-station meteorological observations grouped into analytical zones.
+This study presented a physical–statistical and spectral characterization of wind power density in Nariño, Colombia, using multi-station meteorological observations grouped into four analytical zones. The proposed workflow characterized WPD not only as an energy indicator, but as a physical state variable shaped by spatial boundary conditions, nonlinear wind-speed transformation, probability-state structure, temporal memory and spectral-energy organization.
 
 The main conclusions are:
 
-1. WPD provides a stronger physical descriptor of wind-energy potential than wind speed alone because it incorporates air density and the cubic dependence on wind speed.
+1. WPD provided a stronger physical descriptor of wind-energy behavior than wind speed alone. Because WPD depends on air density and the cube of wind speed, moderate differences in wind-speed states were transformed into stronger energetic contrasts among analytical zones.
 
-2. Daily zone-level air density offers a practical and physically meaningful strategy for WPD estimation when exact hourly overlap among wind speed, pressure and temperature is limited.
+2. Zone 1 was identified as the dominant energetic regime in the study area. However, this dominance was not produced by uniformly high wind speed. Instead, it emerged from an intermittent structure characterized by frequent low-speed states, a long high-speed tail and strong cubic amplification in WPD.
 
-3. The quality-controlled WPD dataset preserved the dominant structure of the observations while reducing the influence of extreme cubic amplification.
+3. The empirical wind-speed and WPD distributions showed that regional wind-energy characterization cannot rely only on central tendency. The energetic response was controlled by the full distribution of states, especially the upper tail of wind speed, which became decisive after transformation into WPD.
 
-4. Zone 1 exhibited the strongest and most intermittent wind-energy regime, with substantially higher WPD than the other analytical zones.
+4. Weibull fitting provided the most appropriate probabilistic characterization of wind-speed regimes in all analytical zones. The shape parameter below one in Zone 1 confirmed a highly asymmetric and intermittent regime, while Zones 2–4 showed more regular behavior with shape parameters close to or above two.
 
-5. Weibull outperformed Rayleigh across all zones, indicating that flexible distributional modeling is necessary for representing wind-speed behavior in complex terrain.
+5. Daily WPD exhibited zone-dependent temporal memory. The strongest persistence occurred in Zone 1, where autocorrelation did not fall below the selected threshold within the 90-day lag window. This indicates that WPD behaves as a temporally structured physical signal rather than as a sequence of independent daily fluctuations.
 
-6. Daily WPD showed relevant temporal persistence, especially in Zone 1, supporting the interpretation of WPD as a structured physical process rather than independent random variability.
+6. FFT-based spectral-band analysis revealed distinct temporal-energy signatures across zones. Zone 1 was dominated by low-frequency variability, Zone 2 showed mixed intermediate-to-low-frequency behavior, Zone 3 presented a more balanced spectral structure and Zone 4 was dominated by shorter-period variability, although the latter must be interpreted cautiously due to lower temporal continuity.
 
-7. FFT-based spectral analysis revealed distinct temporal-energy regimes across zones, confirming that WPD variability is distributed across characteristic period bands.
+7. The combined analysis of spatial conditions, WPD transformation, probability structure, temporal persistence and spectral-energy modes provides a reproducible framework for wind-energy characterization in complex Andean terrain.
 
-Overall, the results demonstrate that WPD-based physical–statistical characterization provides a reproducible framework for evaluating wind-energy potential in complex Andean terrain.
+Overall, the results demonstrate that WPD-based characterization can move wind-resource assessment beyond average-based description toward a more complete physical interpretation of wind-energy regimes. The study does not establish turbine-level feasibility or commercial wind-farm viability; rather, it provides regional physical–statistical evidence that can support future forecasting, uncertainty analysis, terrain-specific modeling and energy-planning studies.
 
 # Data availability statement
 
