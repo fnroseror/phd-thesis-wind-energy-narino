@@ -12,8 +12,7 @@ d Escuela Normal Superior Pio XII, Pupiales, Nariño, Colombia.
 
 * Corresponding author.
 
-E-mail address: [favionrosero@umariana.edu.co](mailto:favionrosero@umariana.edu.co)
-
+E-mail address: favionrosero@umariana.edu.co
 
 ## Highlights
 
@@ -22,8 +21,6 @@ E-mail address: [favionrosero@umariana.edu.co](mailto:favionrosero@umariana.edu.
 - Weibull fitting captured zone-dependent wind-speed probability structures.
 - Daily WPD revealed temporal memory rather than independent fluctuations.
 - FFT identified distinct spectral-energy signatures across analytical zones.
-
-## Abstract
 
 ## Abstract
 
