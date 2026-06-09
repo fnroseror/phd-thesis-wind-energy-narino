@@ -7,7 +7,7 @@ Physical–statistical characterization of wind power density in complex Andean 
 
 **Target journal:** Energy Reports  
 **Article type:** Research Article  
-**Authors:** F.N. Rosero-Rodríguez, N.V. Naranjo-Castaño, J.M. López-Moreno, E. Restrepo-Parra, J.C. Riaño-Rojas
+**Authors:** F.N. Rosero-Rodríguez, N.V. Naranjo-Castaño, J.M. López-Moreno, E. Restrepo-Parra, J.C. Riaño-Rojas, S.G. Rosero-Rodríguez
 
 ---
 # Main figures
