@@ -14,11 +14,11 @@ E-mail address: favionrosero@umariana.edu.co
 
 ## Highlights
 
-- Daily air density supported wind power density estimation.
-- Weibull outperformed Rayleigh in all analytical zones.
-- Zone 1 showed the strongest and most intermittent WPD regime.
-- Daily WPD showed clear temporal persistence across zones.
-- FFT revealed distinct temporal-energy regimes in complex terrain.
+- WPD was characterized as a physical state variable in complex Andean terrain.
+- Zone 1 showed intermittent energetic dominance driven by high-speed tails.
+- Weibull fitting captured zone-dependent wind-speed probability structures.
+- Daily WPD revealed temporal memory rather than independent fluctuations.
+- FFT identified distinct spectral-energy signatures across analytical zones.
 
 ## Abstract
 
