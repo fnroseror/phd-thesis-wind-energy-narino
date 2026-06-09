@@ -12,15 +12,15 @@ d Escuela Normal Superior Pio XII, Pupiales, Nariño, Colombia.
 
 * Corresponding author.
 
-E-mail address: favionrosero@umariana.edu.co
+E-mail address: [favionrosero@umariana.edu.co](mailto:favionrosero@umariana.edu.co)
 
 ## Highlights
 
-- WPD was characterized as a physical state variable in complex Andean terrain.
-- Zone 1 showed intermittent energetic dominance driven by high-speed tails.
-- Weibull fitting captured zone-dependent wind-speed probability structures.
-- Daily WPD revealed temporal memory rather than independent fluctuations.
-- FFT identified distinct spectral-energy signatures across analytical zones.
+* WPD was characterized as a physical state variable in complex Andean terrain.
+* Zone 1 showed intermittent energetic dominance driven by high-speed tails.
+* Weibull fitting captured zone-dependent wind-speed probability structures.
+* Daily WPD revealed temporal memory rather than independent fluctuations.
+* FFT identified distinct spectral-energy signatures across analytical zones.
 
 ## Abstract
 
