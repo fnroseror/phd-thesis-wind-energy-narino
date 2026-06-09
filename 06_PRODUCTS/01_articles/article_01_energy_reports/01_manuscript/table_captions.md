@@ -1,4 +1,16 @@
-# Table captions
+# Table captions — Article 01 Energy Reports
+
+## Article identification
+
+**Title:** Physical–statistical characterization of wind power density in complex Andean terrain: A multi-station study in Nariño, Colombia
+
+**Target journal:** Energy Reports
+
+**Article type:** Research Article
+
+---
+
+# Main tables
 
 ## Table 1
 
@@ -36,4 +48,17 @@ File:
 `04_tables/main_text/Table_03_temporal_dependence_summary_WPD_by_zone.xlsx`
 
 Caption:
-Table 4. Temporal and spectral summary of daily wind power density by analytical zone. The table integrates temporal-dependence indicators and FFT-based spectral-band energy to characterize WPD as a temporally structured physical state variable. The results show zone-dependent memory and spectral-energy signatures, including strong persistence and low-frequency dominance in Zone 1.
+Table 4. Temporal and spectral summary of wind power density by analytical zone. The table integrates temporal-dependence indicators and FFT-based spectral-band energy to characterize WPD as a temporally structured physical state variable. The results show zone-dependent memory and spectral-energy signatures, including strong persistence and low-frequency dominance in Zone 1.
+
+---
+
+# Editorial control
+
+The table captions are aligned with the final manuscript structure:
+
+* Table 1 supports the study area, station grouping and analytical zoning.
+* Table 2 supports the descriptive physical–statistical characterization of wind speed and WPD.
+* Table 3 supports the Weibull/Rayleigh probabilistic characterization.
+* Table 4 supports the temporal-memory and spectral-energy interpretation of daily WPD.
+
+The tables should be interpreted as regional physical–statistical evidence, not as turbine-level feasibility, wind-farm micrositing or investment assessment outputs.
