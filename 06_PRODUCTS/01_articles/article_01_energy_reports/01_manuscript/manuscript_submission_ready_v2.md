@@ -28,7 +28,7 @@ Wind-energy assessment in complex terrain requires physical descriptors capable 
 
 ## Keywords
 
-Wind power density; Wind energy; Weibull distribution; Complex terrain; Andean region; Temporal dependence; Spectral analysis
+Wind power density; Complex terrain; Physical–statistical characterization; Weibull distribution; Temporal memory; Spectral analysis; Andean region
 
 # 1. Introduction
 
