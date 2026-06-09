@@ -12,7 +12,7 @@ d Escuela Normal Superior Pio XII, Pupiales, Nariño, Colombia.
 
 * Corresponding author.
 
-E-mail address: [favionrosero@umariana.edu.co](mailto:favionrosero@umariana.edu.co)
+E-mail address: favionrosero@umariana.edu.co
 
 ## Highlights
 
@@ -311,7 +311,6 @@ Elisabeth Restrepo Parra: Conceptualization, Methodology, Supervision, Project a
 Juan Carlos Riaño Rojas: Methodology, Validation, Supervision, Writing – review and editing.
 
 Sonia Graciela Rosero Rodríguez: Resources, Writing – review and editing.
-
 
 # Declaration of competing interest
 
