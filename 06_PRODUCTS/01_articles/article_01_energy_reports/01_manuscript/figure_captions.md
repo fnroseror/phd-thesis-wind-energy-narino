@@ -7,99 +7,98 @@ Physical–statistical characterization of wind power density in complex Andean 
 
 **Target journal:** Energy Reports  
 **Article type:** Research Article  
-**Author:** Favio Nicolás Rosero Rodríguez
+**Authors:** F.N. Rosero-Rodríguez, N.V. Naranjo-Castaño, J.M. López-Moreno, E. Restrepo-Parra, J.C. Riaño-Rojas
 
 ---
-
 # Main figures
 
 ## Figure 1
 
-**File:**  
+File:
 `03_figures/main_text/Fig_01_physiographic_setting_zoning_narino_FINAL.tiff`
 
-**Caption:**  
-Figure 1. Physiographic setting, topographic relief, municipal boundaries, IDEAM meteorological stations and analytical zoning used for wind power density assessment in Nariño, Colombia. Station labels S01–S16 correspond to the station key reported in the supplementary material. Transparent colored envelopes represent analytical station groupings and should not be interpreted as administrative or official territorial boundaries.
+Caption:
+Figure 1. Physiographic setting and analytical zoning in Nariño, Colombia. The map shows the topographic context, municipal boundaries, IDEAM meteorological stations S01–S16 and the four analytical zones used for wind power density assessment. The zonal structure defines the spatial subdomains used to characterize wind-energy regimes under different physiographic and elevation conditions. Transparent colored envelopes represent analytical station groupings and should not be interpreted as administrative or official territorial boundaries.
 
 ---
 
 ## Figure 2
 
-**File:**  
+File:
 `03_figures/main_text/Fig_02_monthly_mean_wind_speed_by_zone_FINAL.tiff`
 
-**Caption:**  
-Figure 2. Monthly mean wind speed by analytical zone in Nariño, Colombia, during the 2017–2022 study period. The figure summarizes the seasonal variability of wind speed after temporal validation and quality control, allowing comparison of the mean wind regime across the four analytical zones.
+Caption:
+Figure 2. Monthly mean wind speed by analytical zone. Monthly wind-speed variability after temporal validation and quality control is shown for the 2017–2022 study period. The figure represents the initial kinematic state of the wind system and shows zone-dependent temporal variability, including a marked high-speed interval in Zone 1 during 2018–2019.
 
 ---
 
 ## Figure 3
 
-**File:**  
+File:
 `03_figures/main_text/Fig_03_monthly_mean_WPD_by_zone_FINAL.tiff`
 
-**Caption:**  
-Figure 3. Monthly mean wind power density by analytical zone in Nariño, Colombia, during the 2017–2022 study period. WPD was calculated using the daily zone-level air-density strategy and quality-controlled wind-speed records. The figure highlights the amplified energetic effect of wind-speed variability due to the cubic dependence of WPD on wind speed.
+Caption:
+Figure 3. Monthly mean wind power density by analytical zone. WPD was estimated from wind speed and daily zone-level air density. The figure shows the nonlinear energetic response of the wind field, where moderate changes in wind speed are amplified through the cubic dependence of WPD on velocity.
 
 ---
 
 ## Figure 4
 
-**File:**  
+File:
 `03_figures/main_text/Fig_04_wind_speed_distribution_by_zone_FINAL.tiff`
 
-**Caption:**  
-Figure 4. Empirical wind-speed distribution by analytical zone after quality control. The distributions show the zone-dependent structure of the wind-speed regime and provide the empirical basis for Weibull and Rayleigh distributional fitting.
+Caption:
+Figure 4. Wind-speed distribution by analytical zone. Empirical distributions of quality-controlled wind speed summarize the probability structure of kinematic states. The violin and boxplot representation shows the intermittent character of Zone 1 through frequent low-speed states and a long high-speed tail.
 
 ---
 
 ## Figure 5
 
-**File:**  
+File:
 `03_figures/main_text/Fig_05_WPD_distribution_by_zone_FINAL.tiff`
 
-**Caption:**  
-Figure 5. Empirical wind power density distribution by analytical zone after quality control. The distributions reveal the strong asymmetry of WPD and the energetic relevance of high wind-speed events, particularly in zones where intermittent wind regimes produce large WPD values.
+Caption:
+Figure 5. Wind power density distribution by analytical zone. Empirical WPD distributions are shown using a pseudo-logarithmic scale. The figure shows how the upper tail of wind speed is transformed into a high-energy WPD tail, especially in Zone 1, confirming the nonlinear amplification of intermittent wind-speed events.
 
 ---
 
 ## Figure 6
 
-**File:**  
+File:
 `03_figures/main_text/Fig_06_weibull_rayleigh_density_fit_by_zone_FINAL.tiff`
 
-**Caption:**  
-Figure 6. Weibull and Rayleigh density fits for wind-speed distributions by analytical zone. The comparison shows the capacity of each theoretical distribution to represent the empirical wind-speed structure under the complex Pacific–Andean physiographic conditions of Nariño.
+Caption:
+Figure 6. Weibull and Rayleigh density fits by analytical zone. Empirical wind-speed densities are compared with fitted Weibull and Rayleigh distributions. Weibull provides a more flexible representation of the observed wind-speed regimes, especially in Zone 1, where the empirical structure is strongly asymmetric and dominated by low-speed states with a persistent upper tail.
 
 ---
 
 ## Figure 7
 
-**File:**  
+File:
 `03_figures/main_text/Fig_07_weibull_rayleigh_CDF_fit_by_zone_FINAL.tiff`
 
-**Caption:**  
-Figure 7. Weibull and Rayleigh cumulative distribution function fits for wind-speed distributions by analytical zone. The cumulative comparison complements the density-based assessment and supports the selection of the best distributional model for each zone.
+Caption:
+Figure 7. Weibull and Rayleigh cumulative distribution fits by analytical zone. Empirical and fitted cumulative distribution functions of wind speed are compared across zones. The CDF analysis confirms the rapid accumulation of low-speed states and the persistence of an upper tail in Zone 1, supporting Weibull as a probabilistic characterization of the wind-speed regime.
 
 ---
 
 ## Figure 8
 
-**File:**  
+File:
 `03_figures/main_text/Fig_08_daily_WPD_ACF_by_zone_FINAL.tiff`
 
-**Caption:**  
-Figure 8. Autocorrelation function of daily wind power density by analytical zone. The figure shows the temporal persistence of the WPD signal and indicates zone-dependent differences in the decay of daily memory structures.
+Caption:
+Figure 8. Daily autocorrelation function of wind power density by analytical zone. The ACF of daily WPD shows that the energy-density signal is not an independent daily fluctuation but a temporally structured physical state variable. Zone 1 exhibits the strongest persistence, indicating longer memory in its energetic regime.
 
 ---
 
 ## Figure 9
 
-**File:**  
+File:
 `03_figures/main_text/Fig_09_daily_WPD_FFT_band_energy_by_zone_FINAL.tiff`
 
-**Caption:**  
-Figure 9. FFT-based spectral-band energy of daily wind power density by analytical zone. The figure summarizes the relative contribution of different temporal bands to the WPD signal and supports the identification of zone-dependent spectral regimes in Nariño.
+Caption:
+Figure 9. FFT-based spectral-band energy of daily wind power density by analytical zone. Normalized spectral energy of daily WPD is grouped into physically interpretable period bands. The figure identifies zone-dependent temporal-energy signatures, including low-frequency dominance in Zone 1 and shorter-period variability in Zone 4.
 
 ---
 
