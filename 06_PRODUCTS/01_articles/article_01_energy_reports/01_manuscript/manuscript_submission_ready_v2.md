@@ -1,6 +1,6 @@
 # Physical–statistical characterization of wind power density in complex Andean terrain: A multi-station study in Nariño, Colombia
 
-F.N. Rosero-Rodríguez a,b,c,*, N.V. Naranjo-Castaño a,b, J.M. López-Moreno c, E. Restrepo-Parra a,b, J.C. Riaño-Rojas a,b
+F.N. Rosero-Rodríguez a,b,c,*, N.V. Naranjo-Castaño a,b, J.M. López-Moreno c, E. Restrepo-Parra a,b, J.C. Riaño-Rojas a,b, S.G. Rosero-Rodríguez d
 
 a Laboratorio de Física del Plasma, Facultad de Ciencias Exactas y Naturales, Universidad Nacional de Colombia Sede Manizales, Manizales 170003, Colombia.
 
@@ -8,9 +8,12 @@ b PCM Computational Applications Research, Facultad de Ciencias Exactas y Natura
 
 c GISMAR Grupo de Investigación de Ingeniería de Sistemas, Universidad Mariana, Pasto 520001, Colombia.
 
+d Escuela Normal Superior Pio XII, Pupiales, Nariño, Colombia.
+
 * Corresponding author.
 
-E-mail address: favionrosero@umariana.edu.co
+E-mail address: [favionrosero@umariana.edu.co](mailto:favionrosero@umariana.edu.co)
+
 
 ## Highlights
 
@@ -309,6 +312,9 @@ Javier Mauricio López Moreno: Software, Data curation, Validation, Visualizatio
 Elisabeth Restrepo Parra: Conceptualization, Methodology, Supervision, Project administration, Writing – review and editing.
 
 Juan Carlos Riaño Rojas: Methodology, Validation, Supervision, Writing – review and editing.
+
+Sonia Graciela Rosero Rodríguez: Resources, Writing – review and editing.
+
 
 # Declaration of competing interest
 
