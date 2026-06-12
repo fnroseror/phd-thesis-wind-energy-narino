@@ -1,5 +1,0 @@
-﻿analytical_zone,number_of_stations,station_ids,station_codes,station_names,municipalities,altitude_range_m_asl,station_categories,technologies,station_status,corrected_observational_period
-Zone 1,5,S01; S02; S03; S04; S05,5102500128; 51025060; 51025080; 51025090; 51035020,Reserva Natural La Planada; Biotopo; Altaquer; Granja Mira; CCCP Dl Pacifico,Barbacoas; Ricaurte (Nariño); Tumaco,1–1835,Climática Principal,Automática con Telemetría; Convencional,Activa,2017–2022
-Zone 2,4,S06; S07; S08; S09,52055160; 52055170; 52055220; 52055230,Volcán Chiles; La Josefina; El Paraíso; Aeropuerto San Luis,Aldana; Contadero; Cumbal; Túquerres,442–3120,Climática Principal; Sinóptica Principal,Automática con Telemetría,Activa,2017–2022
-Zone 3,5,S10; S11; S12; S13; S14,47015100; 52045080; 5205500123; 52055150; 52055210,El Encano; Universidad de Nariño; Las Iglesias; Cerro Páramo; Botana,Pasto; Puerres,2626–3585,Climática Ordinaria; Climática Principal,Automática con Telemetría,Activa,2017–2022
-Zone 4,2,S15; S16,52035040; 52040050,Viento Libre; Aponte,El Tablón; Taminango,1400–1800,Climática Ordinaria; Pluviométrica,Automática con Telemetría; Convencional,Activa,2017–2022
