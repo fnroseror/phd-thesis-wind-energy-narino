@@ -1,0 +1,17 @@
+Supplementary Figure Captions
+
+Fig. S1. Quality-control sensitivity of mean wind power density (WPD) by analytical zone. The figure summarizes the effect of the selected wind-speed quality-control threshold on zone-level mean WPD and supports the use of the conservative article-level criterion.
+
+Fig. S2. Delta AIC and BIC comparison between Weibull and Rayleigh distribution models by analytical zone. Lower information-criterion values indicate better relative model performance.
+
+Fig. S3. Daily partial autocorrelation function of wind power density by analytical zone. PACF was used as a supplementary diagnostic of direct short-lag dependence in the daily WPD signal.
+
+Fig. S4. Daily autocorrelation function of wind speed by analytical zone. The figure provides a supplementary comparison between the kinematic wind-speed state and the energetic WPD state.
+
+Fig. S5. Daily partial autocorrelation function of wind speed by analytical zone. PACF was used as a supplementary diagnostic of direct short-lag dependence in the wind-speed signal.
+
+Fig. S6. FFT spectrum of daily wind power density by analytical zone. The figure shows the frequency-domain structure underlying the WPD spectral-band summary reported in the main manuscript.
+
+Fig. S7. FFT spectrum of daily wind speed by analytical zone. The figure provides the supplementary frequency-domain characterization of the kinematic wind-speed signal.
+
+Fig. S8. FFT-based spectral-band energy of daily wind speed by analytical zone. The figure summarizes the dominant period-band contributions of the wind-speed signal for comparison with WPD spectral behavior.
