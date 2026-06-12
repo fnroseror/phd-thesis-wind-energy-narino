@@ -1,6 +1,7 @@
-category,filename,submission_role,notes
-Main manuscript,Energy_Reports_Article01_Manuscript_Submission_READY_figures_inserted_v4.docx,Upload as main manuscript file,"Contains text, tables, and Figures 1–9."
-Cover letter,Energy_Reports_Article01_Cover_Letter.docx,Upload as cover letter,Can also be pasted into submission system.
-Supplementary material,Energy_Reports_Article01_Supplementary_Material_Figures_S1_S8.docx,Upload as supplementary material,Contains Fig. S1–S8 with captions.
-Supplementary package,Energy_Reports_Article01_Supplementary_Material_Package.zip,Optional supplementary package,Includes supplementary figures and captions.
-Checklist,Energy_Reports_Article01_Submission_Checklist.md,Internal final check,Use before clicking submit.
+﻿category,filename,submission_role,notes
+Main manuscript,Energy_Reports_Article01_Main_Manuscript_Submission_READY.docx,Upload as main manuscript file,"Contains manuscript text, Tables 1–4, and Figures 1–9."
+Cover letter,Energy_Reports_Article01_Cover_Letter.docx,Upload as cover letter,Final one-page cover letter.
+Supplementary material,Energy_Reports_Article01_Supplementary_Material_Figures_S1_S8.docx,Upload as supplementary material,Contains Figures S1–S8 with captions.
+Main figure source files,Fig_01...Fig_09_*_FINAL.tiff,Upload separately if requested,Nine high-resolution TIFF files corresponding to Figures 1–9.
+Supplementary figure source files,Fig_S1...Fig_S8_*_FINAL.tiff,Upload separately if requested,Eight high-resolution TIFF files corresponding to Figures S1–S8.
+Submission checklist,Energy_Reports_Article01_Submission_Checklist.md,Internal final check,Use before approving the submission-system PDF and clicking submit.
