@@ -1,0 +1,7 @@
+record_type=external_authority_reference
+publication_status=withheld_pending_institutional_similarity_clearance
+source_filename=Tesis Doctoral Corregida - 1053833697(6).pdf
+canonical_public_filename=Tesis_Doctoral_Corregida_1053833697.pdf
+sha256=0a5fffefbe7ff394f3e27270050f4849fff42db3d7e38dda274c9f67cee7bb57
+pdf_page_object_count=152
+validation_rule=Do not treat this record as a repository-file manifest while the PDF is withheld. Before public release, compare the exact candidate PDF against this SHA-256 and add the PDF and its normal checksum together.

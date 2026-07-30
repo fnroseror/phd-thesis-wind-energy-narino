@@ -1,0 +1,51 @@
+     110      ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS PARA
+                     LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES EÓLICAS
+
+
+menor irregularidad relativa, pero su magnitud energética limita el indicador
+absoluto. Este resultado confirma que coherencia y magnitud son dimensiones
+diferentes.
+
+
+      4.6.2   Escenario central proyectado 2023 – 2028
+
+           Tabla 4.6. Síntesis del escenario central proyectado por zona, 2023–2028.
+
+ Z     𝑾𝑷𝑫
+               𝑬𝒇𝒓𝒆𝒆                            𝑬𝒖𝒔𝒂𝒃𝒍𝒆
+ o      𝑾
+       ( 𝟐)    𝒌𝑾𝒉      FNRR    Coherencia       𝒌𝑾𝒉                  Lectura
+ n      𝒎     ( 𝟐 )                             ( 𝟐 )
+                𝒎                                 𝒎
+ a
+                                                          Trayectoria estable de magnitud
+ 1    3.990    34.986   0.111       0.889       31.118
+                                                                     moderada
+                                                           FNRR descendente y segundo
+ 2    5.671    49.722   0.294       0.706       34.924
+                                                               indicador proyectado
+                                                            FNRR bajo con reducción de
+ 3    3.481    30.518   0.053       0.947       28.692
+                                                                        WPD
+                                                          Mayor magnitud e indicador, con
+ 4 10.389      91.093   0.459       0.541       49.326
+                                                              irregularidad persistente
+
+
+
+La corrección física cambia la lectura del escenario proyectado. La Zona 4
+presenta el mayor indicador de energía estructuralmente modulada, con 49.326
+kWh/m² en promedio, debido a una energía integrada de 91.093 kWh/m² que
+compensa su FNRR de 0.459. La Zona 2 alcanza 34.924 kWh/m² y ofrece un balance
+de irregularidad más favorable, pero no supera a la Zona 4 en magnitud absoluta.
+Por tanto, “mejor balance” y “mayor indicador absoluto” no son expresiones
+equivalentes.
+
+La Zona 3 requiere cautela adicional. Su FNRR proyectado desciende hasta cero
+en 2028 porque los cuantiles pronosticados de manera independiente se cruzan y
+la definición aplica 𝑄0.90,𝑧𝑞
+                      ∗
+                              = max(𝑄0.90,𝑧𝑞 , 𝑄0.50,𝑧𝑞 ).      y clipping. Ese valor no
+demuestra regularidad física perfecta; señala que el módulo de cuantiles dejó de
+representar separación superior bajo ese escenario. La conclusión defendible es
+

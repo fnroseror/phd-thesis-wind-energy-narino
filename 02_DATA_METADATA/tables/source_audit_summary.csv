@@ -1,0 +1,12 @@
+field,value
+raw_record_count,8175686
+valid_vv_record_count,2218605
+analytical_station_hour_count,365512
+station_count,16
+zone_count,4
+variable_count,10
+date_parser,dmy
+nominal_period,2017–2022
+raw_audit_max_timestamp,2022-07-01 12:00:00
+analytical_max_timestamp_local,2022-07-01 00:00:00 America/Bogota
+raw_source_sha256,PENDING_FROM_FROZEN_SOURCE

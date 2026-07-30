@@ -1,0 +1,62 @@
+  114      ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS PARA
+                  LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES EÓLICAS
+
+
+4.7   Lectura territorial del escenario 2028
+
+
+
+
+Figura 4.7. Escenario central del indicador energético por zona, 2023–2028. Corresponde
+             a un escenario condicionado y no a generación garantizada.
+
+
+
+
+               Tabla 4.8. Escenario energético regional central para 2028.
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                    115
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+ Z
+ o
+      WPD     𝑬𝒇𝒓𝒆𝒆     FNRR    Coherencia    𝑬𝒖𝒔𝒂𝒃𝒍𝒆         Lectura territorial
+ n
+ a
+                                                        Mayor indicador absoluto, con
+ 4 10.389     91.261    0.459      0.541      49.409
+                                                           irregularidad persistente
+                                                        Segundo indicador, con mejor
+ 2    5.003   43.944    0.232      0.768      33.752
+                                                           coherencia que Zona 4
+                                                         Magnitud moderada y FNRR
+ 1    3.990   35.050    0.111      0.889      31.175
+                                                                     bajo
+                                                         FNRR recortado a cero por
+ 3    2.841   24.953    0.000      1.000      24.953    cruce de cuantiles; no implica
+                                                                   certeza
+
+
+
+En 2028, la Zona 4 alcanza el mayor indicador modulado (49.409 kWh/m²),
+asociado a la mayor WPD (10.389 W/m²), aun con FNRR = 0.459. La Zona 2 registra
+33.752 kWh/m² y una coherencia mayor. La lectura territorial correcta distingue,
+por tanto, entre primacía absoluta de magnitud y balance estructural relativo.
+
+Los resultados no autorizan una selección definitiva de zona. La cobertura histórica
+de Zona 4, la inestabilidad de los PI90 multianuales, la autocorrelación residual del
+Capítulo 3 y la ausencia de curvas de potencia e infraestructura impiden convertir
+el ordenamiento en una recomendación de inversión. La utilidad del capítulo
+consiste en priorizar preguntas: dónde ampliar medición, dónde recalibrar
+incertidumbre, dónde evaluar tecnología y dónde realizar estudios de
+emplazamiento.
+
+
+4.8    Síntesis integradora y contribución doctoral
+
+El Capítulo 4 cierra la trayectoria físico-estadística iniciada en el planteamiento del
+problema. Los datos regionales fueron sometidos a control de calidad,
+

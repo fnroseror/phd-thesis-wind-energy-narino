@@ -1,0 +1,13 @@
+STATIC APPENDICES PACKAGE VALIDATION PASSED
+
+Required annex documents: 8/8
+Python files inside package: 0
+Largest file: support_files/C_predictive_pipeline_approved/TDQ_FINAL_PREDS_GLOBAL.csv
+Largest file size: 17212800 bytes
+GitHub ordinary file limit check (<100 MB): PASSED
+Canonical and complementary outputs: separated
+R/RStudio validator included: validate_appendices.R
+
+Runtime note:
+R is not installed in the artifact-build environment. Execute validate_appendices.R
+from RStudio after placing the folder in the repository.

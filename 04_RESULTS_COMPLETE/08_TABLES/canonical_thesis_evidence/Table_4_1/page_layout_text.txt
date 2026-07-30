@@ -1,0 +1,97 @@
+  100       ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS PARA
+                   LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES EÓLICAS
+
+
+como observación futura. En la presentación anual, 2022 se reconoce como año
+mixto: observación parcial en T1–T2 y proyección en T3–T4.
+
+La cobertura histórica condiciona la lectura. Las Zonas 1–3 disponen de
+información en los seis años del periodo histórico, aunque 2022 es parcial. En la
+Zona 4 no existen observaciones en 2017–2018 y la cobertura de 2019–2020 es
+reducida. Por ello, las figuras muestran esos años como ausencia de observación
+y la Tabla 4.5 reporta explícitamente el número de años y la cobertura media
+utilizados. Esta decisión evita convertir valores completados por el flujo de
+consolidación en evidencia observacional.
+
+La proyección multianual trabaja sobre series trimestrales. Para cada zona se
+pronostican en escala logarítmica la mediana de WPD, el percentil 90 y la energía
+integrada; después, las salidas se retransforman a la escala física. El indicador
+central de WPD del escenario se construye como combinación operativa de los
+cuantiles trimestrales y la energía anual se audita nuevamente mediante la
+ecuación (4.4). La relación WPD × horas constituye la autoridad física para las
+tablas y figuras definitivas.
+
+ Tabla 4.1. Función de los componentes utilizados en la proyección energética regional.
+
+                                                                        Límite de
+    Componente            Qué representa           Función
+                                                                     interpretación
+                                                                  No sustituye la WPD
+                       Agregado energético      Base física del
+  𝑾𝑷𝑫 𝒂𝒏𝒖𝒂𝒍 𝑻𝑫𝑸                                                     horaria bruta del
+                        de la serie regional      escenario
+                                                                       Capítulo 2
+                           Incertidumbre         Evidencia de
+                                                                     No garantiza
+ 𝑷𝑰𝟗𝟎 𝒅𝒆𝒍 𝑪𝒂𝒑í𝒕𝒖𝒍𝒐 𝟑       predictiva de        calibración del
+                                                                  cobertura multianual
+                       corto/medio alcance         modelo
+                        Energía anualizada                         No es energía libre
+                                                  Comparar
+        𝑬𝒇𝒓𝒆𝒆          integrada por unidad                        termodinámica ni
+                                                magnitud física
+                                de área                             generación real
+                                                  Modular la
+                       Irregularidad relativa                        No es ley física
+        𝑭𝑵𝑹𝑹                                        lectura
+                       basada en cuantiles                              universal
+                                                  estructural
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                            101
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+                       Indicador de energía            Comparar                No es energía
+      𝑬𝒖𝒔𝒂𝒃𝒍𝒆              estructuralmente            escenarios              técnicamente
+                              modulada                 regionales              aprovechable
+
+
+
+
+4.3   Formalización del Factor de No Regularidad Regional
+
+La magnitud anual de WPD no informa por sí sola cómo se distribuye el recurso
+dentro de la ventana temporal. Para representar la separación entre un nivel
+central y un régimen alto de WPD, esta tesis utiliza el Factor de No Regularidad
+Regional    (FNRR).   La    definición    final   se    alinea      con   la    implementación
+computacional auditada: emplea los percentiles 50 y 90 de WPD en cada
+trimestre, aplica compresión logarítmica y agrega los resultados mediante
+ponderación por horas.
+
+Sea 𝑞 un trimestre de la zona 𝑧, 𝑄0.50,𝑧𝑞 , la mediana de WPD y 𝑄0.90,𝑧𝑞 su percentil
+90. Para evitar que una inversión numérica de cuantiles produzca irregularidad
+negativa, se define 𝑄0.90,𝑧𝑞
+                     ∗
+                             = max(𝑄0.90,𝑧𝑞 , 𝑄0.50,𝑧𝑞 ). Con 𝑊0 = 1 W/m² como escala
+de referencia y ε = 10⁻¹² como estabilidad numérica adimensional, el descriptor
+trimestral es:
+
+                                       ∗
+                                      𝑄0.90,𝑧𝑞          𝑄0.50,𝑧𝑞
+                              ln (1 + 𝑊 ) − ln (1 + 𝑊 )
+                                          0                 0
+         𝐹𝑁𝑅𝑅𝑧𝑞 = 𝑐𝑙𝑖𝑝[0,1]                     ∗                                 (4.5)
+                                               𝑄0.90,𝑧𝑞
+                                     ln (1 + 𝑊 ) + 𝜀
+                            (                      0             )
+
+La función 𝑐𝑙𝑖𝑝[0,1] (·) restringe el resultado al intervalo físico-operacional
+adoptado. El FNRR anual se obtiene mediante media ponderada por las horas
+teóricas 𝐻𝑞 de los trimestres que forman la ventana 𝑇:
+
+                                     ∑𝑞∈𝑇 𝐻𝑞 FNRR 𝑧𝑞                              (4.6)
+                      FNRR 𝑧 (𝑇) =
+                                         ∑𝑞∈𝑇 𝐻𝑞
+

@@ -1,0 +1,5 @@
+objective,principal_evidence,closure_conclusion
+General,"Marco integrado: caracterización, WPD, predicción, incertidumbre y proyección regional.",Cumplido dentro del alcance físico-estadístico; no equivale a generación real.
+Específico 1,"Control de calidad, cuatro zonas, distribuciones, ACF/PACF, FFT y Wavelet.",Se caracterizaron los factores y estructuras observables que condicionan el viento regional.
+Específico 2,"Partición temporal, familias de modelos, persistencia, Skill-RMSE, PI90 y residuos.","Se formuló una metodología de pronóstico que integra física, estadística e incertidumbre."
+Específico 3,"Salida TDQ-PIESS/KFAS, validación fuera de muestra y escenario trimestral 2023-2028.",Se implementó y evaluó un sistema predictivo y se derivaron indicadores regionales trazables.

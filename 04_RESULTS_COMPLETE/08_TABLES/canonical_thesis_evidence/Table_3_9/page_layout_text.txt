@@ -1,0 +1,42 @@
+  86       ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS PARA
+                  LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES EÓLICAS
+
+
+                                      𝑛
+                               1
+                        𝑊𝑃𝐼90 = ∑(𝑈𝑖 − 𝐿𝑖 )                                (3.27)
+                               𝑛
+                                   𝑖=1
+
+
+El ancho promedio complementa la cobertura. Dos configuraciones pueden
+alcanzar 0.90 y diferir sustancialmente en amplitud. Un intervalo útil debe
+aproximarse al nivel nominal sin ensancharse de manera innecesaria; esta
+propiedad se denomina nitidez y solo es deseable cuando la calibración es
+adecuada [28], [32].
+
+ Tabla 3.9. Cobertura empírica y ancho promedio de los intervalos PI90 del modelo final.
+
+ Zona   Horizonte    Cobertura PI90       Error abs. frente a 0.90   Ancho promedio PI90
+   1      Corto         0.899958                  4.2e-05                  29.949
+   1      Medio         0.899927                  7.3e-05                  26.325
+   1      Largo            0.9                       0                     19.194
+   2      Corto         0.899958                  4.2e-05                   4.193
+   2      Medio         0.899927                  7.3e-05                   2.843
+   2      Largo            0.9                       0                      3.288
+   3      Corto         0.899958                  4.2e-05                   8.289
+   3      Medio         0.899927                  7.3e-05                   2.372
+   3      Largo            0.9                       0                      2.444
+   4      Corto         0.899958                  4.2e-05                  35.348
+   4      Medio         0.899927                  7.3e-05                   2.785
+   4      Largo            0.9                       0                      2.779
+
+
+
+La cobertura posterior se mantiene extremadamente cercana a 0.90 en todas las
+zonas y horizontes; el error absoluto frente al nivel nominal es inferior a 10⁻⁴. Esta
+cercanía describe la calibración realizada dentro de la implementación histórica.
+Debe interpretarse como consistencia interna del procedimiento aplicado, no
+como validación probabilística independiente ni como garantía universal de
+cobertura en periodos o regiones no observados [28], [32], [37], [38].
+

@@ -1,0 +1,51 @@
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                            109
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+conserva para impedir que la anualización se interprete como registro continuo
+completo.
+
+                 Tabla 4.5. Síntesis histórica anualizada por zona, 2017–2022.
+
+Z
+                                              𝑬𝒇𝒓𝒆𝒆               𝑬𝒖𝒔𝒂𝒃𝒍𝒆
+o    Periodo        Cobertura      WPD
+                                              𝒌𝑾𝒉        FNRR         𝒌𝑾𝒉          Lectura
+n    utilizado        media       (W/m²)     ( 𝟐 )                (       )
+                                               𝒎                       𝒎𝟐
+a
+                                                                              Baja magnitud y
+    2017–2022
+                                                                                     baja
+1    (6 años;          0.470       3.219     28.210      0.077    24.531
+                                                                                 irregularidad
+    2022 mixto)
+                                                                                   relativa
+                                                                                    Mayor
+    2017–2022                                                                     indicador
+2    (6 años;          0.476       9.762     85.558      0.468    43.503          modulado
+    2022 mixto)                                                               histórico; FNRR
+                                                                                     alto
+                                                                                  Magnitud
+    2017–2022
+                                                                              intermedia con
+3    (6 años;          0.482       8.049     70.549      0.422    37.952
+                                                                               penalización
+    2022 mixto)
+                                                                                  relevante
+                                                                                  Resultado
+    2019–2022                                                                 condicionado
+4    (4 años;          0.250       7.951     69.689      0.432    39.227       por cobertura
+    2022 mixto)                                                                    histórica
+                                                                                   limitada
+
+
+
+En el periodo histórico, la Zona 2 presenta el mayor indicador modulado promedio
+(43.503 kWh/m²), pese a un FNRR medio de 0.468. La Zona 4 alcanza 39.227
+kWh/m², pero su interpretación es menos robusta porque solo dispone de
+observaciones en cuatro años y su cobertura media es 0.250. La Zona 1 exhibe la
+

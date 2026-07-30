@@ -1,0 +1,44 @@
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                       119
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+La respuesta a la pregunta doctoral es afirmativa dentro del alcance definido: fue
+posible desarrollar una metodología de pronóstico energético basada en el
+análisis físico de las variaciones del viento en Nariño, evaluar su desempeño frente
+a una referencia de persistencia, representar incertidumbre en la escala de
+validación y derivar escenarios regionales físicamente consistentes. Esta respuesta
+no equivale a predecir generación eléctrica real ni a demostrar factibilidad de
+infraestructura; corresponde a la predicción de WPD y a la construcción de
+indicadores energéticos por unidad de área.
+
+        Tabla 5.1. Correspondencia entre objetivos, evidencia y conclusión de cierre.
+
+  Objetivo                 Evidencia principal                        Conclusión
+                   Marco integrado: caracterización,        Cumplido dentro del alcance
+      General      WPD, predicción, incertidumbre y         físico-estadístico; no equivale a
+                          proyección regional.                     generación real.
+                   Control de calidad, cuatro zonas,        Se caracterizaron los factores y
+ Específico 1        distribuciones, ACF/PACF, FFT y         estructuras observables que
+                                Wavelet.                    condicionan el viento regional.
+                     Partición temporal, familias de        Se formuló una metodología de
+ Específico 2     modelos, persistencia, Skill-RMSE, PI90    pronóstico que integra física,
+                                y residuos.                  estadística e incertidumbre.
+                                                              Se implementó y evaluó un
+                   Salida TDQ-PIESS/KFAS, validación
+                                                                sistema predictivo y se
+ Específico 3         fuera de muestra y escenario
+                                                                derivaron indicadores
+                           trimestral 2023-2028.
+                                                                 regionales trazables.
+
+
+
+
+5.2     Conclusiones respecto a la caracterización físico – estadística
+
+La caracterización permitió concluir que el viento de Nariño no puede
+representarse mediante una única serie homogénea ni mediante promedios
+

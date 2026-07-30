@@ -1,0 +1,6 @@
+"categoria","archivo_recomendado_1","archivo_recomendado_2","observacion"
+"predicciones_obs_pred",NA,NA,"Debe contener fecha/zona/horizonte/modelo/observado/predicho."
+"metricas_modelos","04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_TABLA_GLOBAL.csv","04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_TABLA_GLOBAL_MEJORADA.csv","Debe contener RMSE, MAE, R2, Skill o equivalentes."
+"intervalos_PI90","06_PRODUCTS/01_articles/article_01_energy_reports/04_tables/supplementary/Table_S1_QC_scenario_comparison_by_zone.xlsx","04_RESULTS_COMPLETE/01_physical_characterization/VV_Descriptivos_por_Zona.csv","Debe contener lower/upper PI90 o cuantiles equivalentes."
+"FNRR","04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_TABLA_GLOBAL.csv","04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_TABLA_GLOBAL_MEJORADA.csv","Debe contener FNRR o insumos para calcularlo."
+"scripts_modelado","03_CODE/06_hybrid_tdq/01_cap3_tdq_piess_pipeline.R","03_CODE/04_machine_learning/01_cap3_ml_models.R","Scripts con mayor coincidencia de contenido del Capítulo 3."

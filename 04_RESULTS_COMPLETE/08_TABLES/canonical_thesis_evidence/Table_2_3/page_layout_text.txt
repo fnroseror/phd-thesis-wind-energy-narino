@@ -1,0 +1,46 @@
+     38         ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS PARA
+                       LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES EÓLICAS
+
+
+     Tabla 2.3. Resumen descriptivo de la velocidad del viento y la densidad de potencia
+                                       eólica por zona analítica.
+
+ Z
+                       VV      VV           VV      VV      WPD        WPD       WPD
+ o                                                                                          WPD máx.
+      n         Est.   media   mediana      P95     máx.    media      mediana   P95
+ n                                                                                          (W/m²)
+                       (m/s)   (m/s)        (m/s)   (m/s)   (W/m²)     (W/m²)    (W/m²)
+ a
+ 1    104.055   5      3,16    0,93         20,84   59,77   1.703,85   0,44      4.896,38   116.100,18
+ 2    98.480    4      2,79    2,30         6,02    23,73   55,30      6,69      119,79     7.352,57
+ 3    123.109   5      2,50    1,94         6,42    23,85   33,07      4,02      145,31     7.461,53
+ 4    39.868    2      3,37    3,33         6,15    8,87    37,23      19,17     125,87     383,39
+
+
+
+
+La Zona 1 presenta el comportamiento más irregular del conjunto, aunque su
+mediana es 0,93 m/s, la media asciende a 3,16 m/s y el percentil 95 alcanza 20,84
+m/s. Esta separación evidencia una distribución fuertemente asimétrica, con alta
+frecuencia de velocidades bajas y una cola de valores intensos. El máximo de
+59,77 m/s se conservó porque cumple el umbral de plausibilidad definido; sin
+embargo, debe interpretarse con cautela, dado que no se dispone en este
+capítulo de una validación instrumental o independiente específica para cada
+episodio extremo.
+
+La asimetría se amplifica al analizar la WPD. En la Zona 1, la mediana es 0,44 W/m²,
+la media alcanza 1.703,85 W/m² y el máximo supera 116.000 W/m², esta diferencia
+no representa un recurso homogéneamente alto, sino una estimación energética
+dominada por una fracción reducida de valores extremos. Por ello, la Zona 1 se
+interpreta como un régimen de alta sensibilidad energética e irregularidad
+estructural, sujeto además a la limitación de la densidad del aire y a la cautela
+indicada para los máximos observados.
+
+Las Zonas 2 y 3 presentan comportamientos intermedios. La Zona 2 tiene una
+velocidad media de 2,79 m/s y una mediana de 2,30 m/s, mientras que la Zona 3
+tiene una media de 2,50 m/s y una mediana de 1,94 m/s. En ambas zonas, los
+percentiles altos y los máximos indican presencia de eventos intensos, pero con
+menor grado de irregularidad que la Zona 1. La WPD media es de 55,30 W/m² en
+la Zona 2 y 33,07 W/m² en la Zona 3, valores considerablemente inferiores a los de
+

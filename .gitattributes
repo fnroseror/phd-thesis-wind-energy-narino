@@ -1,0 +1,33 @@
+# Preserve repository bytes exactly for SHA-256 validation.
+# Git must not rewrite line endings during checkout.
+* -text
+
+# Keep human-readable diffs without enabling EOL conversion.
+*.R diff
+*.md diff
+*.csv diff
+*.txt diff
+*.yml diff
+*.yaml diff
+*.cff diff
+*.json diff
+*.Rproj diff
+
+# Binary formats
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tif binary
+*.tiff binary
+*.gif binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+*.pbix binary
+*.RData binary
+*.rds binary
+*.zip binary

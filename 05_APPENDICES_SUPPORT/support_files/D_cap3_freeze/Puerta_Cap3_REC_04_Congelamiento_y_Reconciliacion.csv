@@ -1,0 +1,8 @@
+﻿control,aprobado,evidencia
+legacy_localizado,TRUE,E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/Repos/phd-thesis-wind-energy-narino/04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_TABLA_GLOBAL.csv
+12_combinaciones_aprobadas,TRUE,12
+metricas_reproducidas_exactamente,TRUE,12 de 12 combinaciones
+archivos_congelados_con_hash,TRUE,3fcbde509eb119f37f8f892a399c4615|4b08d6b8993caa0b8206f4bfc9bc55d6
+resultados_legacy_no_modificados,TRUE,No se realizó reentrenamiento ni sobrescritura.
+benchmark_corregido_separado,TRUE,E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/Correcciones/Cap3_Pipeline_Directo_Corregido_20260722_095019
+modelo_hibrido_adicional_requerido,FALSE,No se ejecuta por el protocolo de mínima intervención.

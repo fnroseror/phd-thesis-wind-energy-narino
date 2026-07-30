@@ -1,0 +1,100 @@
+2026-06-25 16:09:59 | ============================================================ 
+2026-06-25 16:09:59 | CAPÍTULO 3 — AUDITORÍA INICIAL DEL REPOSITORIO 
+2026-06-25 16:09:59 | REPO_ROOT: E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/phd-thesis-wind-energy-narino 
+2026-06-25 16:09:59 | OUT_ROOT: E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/phd-thesis-wind-energy-narino/06_PRODUCTS/03_chapter_3_validation_audit 
+2026-06-25 16:09:59 | ============================================================ 
+2026-06-25 16:10:00 | Tabla exportada: E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/phd-thesis-wind-energy-narino/06_PRODUCTS/03_chapter_3_validation_audit/02_tables/Tabla_Cap3_AUD01_Inventario_Repositorio.csv 
+2026-06-25 16:10:00 | Archivos inventariados: 110 
+2026-06-25 16:10:00 | Tabla exportada: E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/phd-thesis-wind-energy-narino/06_PRODUCTS/03_chapter_3_validation_audit/02_tables/Tabla_Cap3_AUD04_Scripts_Candidatos_Modelado.csv 
+2026-06-25 16:10:00 | Archivos de datos candidatos: 84 
+2026-06-25 16:10:00 | Inspeccionando 1 de 84 : 04_RESULTS_COMPLETE/01_physical_characterization/VV_Descriptivos_por_Zona.csv 
+2026-06-25 16:10:00 | Inspeccionando 2 de 84 : 04_RESULTS_COMPLETE/01_physical_characterization/VV_Weibull_MLE_por_Zona.csv 
+2026-06-25 16:10:00 | Inspeccionando 3 de 84 : 04_RESULTS_COMPLETE/01_physical_characterization/VV_Weibull_vs_Rayleigh_por_Zona.csv 
+2026-06-25 16:10:00 | Inspeccionando 4 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_2/A1_Conteo_Registros_por_Variable.csv 
+2026-06-25 16:10:00 | Inspeccionando 5 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_2/A2_QC_NA_y_Negativos_por_Variable.csv 
+2026-06-25 16:10:00 | Inspeccionando 6 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_2/A3_Resolucion_Temporal_por_Zona_Estacion.csv 
+2026-06-25 16:10:00 | Inspeccionando 7 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_2/CFG_Cap2_parametros_usados.csv 
+2026-06-25 16:10:00 | Inspeccionando 8 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_2/VV_Descriptivos_por_Zona.csv 
+2026-06-25 16:10:00 | Inspeccionando 9 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_2/VV_Log_Parametros_Procesamiento.csv 
+2026-06-25 16:10:00 | Inspeccionando 10 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_2/VV_Tabla_Maestra_Zonas.csv 
+2026-06-25 16:10:00 | Inspeccionando 11 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_2/VV_Trazabilidad_Limpieza.csv 
+2026-06-25 16:10:00 | Inspeccionando 12 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_2/VV_Varianza_SenalZonal_por_Zona.csv 
+2026-06-25 16:10:00 | Inspeccionando 13 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_2/VV_Weibull_MLE_por_Zona.csv 
+2026-06-25 16:10:00 | Inspeccionando 14 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_2/VV_Weibull_vs_Rayleigh_por_Zona.csv 
+2026-06-25 16:10:00 | Inspeccionando 15 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/CLASICOS_DEFINITIVA_Eh.csv 
+2026-06-25 16:10:00 | Inspeccionando 16 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/CLASICOS_DEFINITIVA_WPD.csv 
+2026-06-25 16:10:00 | Inspeccionando 17 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/DIAGNOSTICO_FILAS_POR_ZONA.csv 
+2026-06-25 16:10:01 | Inspeccionando 18 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/DL_HP_GLOBAL_TDQ.csv 
+2026-06-25 16:10:01 | Inspeccionando 19 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/DL_TABLA_COMBINADA_DEFINITIVA.csv 
+2026-06-25 16:10:01 | Inspeccionando 20 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/DL_TABLA_Eh_COMPLETA.csv 
+2026-06-25 16:10:01 | Inspeccionando 21 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/DL_TABLA_WPD_COMPLETA.csv 
+2026-06-25 16:10:01 | Inspeccionando 22 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/DL_TUNING_WPD_Corto_h1.csv 
+2026-06-25 16:10:01 | Inspeccionando 23 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/DL_TUNING_WPD_Medio_h12.csv 
+2026-06-25 16:10:01 | Inspeccionando 24 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/FNRR_RESUMEN_ZONA.csv 
+2026-06-25 16:10:01 | Inspeccionando 25 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/ML_BASE_DEFINITIVA_Eh.csv 
+2026-06-25 16:10:01 | Inspeccionando 26 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/ML_BASE_DEFINITIVA_WPD.csv 
+2026-06-25 16:10:01 | Inspeccionando 27 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/ML_BAYES_DEFINITIVA_Eh.csv 
+2026-06-25 16:10:01 | Inspeccionando 28 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/ML_BAYES_DEFINITIVA_WPD.csv 
+2026-06-25 16:10:01 | Inspeccionando 29 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_PREDS_GLOBAL.csv 
+2026-06-25 16:10:01 | Inspeccionando 30 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_PREDS_Z1_Corto_h1.csv 
+2026-06-25 16:10:01 | Inspeccionando 31 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_PREDS_Z1_Largo_h72.csv 
+2026-06-25 16:10:01 | Inspeccionando 32 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_PREDS_Z1_Medio_h12.csv 
+2026-06-25 16:10:01 | Inspeccionando 33 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_PREDS_Z2_Corto_h1.csv 
+2026-06-25 16:10:01 | Inspeccionando 34 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_PREDS_Z2_Largo_h72.csv 
+2026-06-25 16:10:01 | Inspeccionando 35 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_PREDS_Z2_Medio_h12.csv 
+2026-06-25 16:10:01 | Inspeccionando 36 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_PREDS_Z3_Corto_h1.csv 
+2026-06-25 16:10:01 | Inspeccionando 37 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_PREDS_Z3_Largo_h72.csv 
+2026-06-25 16:10:01 | Inspeccionando 38 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_PREDS_Z3_Medio_h12.csv 
+2026-06-25 16:10:01 | Inspeccionando 39 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_PREDS_Z4_Corto_h1.csv 
+2026-06-25 16:10:01 | Inspeccionando 40 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_PREDS_Z4_Largo_h72.csv 
+2026-06-25 16:10:01 | Inspeccionando 41 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_PREDS_Z4_Medio_h12.csv 
+2026-06-25 16:10:01 | Inspeccionando 42 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_TABLA_GLOBAL.csv 
+2026-06-25 16:10:01 | Inspeccionando 43 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_INTERVALOS_PREDS.csv 
+2026-06-25 16:10:01 | Inspeccionando 44 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_PREDS_GLOBAL.csv 
+2026-06-25 16:10:01 | Inspeccionando 45 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_PREDS_Z1_Corto_h1.csv 
+2026-06-25 16:10:01 | Inspeccionando 46 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_PREDS_Z1_Largo_h72.csv 
+2026-06-25 16:10:01 | Inspeccionando 47 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_PREDS_Z1_Medio_h12.csv 
+2026-06-25 16:10:01 | Inspeccionando 48 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_PREDS_Z2_Corto_h1.csv 
+2026-06-25 16:10:01 | Inspeccionando 49 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_PREDS_Z2_Largo_h72.csv 
+2026-06-25 16:10:01 | Inspeccionando 50 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_PREDS_Z2_Medio_h12.csv 
+2026-06-25 16:10:01 | Inspeccionando 51 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_PREDS_Z3_Corto_h1.csv 
+2026-06-25 16:10:01 | Inspeccionando 52 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_PREDS_Z3_Largo_h72.csv 
+2026-06-25 16:10:01 | Inspeccionando 53 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_PREDS_Z3_Medio_h12.csv 
+2026-06-25 16:10:01 | Inspeccionando 54 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_PREDS_Z4_Corto_h1.csv 
+2026-06-25 16:10:01 | Inspeccionando 55 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_PREDS_Z4_Largo_h72.csv 
+2026-06-25 16:10:01 | Inspeccionando 56 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_PREDS_Z4_Medio_h12.csv 
+2026-06-25 16:10:01 | Inspeccionando 57 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_TABLA_GLOBAL.csv 
+2026-06-25 16:10:01 | Inspeccionando 58 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_TABLA_GLOBAL_MEJORADA.csv 
+2026-06-25 16:10:01 | Inspeccionando 59 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_TABLA_POR_REGIMEN.csv 
+2026-06-25 16:10:01 | Inspeccionando 60 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_4/CAP4_ANUAL_FNRR_COH_2017_2028.csv 
+2026-06-25 16:10:01 | Inspeccionando 61 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_4/CAP4_ANUAL_WPD_Efree_Eusable_PI90_2017_2028.csv 
+2026-06-25 16:10:01 | Inspeccionando 62 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_4/CAP4_DAILY_WPD_TDQ_2017_2028.csv 
+2026-06-25 16:10:01 | Inspeccionando 63 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_4/CAP4_RESUMEN_ANUAL_WPD_E_FNRR_USABLE_PI90.csv 
+2026-06-25 16:10:01 | Inspeccionando 64 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_4/CAP4_RESUMEN_TRIMESTRAL_WPD_E_FNRR_USABLE_PI90.csv 
+2026-06-25 16:10:01 | Inspeccionando 65 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_4/CAP4_TDQ_ANUAL_2017_2028.csv 
+2026-06-25 16:10:01 | Inspeccionando 66 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_4/CAP4_TDQ_HOURLY_WPD_Eh_PI90.csv 
+2026-06-25 16:10:01 | Inspeccionando 67 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_4/CAP4_TDQ_TRIMESTRAL_2017_2028.csv 
+2026-06-25 16:10:01 | Inspeccionando 68 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_4/CAP4_TRIMESTRAL_FNRR_COH_2017_2028.csv 
+2026-06-25 16:10:01 | Inspeccionando 69 de 84 : 04_RESULTS_COMPLETE/08_TABLES/chapter_4/CAP4_TRIMESTRAL_WPD_Efree_Eusable_PI90_2017_2028.csv 
+2026-06-25 16:10:01 | Inspeccionando 70 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/02_results/map_boundaries/gadm/gadm41_COL_1_pk.rds 
+2026-06-25 16:10:01 | Inspeccionando 71 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/02_results/map_boundaries/gadm/gadm41_COL_2_pk.rds 
+2026-06-25 16:10:02 | Inspeccionando 72 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/04_tables/main_text/Table_01_IDEAM_meteorological_stations_and_analytical_zoning.csv 
+2026-06-25 16:10:02 | Inspeccionando 73 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/04_tables/main_text/Table_02_descriptive_statistics_VV_WPD_by_zone.xlsx 
+2026-06-25 16:10:02 | Inspeccionando 74 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/04_tables/main_text/Table_03_selected_wind_speed_distribution_fit_metrics_by_zone.xlsx 
+2026-06-25 16:10:02 | Inspeccionando 75 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/04_tables/main_text/Table_04_temporal_spectral_summary_WPD_by_zone.xlsx 
+2026-06-25 16:10:02 | Inspeccionando 76 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/04_tables/supplementary/Table_S1_QC_scenario_comparison_by_zone.xlsx 
+2026-06-25 16:10:02 | Inspeccionando 77 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/04_tables/supplementary/Table_S2_full_weibull_rayleigh_fit_metrics_by_zone.xlsx 
+2026-06-25 16:10:02 | Inspeccionando 78 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/04_tables/supplementary/Table_S3_daily_ACF_values_VV_WPD_by_zone.xlsx 
+2026-06-25 16:10:02 | Inspeccionando 79 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/04_tables/supplementary/Table_S4_daily_PACF_values_VV_WPD_by_zone.xlsx 
+2026-06-25 16:10:02 | Inspeccionando 80 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/04_tables/supplementary/Table_S5_daily_temporal_coverage_by_zone.xlsx 
+2026-06-25 16:10:02 | Inspeccionando 81 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/04_tables/supplementary/Table_S6_WPD_top_spectral_periods_by_zone.xlsx 
+2026-06-25 16:10:02 | Inspeccionando 82 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/04_tables/supplementary/Table_S7_FFT_spectral_band_energy_by_zone_variable.xlsx 
+2026-06-25 16:10:02 | Inspeccionando 83 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/04_tables/supplementary/Table_S8_FFT_segment_summary_by_zone_variable.xlsx 
+2026-06-25 16:10:02 | Inspeccionando 84 de 84 : 06_PRODUCTS/01_articles/article_01_energy_reports/07_submission_package/Energy_Reports_Article01_Submission_File_Manifest.csv 
+2026-06-25 16:10:02 | Tabla exportada: E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/phd-thesis-wind-energy-narino/06_PRODUCTS/03_chapter_3_validation_audit/02_tables/Tabla_Cap3_AUD03_Estructura_Archivos_Datos_Candidatos.csv 
+2026-06-25 16:10:02 | Tabla exportada: E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/phd-thesis-wind-energy-narino/06_PRODUCTS/03_chapter_3_validation_audit/02_tables/Tabla_Cap3_AUD02_Archivos_Candidatos_Cap3.csv 
+2026-06-25 16:10:02 | Tabla exportada: E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/phd-thesis-wind-energy-narino/06_PRODUCTS/03_chapter_3_validation_audit/02_tables/Tabla_Cap3_AUD05_Rutas_Recomendadas_Siguiente_Paso.csv 
+2026-06-25 16:10:03 | Workbook exportado: E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/phd-thesis-wind-energy-narino/06_PRODUCTS/03_chapter_3_validation_audit/02_tables/Cap3_Auditoria_Repositorio_Predicciones.xlsx 
+2026-06-25 16:10:03 | CAPÍTULO 3 — AUDITORÍA INICIAL FINALIZADA 
+2026-06-25 16:10:03 | Fin: 2026-06-25 16:10:03.157994 
+2026-06-25 16:10:03 | ============================================================ 

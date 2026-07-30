@@ -1,0 +1,50 @@
+  92         ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS PARA
+                    LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES EÓLICAS
+
+
+RMSE, MAE, Skill-RMSE, Skill-MAE y Diebold-Mariano deben leerse conjuntamente,
+especialmente en Zona 1 y en horizontes cortos [27], [29], [31].
+
+Se calcularon además CRPS y LogScore aproximados a partir de PI90. Como no se
+dispone de una distribución predictiva completa, estos valores no son reglas de
+puntuación exactas del pronóstico original y se conservan en el anexo técnico
+como verificación exploratoria. Su interpretación se limita a comparar consistencia
+interna, no a declarar optimalidad probabilística [32], [37], [46], [47].
+
+ Tabla 3.11. Síntesis metodológica de las pruebas complementarias aplicadas al modelo
+                                            final.
+
+                                                                              Uso en la
+  Componente              Propósito                  Resultado general
+                                                                                 tesis
+                     Evaluar magnitud,       Zona 1 con asimetría extrema;
+                                                                              Cuerpo del
+    Residuos        asimetría y colas del   Zonas 2-4 con comportamiento
+                                                                               capítulo
+                            error                      más estable
+                          Detectar               Autocorrelación residual      Mención
+   Ljung-Box          autocorrelación                detectada en las          breve y
+                          residual              combinaciones evaluadas         anexo
+                     Comparar modelo            Favorece al modelo en la       Mención
+    Diebold-
+                        final contra         mayoría de casos, con matices     breve y
+       Mariano
+                        persistencia         en Zona 1 y Zona 3 corto plazo     anexo
+                    Evaluar consistencia     Indicadores calculados desde
+                                                                                Anexo
+ CRPS/LogScore         probabilística           PI90, no desde distribución
+                                                                               técnico
+                        aproximada                      completa
+                                             Cobertura empírica cercana a
+                     Evaluar calibración                                      Cuerpo del
+ Cobertura PI90                               0.90 dentro de la calibración
+                       probabilística                                          capítulo
+                                                         histórica
+
+
+
+Los resultados complementarios del pipeline muestran tres elementos. Primero, la
+salida final presenta menor RMSE que la persistencia implementada, aunque
+Diebold-Mariano introduce matices por función de pérdida. Segundo, PI90
+alcanza cobertura cercana al 90 % bajo el procedimiento histórico de calibración.
+

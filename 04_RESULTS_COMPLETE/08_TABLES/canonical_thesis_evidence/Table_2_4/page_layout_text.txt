@@ -1,0 +1,36 @@
+     42            ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS PARA
+                          LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES EÓLICAS
+
+
+las curvas acumuladas, el estadístico de Kolmogorov-Smirnov y el criterio de
+información de Akaike:
+
+                                   𝐴𝐼𝐶 = 2𝑝 − 2 ln(𝐿̂)                           (2.6)
+
+donde 𝑝 representa el número de parámetros del modelo y 𝐿̂ la máxima
+verosimilitud alcanzada. En términos comparativos, menores valores de 𝐴𝐼𝐶
+indican un mejor equilibrio entre ajuste y complejidad del modelo.
+
+ Tabla 2.4. Parámetros Weibull/Rayleigh y métricas de ajuste de la velocidad del viento
+                                             por zona analítica.
+
+ Z
+ o                   Ceros               c         σ       AIC       AIC        KS         KS
+           n+                  k
+ n                    (%)              (m/s)     (m/s)   Weibull   Rayleigh   Weibull    Rayleigh
+ a
+ 1 103.382           0,647    0,656    2,002     6,324   389.332   965.609     0,167      0,786
+ 2        98.373     0,109    1,437    3,108     2,541   377.236   406.335     0,080      0,166
+ 3 123.109           0,000    1,411    2,774     2,252   449.521   484.484     0,073      0,192
+ 4        39.859     0,023    2,050    3,808     2,680   153.696   153.731     0,074      0,076
+
+
+
+
+La Tabla 2.4 resume los parámetros estimados y las métricas de ajuste, mientras
+que la Figura 2.5 compara las funciones de distribución acumulada. Dado el gran
+tamaño muestral, la evaluación no se basa exclusivamente en pruebas de
+significancia: se interpretan de manera conjunta el estadístico D de Kolmogorov–
+Smirnov, el AIC y la inspección gráfica. En este marco comparativo, Weibull ofrece
+mayor flexibilidad que Rayleigh, pero el nivel de adecuación depende de la zona.
+

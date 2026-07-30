@@ -1,0 +1,10 @@
+﻿control,aprobado,evidencia
+48_filas_anuales,TRUE,48
+192_filas_trimestrales,TRUE,192
+2022_T3_T4_clasificados_proyeccion,TRUE,2022-T3|2022-T4
+tabla_4_7_sin_cambios,TRUE,43.482|39.213|33.322|27.825
+ranking_4_2_3_1,TRUE,4>2>3>1
+zona4_2017_2018_estado_sin_observacion,TRUE,Zona 4 2017-2018 = historico_reconstruido_sin_observacion
+zona4_2017_2018_no_graficada,TRUE,"WPD, FNRR y energía = NA solo para visualización"
+seis_figuras_generadas,TRUE,Fig_Cap4_ED_01_Figura_4_2_WPD_Anual.png|Fig_Cap4_ED_02_Figura_4_3_Energia_Anual.png|Fig_Cap4_ED_03_Figura_4_4_Energia_Usable_Promedio.png|Fig_Cap4_ED_04_Figura_4_5_FNRR_Anual.png|Fig_Cap4_ED_05_Figura_4_6_Sintesis_Energetica_FNRR.png|Fig_Cap4_ED_06_Figura_4_7_Escenario_2023_2028.png
+nuevo_modelo_entrenado,FALSE,No se entrenaron modelos.

@@ -1,0 +1,36 @@
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                        111
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+debilitamiento de la señal energética y necesidad de recalibrar cuantiles para
+horizontes largos.
+
+
+     4.6.3     Síntesis energética estructural 2017 – 2028
+
+             Tabla 4.7. Síntesis energética-estructural auditada por zona, 2017–2028.
+
+ Z
+                           𝑬𝒇𝒓𝒆𝒆                              𝑬𝒖𝒔𝒂𝒃𝒍𝒆
+ o      Indicador                    FNRR
+                           𝒑𝒓𝒐𝒎               Coherencia       𝒑𝒓𝒐𝒎            Lectura
+ n     central WPD                   medio
+ a
+                                                                           Mayor indicador
+ 4           8.946         78.422    0.441       0.559        43.482      absoluto y mayor
+                                                                             FNRR medio
+                                                                         Segundo indicador
+ 2           7.716         67.640    0.381       0.619        39.213     y mejor regularidad
+                                                                             que Zona 4
+                                                                              Indicador
+                                                                             intermedio,
+ 3           5.765         50.533    0.238       0.762        33.322         trayectoria
+                                                                             proyectada
+                                                                            descendente
+                                                                          Baja irregularidad,
+ 1           3.605         31.598    0.094       0.906        27.825      menor magnitud
+                                                                               absoluta
+

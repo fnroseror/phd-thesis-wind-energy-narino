@@ -1,135 +1,82 @@
-# Dataset Overview
+# Dataset overview
 
-## General description
+## 1. Observational source
 
-This repository is associated with the doctoral thesis:
+The thesis uses terrestrial meteorological observations supplied by the **Instituto de Hidrología, Meteorología y Estudios Ambientales (IDEAM)** for stations located in Nariño, Colombia.
 
-**“Estudio de la velocidad de viento e inclusión de parámetros físicos para la predicción de energía eléctrica producida por fuentes eólicas”**
+The frozen source used by the thesis contains **8,175,686 records** in long format. The detected fields are:
 
-The empirical basis of the research consists of an approximately **8-million-record hourly meteorological dataset** corresponding to the period **2017–2022**, built from **16 IDEAM meteorological stations** and organized into **four representative geographic zones** in the department of **Nariño, Colombia**.
+```text
+Estación | FechaYHora | Valor | Zona | Variable
+```
 
-This observational dataset constitutes the physical and statistical foundation of the doctoral work. It supports the characterization of wind dynamics, the construction of derived physical variables, the comparative predictive modeling framework, and the regional energetic interpretation developed throughout the thesis.
+The date parser selected in the final audit was `dmy`. The nominal period is **2017–2022**, with effective source availability through **1 July 2022**.
 
----
+## 2. Observed variables
 
-## Temporal coverage
+The raw long-format source contains ten variable codes:
 
-The historical observational period used in the research spans from **2017 to 2022**.
+- `VV`: wind speed;
+- `DV`: wind direction;
+- `PR`: precipitation;
+- `TM`: mean temperature;
+- `TMIN`: minimum temperature;
+- `HR`: relative humidity;
+- `PA`: atmospheric pressure;
+- `NU`: cloudiness;
+- `FA`: atmospheric phenomenon;
+- `EV`: evaporation.
 
-Based on this information, the thesis develops and validates a forecasting framework whose energetic projection extends to **2028**. For this reason, the observational window serves as the empirical basis for model construction, validation, and historical interpretation, while the projected horizon represents the prospective stage of the doctoral framework.
+The exact audited counts are provided in [`tables/variable_counts.csv`](tables/variable_counts.csv). Their sum equals the canonical raw total of 8,175,686 records.
 
----
+## 3. Wind-speed layer
 
-## Spatial coverage
+The control stage identified **2,218,605 valid wind-speed records** across all 16 stations and four zones. These records are non-missing, finite, non-negative, and within the adopted plausibility threshold of 75 m/s.
 
-The dataset corresponds to the department of **Nariño**, a region treated in the thesis as a scientifically relevant case due to its meteorological complexity, topographic heterogeneity, and wind-energy potential.
+Zeros were retained because they can represent physical calm conditions. Their occurrence was quantified by station and zone instead of being removed automatically.
 
-To ensure spatial representativeness and variable completeness, the 16 stations were grouped into **four geographic zones**. This zonal organization is a structural component of the thesis, since the physical characterization, predictive comparison, uncertainty interpretation, and energetic projection are all performed at the regional zonal level.
+## 4. Analytical station-hour layer
 
----
+After station-hour consolidation and hierarchical construction of air density, the analytical VV/WPD dataset contains **365,512 station-hour rows**:
 
-## Observed variables
+| Zone | Analytical rows |
+|---|---:|
+| 1 | 104,055 |
+| 2 | 98,480 |
+| 3 | 123,109 |
+| 4 | 39,868 |
 
-According to the methodological design of the thesis, the observational dataset includes the following meteorological variables:
+This layer supports the descriptive and distributional results reported in Chapter 2 and feeds subsequent modeling stages. It must not be confused with the 2,218,605 valid source-level wind-speed observations, which can have finer-than-hourly resolution.
 
-- **VV** — Wind speed
-- **DV** — Wind direction
-- **Tmin** — Minimum temperature
-- **Tmax** — Maximum temperature
-- **PA** — Atmospheric pressure
-- **HR** — Relative humidity
-- **EV** — Evaporation
-- **NU** — Cloudiness
-- **PR** — Precipitation
-- **FA** — Atmospheric phenomenon
+## 5. Spatial organization
 
-These variables provide the meteorological basis required both for the physical analysis of wind behavior and for the subsequent predictive and energetic modeling stages.
+The 16 stations are organized into four analytical zones. The grouping is operational and comparative. It is not an administrative regionalization, a continuous wind-field interpolation, or proof of exhaustive spatial representativeness.
 
----
+The zones allow comparison of observed regimes under differentiated geographic conditions while preserving station-level traceability through IDEAM codes.
 
-## Derived variables within the thesis
+## 6. Derived physical layer
 
-The thesis is not limited to the use of raw observed variables. It also constructs derived physical and energetic variables required by the doctoral framework.
+Air density is constructed hierarchically from available pressure and temperature information:
 
-The most relevant derived variables are:
+1. station-hour density;
+2. zone-hour median density;
+3. zone-month median density;
+4. reference density `rho_ref = 1.10 kg/m³` when the previous levels are unavailable.
 
-- **ρ (air density)**, estimated through the ideal gas approximation.
-- **WPD (Wind Power Density)**, defined as the **central variable of analysis** in the thesis.
-- **Eh**, interpreted as **horizon-integrated energy** for accumulated energetic analysis.
-- **FNRR**, introduced as a structural descriptor of regional irregularity.
+Each analytical record retains the density-source category. WPD is then computed as:
 
-Within the scope of the thesis, **WPD** is treated as the central physical target variable, while **Eh** is used as a derived energetic quantity for operational interpretation.
+```text
+WPD(t) = 0.5 × rho(t) × v(t)^3
+```
 
----
+Because 68.0361% of the analytical rows use the reference density, WPD must be interpreted as a regional physical estimate with partial thermodynamic variability and explicit fallback traceability, not as a complete atmospheric-density reconstruction.
 
-## Scientific role of the dataset
+## 7. Separation of analytical stages
 
-The dataset fulfills three major scientific functions within the doctoral research.
+The repository must keep three stages distinct:
 
-### 1. Physical characterization of wind
+1. **observational and station-hour characterization**;
+2. **hourly WPD forecasting** for horizons `h = 1, 12, 72`;
+3. **quarterly scenario stage** from `2022-Q3` to `2028-Q4`, summarized annually for 2023–2028.
 
-It supports the multiscale physical–statistical characterization of wind dynamics, including:
-
-- descriptive statistics,
-- Weibull fitting,
-- Rayleigh comparison,
-- temporal dependence analysis through ACF and PACF,
-- spectral analysis through FFT,
-- and time–frequency analysis through Wavelet decomposition.
-
-This stage provides the structural physical interpretation of wind behavior in Nariño.
-
-### 2. Predictive modeling
-
-It provides the empirical basis for the comparative forecasting framework, including:
-
-- classical models such as ARIMA and ARIMAX,
-- machine learning models such as Random Forest and XGBoost,
-- deep learning architectures based on LSTM,
-- and a hybrid physical–statistical integration approach.
-
-The dataset therefore supports both deterministic and probabilistic evaluation of predictive performance.
-
-### 3. Energetic interpretation and projection
-
-It enables the construction and interpretation of:
-
-- Wind Power Density (WPD),
-- free energy,
-- usable energy,
-- calibrated PI90 intervals,
-- and projected regional energetic scenarios up to 2028.
-
-This makes the dataset essential not only for forecasting, but also for translating atmospheric variability into physically interpretable energetic outcomes.
-
----
-
-## Data treatment principles
-
-The thesis establishes that the observational data were preprocessed under a physically consistent strategy. The main procedures include:
-
-- elimination of non-physical negative values,
-- quality control,
-- recording of zero proportions,
-- temporal-resolution analysis,
-- and cleaning traceability.
-
-A key principle of the work is that the signal was processed while respecting its **physical nature**, avoiding transformations that could distort its original energetic structure.
-
----
-
-## Interpretation within the repository
-
-Within this repository, the dataset should not be understood as a simple collection of meteorological observations. It should be interpreted as the **observational foundation of a reproducible physical–statistical system**.
-
-All subsequent repository sections related to code, results, figures, tables, appendices, and reproducibility are conceptually anchored in this dataset and in its zonal organization.
-
-For that reason, this overview functions as the entry point to the empirical base of the thesis.
-
----
-
-## Repository note
-
-As stated in the annex section of the thesis, the broader repository is intended to consolidate the zonal data structure, preprocessing scripts, physical-variable generation, classical/ML/DL pipelines, TDQ–PIESS implementation, FNRR computation, PI90 calibration, prospective projection, and the materials necessary to guarantee the computational reproducibility of the reported results.
-
-This dataset overview is therefore the starting point for understanding the observational basis of that reproducible doctoral system.
+The quarterly stage is informed by the approved pipeline but is not a direct extension of the hourly forecast horizons.

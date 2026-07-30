@@ -1,0 +1,42 @@
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                    81
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+La lectura de estos resultados considera que la WPD es altamente sensible a la
+velocidad. Por ello, RMSE y Skill-RMSE son los indicadores principales; MAE y R² se
+interpretan como complementos. Esta jerarquía evita seleccionar modelos
+únicamente por ajuste promedio o varianza explicada y permite verificar una
+reducción efectiva del error frente a persistencia [27], [29], [31].
+
+Tabla 3.8. Desempeño determinista del modelo final TDQ-PIESS/KFAS frente a persistencia
+                                       para WPD.
+
+  Zona      Horizonte        Modelo        RMSE       MAE        R2       Skill-RMSE
+    1         Corto         KFAS-S24      56.214      8.768     0.083       0.728
+    1         Medio         KFAS-S24      55.741      7.719     0.098        0.73
+    1         Largo         KFAS-S24      55.618      6.283     0.104       0.731
+    2         Corto           KFAS         1.504      0.852     0.979       0.805
+    2         Medio           KFAS         1.019      0.577     0.991         0.9
+    2         Largo           KFAS         1.151      0.647     0.988       0.907
+    3         Corto         KFAS-S24       3.03       2.056     0.747       0.275
+    3         Medio           KFAS         0.98       0.521     0.974       0.805
+    3         Largo           KFAS         1.027      0.542     0.971        0.85
+    4         Corto           KFAS        15.816      8.363     0.535       0.253
+    4         Medio           KFAS         1.315       0.6      0.997       0.949
+    4         Largo           KFAS         1.306      0.594     0.997       0.952
+
+
+
+Los resultados muestran Skill-RMSE positivo en las doce combinaciones zona-
+horizonte, lo que indica reducción del RMSE frente a la persistencia implementada.
+La magnitud de la mejora no es homogénea, por lo que la predicción de WPD
+debe interpretarse como un problema regionalmente diferenciado. Esta
+conclusión describe la ventana final del pipeline aprobado y no implica
+superioridad universal fuera de las condiciones evaluadas [27], [29].
+
+La Zona 2 presenta el desempeño más consistente dentro del pipeline aprobado.
+En esta zona, la salida alcanza valores de R² superiores a 0.97 en los tres horizontes,
+

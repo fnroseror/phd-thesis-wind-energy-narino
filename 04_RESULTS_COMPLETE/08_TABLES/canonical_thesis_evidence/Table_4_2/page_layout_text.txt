@@ -1,0 +1,50 @@
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                   103
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+                              ∂FNRR 𝑧𝑞                                    (4.8)
+                                ∗       ≥0
+                              ∂𝑄0.90,𝑧𝑞
+                         𝐶𝑧 (𝑇) = 1 − 𝐹𝑁𝑅𝑅𝑧 (𝑇)                           (4.9)
+
+La coherencia 𝐶𝑧 (𝑇) es el complemento operacional del FNRR. Un valor alto indica
+menor separación relativa entre el nivel central y la cola superior según la
+definición adoptada; no significa ausencia de turbulencia, estacionariedad
+perfecta ni operación garantizada. De manera simétrica, una zona con FNRR alto
+presenta mayor irregularidad relativa, pero puede conservar una magnitud
+energética elevada.
+
+          Tabla 4.2. Comparación del FNRR con métricas clásicas de dispersión.
+
+                       Información         Limitación para esta
+    Métrica                                                         Relación con FNRR
+                        principal                  tesis
+   Varianza /                              Sensibles a extremos
+                   Dispersión respecto                            FNRR usa cuantiles y es
+  desviación                               y dependientes de la
+                       a la media                                     adimensional
+   estándar                                       escala
+                                                                     FNRR normaliza
+ Coeficiente de    Dispersión relativa a   Inestable cuando la
+                                                                   mediante cuantiles y
+   variación            la media              media es baja
+                                                                        logaritmos
+     IQR /                                                        FNRR usa mediana–P90
+                    Dispersión central        No enfatiza el
+  coeficiente                                                         y ponderación
+                         robusta           régimen alto de WPD
+ cuartílico [48]                                                        temporal
+                                                                    FNRR resume una
+  Asimetría /       Forma y peso de          Difícil traducción
+                                                                   separación superior
+    curtosis              colas             energética directa
+                                                                         relativa
+                                                                   Complementario; no
+                      Incertidumbre        Depende del modelo
+      PI90                                                            mide la misma
+                        predictiva              y horizonte
+                                                                        propiedad
+

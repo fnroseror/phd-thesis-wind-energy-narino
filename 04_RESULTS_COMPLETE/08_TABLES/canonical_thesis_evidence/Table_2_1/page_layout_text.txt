@@ -1,0 +1,85 @@
+  30            ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS PARA
+                       LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES EÓLICAS
+
+
+2.2        Datos meteorológicos, estaciones y zonificación regional
+
+La base observacional utilizada en este capítulo corresponde a registros
+meteorológicos horarios de estaciones terrestres suministrados por el Instituto de
+Hidrología, Meteorología y Estudios Ambientales —IDEAM— [17], localizadas en el
+departamento de Nariño. El conjunto bruto contiene 8.175.686 registros
+correspondientes al periodo 2017–2022, con disponibilidad efectiva hasta el 1 de
+julio de 2022 a las 00:00. Esta precisión es necesaria porque el periodo nominal se
+mantiene como 2017–2022, aunque el archivo fuente no cubre la totalidad del
+año calendario 2022.
+
+Las variables meteorológicas disponibles en la base incluyen velocidad del viento
+(VV), dirección del viento (DV), precipitación (PR), temperatura media (TM),
+temperatura mínima (TMIN), humedad relativa (HR), presión atmosférica (PA),
+nubosidad (NU), fenómeno atmosférico (FA) y evaporación (EV). Para la
+caracterización físico-estadística del viento, la variable principal de entrada es la
+velocidad del viento, debido a que permite describir la dinámica cinemática del
+flujo atmosférico y de manera complementaria, la presión atmosférica y la
+temperatura permiten estimar la densidad del aire y, por tanto, construir la
+densidad de potencia eólica como variable energética derivada.
+
+El control inicial confirmó la presencia de 16 estaciones con registros de velocidad
+del viento, distribuidas en cuatro zonas analíticas, el código IDEAM se conserva
+como identificador primario y los códigos S01–S16 se utilizan únicamente como
+alias gráficos consistentes con el mapa y las figuras. Esta verificación consolida la
+trazabilidad del número de estaciones y evita discrepancias entre metodología,
+tablas y visualizaciones. La Tabla 2.1 presenta el inventario utilizado.
+
+Tabla 2.1. Inventario de estaciones meteorológicas IDEAM agrupadas por zona analítica.
+
+      ID        Código IDEAM        Estación        Municipio       Altitud (m)    Zona
+                                   CCCP DL
+  S01             51035020                           Tumaco              1        Zona 1
+                                   PACIFICO
+  S02             51025090       GRANJA MIRA         Tumaco             16        Zona 1
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                 31
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+  S03             51025080     ALTAQUER         Barbacoas           110        Zona 1
+  S04             51025060     BIOTOPO          Barbacoas           512        Zona 1
+                                RESERVA
+                                                 Ricaurte
+  S05         5102500128      NATURAL LA                            1835       Zona 1
+                                                 (Nariño)
+                               PLANADA
+  S06             52055220    EL PARAISO         Túquerres          3120       Zona 2
+  S07             52055170    LA JOSEFINA       Contadero           2450       Zona 2
+                             AEROPUERTO
+  S08             52055230                        Aldana            2961       Zona 2
+                                SAN LUIS
+                               VOLCAN
+  S09             52055160                       Cumbal             442        Zona 2
+                                 CHILES
+  S10         5205500123      LAS IGLESIAS         Pasto            2973       Zona 3
+                             UNIVERSIDAD
+  S11             52045080                         Pasto            2626       Zona 3
+                              DE NARINO
+  S12             47015100    EL ENCANO            Pasto            2830       Zona 3
+  S13             52055210      BOTANA             Pasto            2820       Zona 3
+                                CERRO
+  S14             52055150                        Puerres           3585       Zona 3
+                               PARAMO
+  S15             52035040    VIENTO LIBRE      Taminango           1400       Zona 4
+  S16             52040050      APONTE           El Tablón          1800       Zona 4
+
+
+
+
+Para organizar la heterogeneidad espacial del territorio, las estaciones fueron
+agrupadas en cuatro zonas analíticas. La agrupación es operativa y comparativa:
+no constituye una regionalización administrativa, no interpola un campo continuo
+del viento y no pretende demostrar representatividad espacial exhaustiva
+mediante un índice de autocorrelación geográfica. Su propósito es comparar
+regímenes observados bajo condiciones geográficas diferenciadas, considerando
+localización, continuidad de registros, disponibilidad de variables y diversidad física
+del territorio.
+

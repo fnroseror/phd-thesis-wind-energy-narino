@@ -1,0 +1,15 @@
+STATIC ROOT PACKAGE VALIDATION PASSED
+
+Required root files prepared: 10
+Executable root scripts: R only
+Python files: 0
+Broad evidence exclusions in .gitignore: 0
+Byte-preserving .gitattributes: included
+Repository release designation: v1.0.0-rc1
+Global validation wrapper: 00_validate_repository.R
+Environment wrapper: 00_check_environment.R
+
+Pending runtime validation:
+- Copy folders 01-07 and these root files into the local Git repository.
+- Run the R validators.
+- Push and perform the clean-clone protocol.

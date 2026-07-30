@@ -1,0 +1,116 @@
+  68         ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS PARA
+                    LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES EÓLICAS
+
+
+En la implementación computacional, la variable auxiliar que aparecía
+originalmente bajo la etiqueta FNRR dentro del modelo horario corresponde a un
+objeto distinto del FNRR del Capítulo 4. Para evitar homonimia, se denomina índice
+interno de estado TDQ (I_TDQ). Este índice resume condiciones internas de
+confianza, variabilidad efectiva y memoria del estado; opera como predictor del
+flujo TDQ-PIESS/KFAS y no se utiliza para modular energía.
+
+    Tabla 3.2. Modelos evaluados y justificación metodológica dentro del Capítulo 3.
+
+  Modelo o                                           Razón de             Limitación
+                    Tipo        Qué captura
+   familia                                            inclusión           principal
+                                                   Establecer una       No incorpora
+                Línea base      Continuidad
+                                                     referencia         covariables ni
+ Persistencia      física-     inmediata de la
+                                                  mínima de valor        cambios de
+                 temporal           señal
+                                                     predictivo            régimen
+                                                    Evaluar si la
+                                                      memoria
+                                                                      Limitado ante no
+                  Modelo        Dependencia       temporal puede
+                                                                          linealidad,
+                 clásico de    autorregresiva y      modelarse
+   ARIMA                                                              heterogeneidad
+                   series         estructura       mediante una
+                                                                          regional y
+                temporales     temporal lineal       estructura
+                                                                         multiescala
+                                                     estadística
+                                                    interpretable
+                                Dependencia       Evaluar el aporte       Sensible a
+                  Modelo        temporal más       de covariables      especificación,
+  ARIMAX        clásico con      información        frente a una      estacionariedad y
+                covariables    meteorológica      estructura ARIMA    relaciones lineales
+                                   externa              pura            aproximadas
+                                                      Evaluar
+                                                                            Menor
+                              Interacciones no       relaciones
+                Aprendizaje                                              capacidad
+  Random                          lineales y      complejas entre
+                automático                                              explícita para
+    Forest                     particiones de       predictores
+                  no lineal                                               memoria
+                                  variables       meteorológicos y
+                                                                         secuencial
+                                                        WPD
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                                   69
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+                                      Patrones no                                  Requiere control
+                                                                 Evaluar
+                  Aprendizaje           lineales y                                         de
+                                                               ensambles
+  XGBoost         automático           corrección                                 hiperparámetros y
+                                                            aditivos con alto
+              por boosting           progresiva de                                       puede
+                                                            poder predictivo
+                                         errores                                      sobreajustar
+                                       Estructura                                    Depende del
+                                                            Evaluar el efecto
+                                     XGBoost con                                      espacio de
+                   XGBoost                                  de optimización
+ XGB_Bayes                             búsqueda                                     búsqueda y del
+                  optimizado                                sistemática en el
+                                     bayesiana de                                      criterio de
+                                                              desempeño
+                                    hiperparámetros                                  optimización
+                                                                                         Mayor
+                                                              Evaluar si una
+                                     Dependencia                                     complejidad,
+                  Aprendizaje                                 arquitectura
+                                       temporal y                                    sensibilidad a
+    LSTM           profundo                                recurrente mejora
+                                      memoria de                                         datos,
+                  secuencial                                la predicción de
+                                     largo alcance                                  arquitectura e
+                                                                  WPD
+                                                                                   hiperparámetros
+                                                                Articular                Debe
+                                       Predicción
+                  Integración                                 desempeño              interpretarse
+                                     consolidada,
+                    físico-                                   determinista,          como marco
+ TDQ-PIESS                           PI90, residuos y
+                  estadística                                incertidumbre y         operativo, no
+                                        soporte
+                     final                                  transición hacia        como modelo
+                                      energético
+                                                                  FNRR                  universal
+       Tabla 3.3. Lectura físico-operacional de las familias de modelos evaluadas.
+
+                              Modelo físico-
+                                                        Información física
+ Familia / modelo              estadístico                                        Papel en la tesis
+                                                         que aprovecha
+                              representado
+                                                                                  Referencia física
+                        Modelo inercial: el          Memoria inmediata
+                                                                                  mínima; ningún
+                        futuro se aproxima                de la WPD y
+   Persistencia                                                                      modelo se
+                       con el último estado               continuidad
+                                                                                considera útil si no lo
+                               observado.            temporal del viento.
+                                                                                       supera.
+

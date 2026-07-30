@@ -1,0 +1,6 @@
+family,physical_operational_model,skill_rmse_mean,r2_mean,reading
+Clásicos,Memoria lineal / covariables,0.274,0.15,Referencia interpretable.
+ML base,No linealidad por árboles,0.389,0.523,Mejora no lineal intermedia.
+ML Bayes,No linealidad optimizada,0.389,0.526,Refina hiperparámetros.
+DL LSTM,Memoria secuencial,-3.872,-116.254,"Útil en corto plazo, sensible a zona/horizonte."
+TDQ-PIESS final,Estado-espacio/KFAS + PI90 + I_TDQ,0.74,0.705,Salida final aprobada; no implica dominio universal.

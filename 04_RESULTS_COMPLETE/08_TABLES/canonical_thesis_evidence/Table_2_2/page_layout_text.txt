@@ -1,0 +1,55 @@
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                        35
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+   Tabla 2.2. Criterios de preprocesamiento, control físico y construcción de variables.
+
+       Etapa                    Criterio aplicado               Propósito metodológico
+                                                                Garantizar consistencia
+                         Estandarización de nombres de
+  Normalización                                                     computacional y
+                      estaciones, zonas, variables y fechas
+                                                                      trazabilidad
+                       Conversión de fechas a estructura          Conservar resolución
+ Control temporal
+                              horaria homogénea                  temporal comparable
+                      Eliminación de velocidades negativas,
+                                                                    Excluir valores sin
+  Control físico de     valores no numéricos y no finitos;
+                                                                 interpretación física o
+        VV            umbral superior de plausibilidad de 75
+                                                                fuera del rango definido.
+                                        m/s.
+                                                               Preservar posibles estados
+ Conservación de        Conservación y cuantificación de
+                                                                 de calma y mantener
+       ceros               velocidades iguales a cero.
+                                                                      trazabilidad.
+   Organización        Asociación de cada estación a una         Permitir comparación
+     espacial                    zona analítica                         regional
+                      Estimación con presión y temperatura;
+ Construcción de                                                 Incorporar variabilidad
+                       respaldo estación-hora, zona-hora,
+        rho                                                     termodinámica del aire
+                          zona-mes y ρref = 1,10 kg/m³.
+                                                                 Traducir velocidad del
+ Construcción de      Evaluación de la ecuación (2.2) sobre
+                                                                  viento en magnitud
+        WPD              365.512 registros estación-hora.
+                                                                       energética
+
+
+
+
+Para estimar la densidad del aire se utilizaron los registros de presión atmosférica y
+temperatura disponibles en la base meteorológica, cuando existió coincidencia
+válida entre estación, zona, fecha-hora, presión y temperatura, la densidad se
+calculó mediante la relación de gas ideal seco:
+
+                                       P(t)
+                             ρ(t) =                                        (2.3)
+                                      R d T(t)
+

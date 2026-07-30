@@ -1,0 +1,6 @@
+﻿paso,criterio,n,porcentaje_respecto_inicial
+Registros iniciales VV dentro de 2017–2022,Variable_clean == VV,2218605,100
+Fecha válida,FechaYHora no NA,2218605,100
+Valor numérico no NA y finito,Valor no NA y finito,2218605,100
+Valor mayor o igual a cero,Valor >= 0,2218605,100
+Valor menor o igual a máximo plausible,Valor <= 75 m/s,2218605,100

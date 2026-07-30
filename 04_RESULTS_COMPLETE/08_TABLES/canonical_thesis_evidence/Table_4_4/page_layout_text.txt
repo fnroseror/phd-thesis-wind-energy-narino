@@ -1,0 +1,48 @@
+  106            ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS PARA
+                        LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES EÓLICAS
+
+
+La auditoría computacional detectó que varios límites superiores anuales
+reconstruidos alcanzan magnitudes extremas y dominan la escala visual. Esta
+inestabilidad se origina en la retransmisión de incertidumbre desde pronósticos
+trimestrales logarítmicos y no es compatible con una lectura territorial central
+robusta. Por ello, los PI90 multianuales se conservan como diagnóstico y anexo,
+pero no se utilizan como bandas principales ni para ordenar zonas en el cuerpo
+del capítulo.
+
+La narrativa principal se basa en el escenario central, auditado con la identidad
+WPD × horas. Esta decisión no elimina la incertidumbre: la hace visible como
+limitación metodológica. Los escenarios inferior y superior permanecen definidos
+por las ecuaciones (4.14)–(4.17), pero cualquier uso posterior debe recalibrar la
+distribución multianual o aplicar métodos probabilísticos específicamente
+diseñados para horizontes extendidos [28], [32], [34], [36]–[38].
+
+                  Tabla 4.4. Tratamiento definitivo de los escenarios energéticos.
+
+                                                                              Estado de
+  Escenario                   Base                 Uso en la tesis
+                                                                            incertidumbre
+                                                     Definición               Requiere
+                     Límite inferior del PI90
+      Inferior                                    metodológica y         recalibración para
+                           multianual
+                                                       anexo                   decisión
+                      Predicción trimestral
+                                                  Tablas, figuras y    Escenario principal, no
+      Central          central y auditoría
+                                                 lectura territorial           certeza
+                          WPD × horas
+                     Límite superior del PI90                           Presenta extremos de
+      Superior                                  Diagnóstico y anexo
+                           multianual                                  escala en varias zonas
+
+
+
+
+4.6     Resultados energéticos regionales
+
+Los resultados se presentan separando el periodo histórico con soporte
+observacional, el año mixto 2022, el escenario proyectado 2023–2028 y la síntesis
+completa. Todas las magnitudes 𝐸𝑓𝑟𝑒𝑒 y 𝐸𝑢𝑠𝑎𝑏𝑙𝑒 de esta versión se recalcularon
+mediante las ecuaciones (4.4) y (4.9). Este control corrige discrepancias de la
+

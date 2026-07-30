@@ -1,0 +1,20 @@
+STATIC REPRODUCIBILITY PACKAGE VALIDATION PASSED
+
+Canonical folders indexed: 6/6
+Canonical files indexed in folders 01-06: 408
+Canonical folder bytes indexed: 124373090
+Delivery ZIP hashes recorded: 6
+Original sessionInfo files consolidated: 5
+R package dependencies detected: 31
+Python files included in 07_REPRODUCIBILITY: 0
+Files above 100 MB in 07_REPRODUCIBILITY: 0
+Largest file: 01_manifests/repository_snapshot_manifest_01_06.csv
+Largest file size: 63585 bytes
+Global validator included: 02_validation/validate_repository.R
+Exact final success line: VALIDATION PASSED
+
+Pending gates:
+- root README and .gitignore package;
+- author confirmation of exact submitted thesis PDF;
+- institutional similarity-release decision;
+- clean GitHub clone validation.

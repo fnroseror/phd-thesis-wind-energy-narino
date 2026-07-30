@@ -1,0 +1,11 @@
+zone,rho_source,row_count,zone_share_pct
+1,station_hour,43754,42.0489
+1,zone_hour,6139,5.8998
+1,zone_month,54161,52.0504
+1,rho_ref,1,0.001
+2,rho_ref,98480,100.0
+3,rho_ref,123109,100.0
+4,station_hour,4301,10.7881
+4,zone_hour,1156,2.8996
+4,zone_month,7321,18.3631
+4,rho_ref,27090,67.9492

@@ -1,0 +1,15 @@
+﻿elemento,valor
+Ruta del archivo,D:/Academia/UNAL/DOCTORADO/Versión Final Tesis/Datos.txt
+Existe archivo,TRUE
+Tamaño aproximado MB,281.767
+Registros crudos leídos,8175686
+Registros dentro de 2017–2022,8175686
+Parser de fecha usado,dmy
+Periodo mínimo corregido,2017-01-01
+Periodo máximo corregido,2022-07-01 12:00:00
+Número de estaciones observado,16
+Número esperado de estaciones,16
+Número de zonas observado,4
+Número de variables observado,10
+Variable objetivo,VV
+Fecha de generación,2026-07-06 21:11:36.606105

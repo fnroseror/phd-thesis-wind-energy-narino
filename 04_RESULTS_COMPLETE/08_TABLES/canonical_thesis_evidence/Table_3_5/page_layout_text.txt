@@ -1,0 +1,31 @@
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                     77
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+salida final evaluada. El FNRR se reserva como descriptor de transición y se
+formaliza en el Capítulo 4.
+
+             Tabla 3.5. Síntesis comparativa de familias de modelos para WPD.
+
+                  Modelo físico-     Skill-RMSE
+  Familia                                         R² medio             Lectura
+                  operacional          medio
+                 Memoria lineal /
+  Clásicos                             0.274        0.15      Referencia interpretable.
+                   covariables
+                No linealidad por                                  Mejora no lineal
+  ML base                              0.389        0.523
+                     árboles                                         intermedia.
+                  No linealidad
+ ML Bayes                              0.389        0.526      Refina hiperparámetros.
+                   optimizada
+                                                                 Útil en corto plazo,
+  DL LSTM     Memoria secuencial       -3.872     -116.254
+                                                              sensible a zona/horizonte.
+ TDQ-PIESS    Estado-espacio/KFAS                             Salida final aprobada; no
+                                        0.74        0.705
+    final         + PI90 + I_TDQ                              implica dominio universal.
+

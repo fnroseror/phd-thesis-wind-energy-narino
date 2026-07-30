@@ -1,0 +1,12 @@
+extension,file_count
+.csv,7
+.docx,6
+.md,47
+.pdf,7
+.r,9
+.rds,2
+.tif,1
+.tiff,25
+.txt,5
+.xlsx,12
+[no_extension],8

@@ -1,0 +1,6 @@
+layer,count,unit,temporal_scope,canonical_note
+raw_meteorological_source,8175686,records,2017–2022; effective through 2022-07-01,Frozen long-format source
+valid_wind_speed_source,2218605,records,2017–2022; effective through 2022-07-01,"Finite, non-negative, <=75 m/s"
+analytical_station_hour_vv_wpd,365512,rows,2017-01-01 00:00 to 2022-07-01 00:00 America/Bogota,Station-hour analytical layer
+stations,16,stations,Nariño,IDEAM code is primary identifier
+analytical_zones,4,zones,Nariño,Operational comparative grouping

@@ -1,0 +1,45 @@
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                        75
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+                                Skill = 0
+                                                                              (3.21)
+ ⇒ el modelo presenta desempeño equivalente a persistencia
+
+ Skill < 0 ⇒ el modelo tiene menor desempeño que persistencia                 (3.22)
+
+El Skill-RMSE se adoptó como criterio rector porque cuantifica la reducción relativa
+del RMSE frente a una referencia física-operacional. El R² no se elimina, pero se
+interpreta como complemento: un modelo puede mejorar a persistencia y explicar
+poca varianza, o explicar varianza sin ofrecer una ganancia operacional suficiente
+[27], [29].
+
+   Tabla 3.4. Métricas deterministas utilizadas para evaluar el desempeño predictivo de
+                                            WPD.
+
+                 Expresión
+  Métrica                                          Función en la evaluación
+                  general
+ Residual     Ecuación (3.11)               Medir el error puntual de predicción
+   RMSE       Ecuación (3.12)         Penalizar errores grandes y eventos extremos
+    MAE       Ecuación (3.13)                 Medir error absoluto promedio
+    Bias      Ecuación (3.14)    Identificar sobreestimación o subestimación sistemática
+     𝑹𝟐       Ecuación (3.15)                 Evaluar variabilidad explicada
+    Skill-                            Medir ganancia frente a persistencia en error
+              Ecuación (3.18)
+   RMSE                                                  cuadrático
+ Skill-MAE    Ecuación (3.19)    Medir ganancia frente a persistencia en error absoluto
+
+
+
+En la interpretación de resultados, el Skill-RMSE se priorizó como criterio principal de
+ganancia      predictiva,    debido   a     que    la   WPD   puede    presentar       errores
+energéticamente relevantes asociados a valores extremos. No obstante, el Skill-
+MAE se conservó como métrica complementaria para evaluar el comportamiento
+del error típico. Esta distinción permite identificar casos en los que un modelo
+reduce errores extremos, pero no necesariamente mejora el error absoluto
+promedio frente a persistencia [27], [29], [31].
+

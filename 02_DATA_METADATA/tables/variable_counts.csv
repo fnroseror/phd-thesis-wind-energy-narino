@@ -1,0 +1,11 @@
+variable_code,variable_name,raw_record_count,station_count,zones
+VV,Wind speed,2218605,16,1;2;3;4
+DV,Wind direction,2210919,16,1;2;3;4
+PR,Precipitation,2203119,16,1;2;3;4
+TM,Mean temperature,422999,16,1;2;3;4
+TMIN,Minimum temperature,386699,15,1;2;3;4
+HR,Relative humidity,355756,16,1;2;3;4
+PA,Atmospheric pressure,308805,14,1;2;3;4
+NU,Cloudiness,35594,7,1;2;3;4
+FA,Atmospheric phenomenon,21164,9,1;2;3;4
+EV,Evaporation,12026,7,1;2;3;4

@@ -1,192 +1,83 @@
 # Contributions Summary
 
-## Overview
+## Central contribution
 
-This doctoral thesis develops a hybrid physical–statistical framework for the characterization, prediction, and energetic interpretation of wind dynamics in the department of Nariño, Colombia. Its contribution is not limited to predictive performance alone; it integrates physical interpretation, comparative modeling, explicit uncertainty quantification, and a structurally interpretable regional metric to support more coherent wind-energy assessment.
+The thesis establishes a reproducible physical-statistical workflow that connects meteorological observations, construction of Wind Power Density (WPD), comparative forecasting, uncertainty evaluation, regional irregularity, and conditioned energy scenarios for Nariño, Colombia.
 
----
+The contribution lies in the integration of these components under explicit traceability and limitations. It does not rely on presenting a single algorithm, zone, or descriptor as universal.
 
-## Main doctoral contributions
+## 1. Physical-statistical characterization
 
-### 1. Regional physical–statistical characterization of wind in Nariño
+The study organizes 16 IDEAM stations into four analytical zones and preserves the heterogeneity of coverage and physical regime. The characterization combines:
 
-The thesis establishes a structured physical characterization of wind dynamics in Nariño using approximately 8 million hourly meteorological records from 2017–2022, organized into four representative zones.
+- descriptive analysis of wind speed and WPD;
+- Weibull/Rayleigh comparison;
+- ACF and PACF;
+- FFT;
+- Morlet Continuous Wavelet Transform.
 
-This characterization is not restricted to descriptive statistics. It integrates:
+The resulting interpretation distinguishes regional distributional behavior, temporal memory, spectral organization, multiscale variability, and sensitivity to extremes.
 
-- distributional analysis,
-- temporal dependence structure,
-- spectral behavior,
-- and multiscale non-stationary dynamics.
+## 2. Traceable construction of WPD
 
-The resulting analysis demonstrates that wind in Nariño cannot be treated as a Gaussian stationary process, but rather as a nonlinear, multiscale atmospheric system with structural irregularity, persistence, and physically relevant intermittency.
+WPD is used as the main physical variable linking meteorological observations to energy interpretation. Air density is incorporated through a documented hierarchy of available pressure-temperature information and fallback sources. This preserves the physical identity of WPD while making the limitations of density coverage explicit.
 
----
+## 3. Comparative forecasting framework
 
-### 2. Formulation of a hybrid physical–statistical forecasting methodology
+The predictive workflow evaluates different model families under a common regional and horizon-based structure:
 
-A central contribution of the thesis is the construction of a coherent forecasting methodology that links physics, statistics, and predictive modeling under uncertainty.
+- persistence;
+- ARIMA and ARIMAX;
+- Random Forest and XGBoost;
+- Bayesian-tuned variants;
+- LSTM;
+- final TDQ-PIESS/KFAS integration.
 
-The proposed methodology integrates:
+The model families are not treated as interchangeable. They provide complementary linear, nonlinear, sequential, state-space, and probabilistic views of the WPD process.
 
-- physical variable construction,
-- structured preprocessing,
-- temporal validation,
-- deterministic evaluation,
-- probabilistic calibration,
-- and regional energetic interpretation.
+## 4. Benchmark-based and residual-aware evaluation
 
-This contribution is methodological in nature: the thesis does not present an isolated model, but a reproducible workflow that connects physical interpretation with predictive evaluation and energetic usability.
+Predictive value is assessed relative to persistence, with Skill-RMSE as a principal comparative metric and RMSE, MAE, and R-squared as complementary measures. The approved final pipeline reports positive Skill-RMSE for the twelve zone-horizon combinations, while the thesis explicitly retains the limitations revealed by residual autocorrelation and loss-function sensitivity.
 
----
+## 5. Probabilistic evaluation
 
-### 3. Comparative predictive evaluation under a unified experimental design
+The final pipeline includes nominal 90% prediction intervals (PI90), empirical coverage, interval-width analysis, and residual diagnostics. PI90 calibration is interpreted within the evaluated design and is not generalized beyond the validation protocol without further external assessment.
 
-The thesis implements and evaluates multiple predictive families under a homogeneous framework, including:
+## 6. Operational distinction between `I_TDQ` and FNRR
 
-- ARIMA and ARIMAX,
-- Random Forest,
-- XGBoost,
-- Bayesian-tuned variants,
-- LSTM-based architectures,
-- and the TDQ–PIESS hybrid formulation.
+The thesis separates two different objects:
 
-A key contribution here is the use of a consistent time-series validation strategy and a unified evaluation logic for all models, allowing a fair comparison between classical, machine learning, deep learning, and hybrid approaches.
+- `I_TDQ`: internal causal state information used in the hourly predictive pipeline;
+- FNRR: a regional descriptor of irregularity used in the aggregated energy interpretation.
 
-This provides not only performance comparison, but a structural interpretation of which types of models better align with the physical regimes observed in different zones of Nariño.
+This distinction prevents internal model state from being conflated with the regional structural descriptor.
 
----
+## 7. FNRR and structurally modulated energy indicator
 
-### 4. Prioritization of Skill Score against persistence as the main predictive criterion
+FNRR is formalized as a bounded, dimensionless regional descriptor based on robust WPD quantiles defined in the final thesis. It is used to modulate the annualized integrated-energy indicator:
 
-The thesis makes an explicit epistemic and methodological decision: predictive value is not judged only by goodness-of-fit metrics such as R², but by real improvement over a physically meaningful baseline.
+`E_usable = (1 - FNRR) * E_free`
 
-For this reason, the **Skill Score against persistence** is used as the principal criterion for model selection, while RMSE, MAE, and R² are treated as complementary metrics.
+The relation is an operational structural modulation. It does not estimate turbine output, grid-deliverable energy, thermodynamic free energy, or guaranteed generation.
 
-This contribution is important because it aligns model evaluation with operational relevance in atmospheric and energy forecasting, avoiding misleading overinterpretation of isolated statistical fit.
+## 8. Explicit transition between forecasting scales
 
----
+A specific doctoral contribution is the separation between:
 
-### 5. Explicit probabilistic uncertainty modeling through calibrated PI90 intervals
+- hourly forecasting at `h = 1, 12, 72`;
+- the quarterly stage beginning at 2022-Q3;
+- the central annual scenario for 2023-2028.
 
-Another major contribution is the incorporation of predictive uncertainty as a core part of the doctoral framework.
+This transition prevents the multiyear scenario from being misrepresented as a direct extrapolation of the hourly forecast.
 
-Rather than presenting only point forecasts, the thesis includes:
+## 9. Regional conditioned scenario
 
-- interval prediction at the 90% level (PI90),
-- empirical coverage analysis,
-- calibration procedures,
-- and interpretation of uncertainty stability across zones and horizons.
+The regional scenario supports comparative interpretation of magnitude and irregularity among zones. It is presented with physical and methodological limits and does not constitute site selection, turbine selection, wind-farm design, or techno-economic feasibility.
 
-This allows the framework to move from simple prediction toward **honest probabilistic forecasting**, where uncertainty is not treated as an accessory output but as a scientifically necessary property of the model.
+## 10. Reproducible and auditable architecture
 
----
+The thesis contributes an evidence architecture linking:
 
-### 6. Introduction and formalization of the FNRR index
+`submitted thesis <-> canonical outputs <-> code <-> figures and tables <-> appendices <-> manifests and validation`
 
-One of the original contributions of the thesis is the introduction of the **Factor de No Regularidad Regional (FNRR)**.
-
-FNRR is proposed as an adimensional index derived from robust quantiles of WPD to describe structural irregularity in the regional energetic regime. It is designed to be:
-
-- bounded,
-- robust,
-- scale-invariant,
-- and energetically interpretable.
-
-Its role is not merely descriptive. FNRR acts as a bridge between physical variability, predictive difficulty, and energetic interpretation, providing a structural descriptor of regional irregularity that goes beyond traditional variance-based measures.
-
----
-
-### 7. Distinction between free energy and structurally usable energy
-
-The thesis introduces a physically and operationally meaningful distinction between:
-
-- **free energy**,
-- and **usable energy**.
-
-This distinction is formalized through the relation:
-
-**E_usable = (1 − FNRR) E_free**
-
-This is a key doctoral contribution because it shows that physically available wind energy is not automatically equivalent to structurally usable energy. In this framework, irregularity is translated into an explicit energetic penalty, allowing the regime itself to modulate interpretation.
-
-This contribution gives the thesis a stronger physical and decision-oriented dimension, extending the analysis beyond raw potential estimation.
-
----
-
-### 8. Regional energy projection up to 2028 under uncertainty control
-
-The thesis extends the validated framework into an annual regional projection up to 2028.
-
-This is not presented as a naive extrapolation, but as the extension of a calibrated physical–statistical model that integrates:
-
-- WPD as central variable,
-- uncertainty propagation,
-- FNRR-based modulation,
-- and scenario-based interpretation.
-
-The result is a regional energetic outlook that preserves methodological consistency and explicitly distinguishes between central tendency, uncertainty, and structural firmness.
-
----
-
-### 9. Reproducible scientific architecture
-
-A major methodological contribution of the thesis is its reproducible design.
-
-The doctoral work is organized not only as a scientific argument in written form, but as a reproducible architecture composed of:
-
-- data structuring,
-- preprocessing logic,
-- physical variable generation,
-- predictive pipelines,
-- calibration procedures,
-- extended outputs,
-- and supporting annex material.
-
-This makes the work transferable to other regions with comparable meteorological information and strengthens the scientific traceability of the results.
-
----
-
-### 10. Integration of TDQ as a unifying scientific framework within the thesis scope
-
-Within the scope of this doctoral work, TDQ is presented as a hybrid physical–statistical framework that unifies:
-
-- physical characterization,
-- comparative forecasting,
-- uncertainty quantification,
-- and energetic interpretation.
-
-Its contribution in the thesis is not philosophical or speculative, but methodological and scientific: TDQ organizes the system under a coherent structure in which physical information, predictive logic, and regional irregularity are interpreted jointly.
-
-In this sense, the thesis establishes TDQ not merely as a label, but as an operational framework with explicit computational and energetic meaning.
-
----
-
-## Scientific significance
-
-Taken together, these contributions position the thesis as more than a conventional wind forecasting study.
-
-Its scientific significance lies in the integration of:
-
-- atmospheric physics,
-- statistical modeling,
-- benchmark-based predictive validation,
-- uncertainty calibration,
-- and regional energetic interpretation
-
-within a single coherent framework.
-
-The work therefore contributes simultaneously at four levels:
-
-- **physical**, by interpreting wind as a structured atmospheric system;
-- **statistical**, by introducing robust comparative and probabilistic evaluation;
-- **methodological**, by proposing a reproducible hybrid pipeline;
-- **applied**, by translating physical variability into usable energy assessment and regional projection.
-
----
-
-## Final statement
-
-The central contribution of this thesis is the demonstration that regional wind-energy forecasting in Nariño must be treated as a **physical–statistical problem under uncertainty**, not merely as a numerical regression task.
-
-By combining physical characterization, hybrid predictive modeling, calibrated uncertainty, and the formalization of FNRR, the thesis establishes a structured doctoral contribution that is reproducible, transferable, and scientifically defensible.
+The repository is the public implementation of this architecture. Complementary robustness analyses are preserved as supporting evidence but do not replace the approved figures and metrics reported in the dissertation.

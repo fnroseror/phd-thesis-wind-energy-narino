@@ -1,0 +1,19 @@
+﻿objeto,valor
+archivo_rds,E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/Repos/tesis-doctoral-prediccion-energia-eolica-narino/02_capitulo_2_caracterizacion/06_processed/cap2_B_dataset_principal_VV_WPD_QC_articulo1.rds
+md5_rds,b65accec1f4a32992c8a39cebc3b372b
+md5_csv,574e47a61bf9df865eca7a41d1f920b7
+filas,365512
+columnas,20
+zonas,4
+estaciones,16
+duplicados_estacion_hora,0
+fecha_min_utc,2017-01-01 05:00:00 UTC
+fecha_max_utc,2022-07-01 05:00:00 UTC
+fecha_min_local,2017-01-01 00:00:00 -05
+fecha_max_local,2022-07-01 00:00:00 -05
+VV_negativa,0
+WPD_negativa,0
+rho_no_positiva,0
+VV_NA,0
+WPD_NA,0
+rho_NA,0

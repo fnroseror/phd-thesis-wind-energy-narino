@@ -1,0 +1,17 @@
+station_code,station_name,municipality,zone,altitude_m_as_reported,latitude,longitude,thesis_table_alias,figure_map_alias,alias_status
+51035020,CCCP DL PACIFICO,Tumaco,1,1,1.81916667,-78.73,S01,S05,presentation_alias_mismatch
+51025090,GRANJA MIRA,Tumaco,1,16,1.55019444,-78.69558333,S02,S04,presentation_alias_mismatch
+51025080,ALTAQUER,Barbacoas,1,110,1.24833333,-78.0925,S03,S03,aligned
+51025060,BIOTOPO,Barbacoas,1,512,1.40863889,-78.28161111,S04,S02,presentation_alias_mismatch
+5102500128,RESERVA NATURAL LA PLANADA,Ricaurte (Nariño),1,1835,1.15783333,-77.9765,S05,S01,presentation_alias_mismatch
+52055220,EL PARAISO,Túquerres,2,3120,1.07061111,-77.63688889,S06,S08,presentation_alias_mismatch
+52055170,LA JOSEFINA,Contadero,2,2450,0.93030556,-77.49119444,S07,S07,aligned
+52055230,AEROPUERTO SAN LUIS,Aldana,2,2961,0.85708333,-77.67775,S08,S09,presentation_alias_mismatch
+52055160,VOLCAN CHILES,Cumbal,2,442,0.84658333,-77.92122222,S09,S06,presentation_alias_mismatch
+5205500123,LAS IGLESIAS,Pasto,3,2973,1.05480556,-77.27025,S10,S12,presentation_alias_mismatch
+52045080,UNIVERSIDAD DE NARINO,Pasto,3,2626,1.23,-77.28,S11,S11,aligned
+47015100,EL ENCANO,Pasto,3,2830,1.15994444,-77.16147222,S12,S10,presentation_alias_mismatch
+52055210,BOTANA,Pasto,3,2820,1.16,-77.27880556,S13,S14,presentation_alias_mismatch
+52055150,CERRO PARAMO,Puerres,3,3585,0.84311111,-77.38880556,S14,S13,presentation_alias_mismatch
+52035040,VIENTO LIBRE,Taminango,4,1400,1.62,-77.34,S15,S15,aligned
+52040050,APONTE,El Tablón,4,1800,1.39733333,-77.03052778,S16,S16,aligned

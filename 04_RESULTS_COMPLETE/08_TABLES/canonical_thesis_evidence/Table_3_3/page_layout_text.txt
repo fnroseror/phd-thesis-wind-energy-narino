@@ -1,0 +1,125 @@
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                                   69
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+                                      Patrones no                                  Requiere control
+                                                                 Evaluar
+                  Aprendizaje           lineales y                                         de
+                                                               ensambles
+  XGBoost         automático           corrección                                 hiperparámetros y
+                                                            aditivos con alto
+              por boosting           progresiva de                                       puede
+                                                            poder predictivo
+                                         errores                                      sobreajustar
+                                       Estructura                                    Depende del
+                                                            Evaluar el efecto
+                                     XGBoost con                                      espacio de
+                   XGBoost                                  de optimización
+ XGB_Bayes                             búsqueda                                     búsqueda y del
+                  optimizado                                sistemática en el
+                                     bayesiana de                                      criterio de
+                                                              desempeño
+                                    hiperparámetros                                  optimización
+                                                                                         Mayor
+                                                              Evaluar si una
+                                     Dependencia                                     complejidad,
+                  Aprendizaje                                 arquitectura
+                                       temporal y                                    sensibilidad a
+    LSTM           profundo                                recurrente mejora
+                                      memoria de                                         datos,
+                  secuencial                                la predicción de
+                                     largo alcance                                  arquitectura e
+                                                                  WPD
+                                                                                   hiperparámetros
+                                                                Articular                Debe
+                                       Predicción
+                  Integración                                 desempeño              interpretarse
+                                     consolidada,
+                    físico-                                   determinista,          como marco
+ TDQ-PIESS                           PI90, residuos y
+                  estadística                                incertidumbre y         operativo, no
+                                        soporte
+                     final                                  transición hacia        como modelo
+                                      energético
+                                                                  FNRR                  universal
+       Tabla 3.3. Lectura físico-operacional de las familias de modelos evaluadas.
+
+                              Modelo físico-
+                                                        Información física
+ Familia / modelo              estadístico                                        Papel en la tesis
+                                                         que aprovecha
+                              representado
+                                                                                  Referencia física
+                        Modelo inercial: el          Memoria inmediata
+                                                                                  mínima; ningún
+                        futuro se aproxima                de la WPD y
+   Persistencia                                                                      modelo se
+                       con el último estado               continuidad
+                                                                                considera útil si no lo
+                               observado.            temporal del viento.
+                                                                                       supera.
+ 70       ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS PARA
+                 LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES EÓLICAS
+
+
+                                               Persistencia
+                     Representación                                Referencia clásica
+                                               estadística,
+                   autorregresiva lineal                           interpretable para
+      ARIMA                                 autocorrelación y
+                     de la memoria                                series temporales de
+                                           estructura lineal de
+                        temporal.                                         WPD.
+                                                la señal.
+                                                                      Evalúa si los
+                                            Efecto de presión,
+                                                                        forzantes
+                       ARIMA con              temperatura,
+                                                                    meteorológicos
+      ARIMAX      covariables exógenas      humedad u otras
+                                                                       mejoran la
+                     meteorológicas.        variables sobre el
+                                                                  predicción frente a
+                                               flujo eólico.
+                                                                         ARIMA.
+                                             Regímenes no
+                      Ensamble no                                 Compara la utilidad
+                                                lineales e
+                     paramétrico de                                 de aprendizaje
+  Random Forest                            interacciones entre
+                      particiones de                              automático robusto
+                                                variables
+                        decisión.                                    frente a ruido.
+                                            meteorológicas.
+                      Ensamble por
+                                              No linealidad
+                        boosting y                                Identifica estructuras
+                                           amplificada por la
+    XGBoost /        optimización de                                   no lineales
+                                             relación cúbica
+   XGB_Bayes        errores residuales;                             explotables por
+                                            entre velocidad y
+                       Bayes ajusta                                 zona y horizonte.
+                                                  WPD.
+                    hiperparámetros.
+                      Arquitectura                                Evalúa si la memoria
+                                             Dependencias
+                     recurrente con                               profunda mejora los
+ LSTM_TDQ_BAYES                            temporales de corto
+                  memoria secuencial y                            modelos de árboles
+                                           y mediano alcance.
+                    ajuste bayesiano.                                  o clásicos.
+                    Integración físico-    WPD física, memoria    Salida integrada del
+                     estadística con            temporal,         pipeline aprobado y
+ TDQ-PIESS/KFAS   estado-espacio/KFAS,         calibración        puente conceptual
+                   PI90 e índice interno     probabilística e        hacia la etapa
+                          I_TDQ.                 I_TDQ.               energética.
+
+
+
+En los archivos computacionales, la etiqueta KFAS identifica la implementación de
+estado-espacio usada en la etapa final. No constituye un modelo físico autónomo:
+

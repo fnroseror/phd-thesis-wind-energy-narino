@@ -1,0 +1,14 @@
+path,stage,status,purpose
+00_config.R,infrastructure,canonical,portable environment configuration
+00_run_pipeline.R,infrastructure,canonical,conservative entry point
+01_preprocessing/01_build_station_hour_dataset.R,preprocessing,canonical_public_reimplementation,approved station-hour and WPD logic
+02_physical_characterization/00_run_cap2.R,chapter_2,orchestrator,runs final corrected blocks
+02_physical_characterization/01_cap2_data_zoning_qc.R,chapter_2,canonical_execution,final correction block A
+02_physical_characterization/02_cap2_distributional_analysis.R,chapter_2,canonical_execution,final correction block B
+02_physical_characterization/03_cap2_temporal_spectral_wavelet.R,chapter_2,canonical_execution,final correction block C
+03_classical_models/01_cap3_classical_models.R,chapter_3,approved_candidate,persistence/ARIMA/ARIMAX
+04_machine_learning/01_cap3_ml_models.R,chapter_3,approved_candidate,RF/XGB and tuned variants
+05_deep_learning/01_cap3_dl_pipeline.R,chapter_3,approved_candidate,LSTM family
+06_hybrid_tdq/01_cap3_tdq_piess_kfas.R,chapter_3,final_hourly_pipeline,state-space/KFAS + PI90 + I_TDQ
+06_hybrid_tdq/02_cap3_final_diagnostics.R,chapter_3,complementary_robustness,residual and comparative diagnostics
+07_energy_projection/01_cap4_quarterly_scenario_2022Q3_2028Q4.R,chapter_4,final_quarterly_stage,separate quarterly scenario and FNRR

@@ -1,0 +1,96 @@
+  104        ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS PARA
+                    LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES EÓLICAS
+
+
+4.4   Energía integrada y modulación estructural
+
+La energía integrada 𝐸𝑓𝑟𝑒𝑒 cuantifica magnitud. El FNRR resume irregularidad
+relativa. Para combinarlas se define el indicador de energía estructuralmente
+modulada 𝐸𝑢𝑠𝑎𝑏𝑙𝑒 como el producto entre energía integrada y coherencia:
+
+        𝐸(𝑢𝑠𝑎𝑏𝑙𝑒,𝑧) (𝑇) = 𝐶𝑧 (𝑇)𝐸𝑓𝑟𝑒𝑒,𝑧 (𝑇) = [1 − 𝐹𝑁𝑅𝑅𝑧 (𝑇)]𝐸𝑓𝑟𝑒𝑒,𝑧 (𝑇)   (4.10)
+
+
+
+
+        𝛥𝐸𝑠𝑡𝑟𝑢𝑐𝑡,𝑧 (𝑇) = 𝐸𝑓𝑟𝑒𝑒,𝑧 (𝑇) − 𝐸𝑢𝑠𝑎𝑏𝑙𝑒,𝑧 (𝑇) = 𝐹𝑁𝑅𝑅𝑧 𝐸𝑓𝑟𝑒𝑒,𝑧 (𝑇)   (4.11)
+
+La magnitud 𝛥𝐸𝑠𝑡𝑟𝑢𝑐𝑡 no representa una pérdida aerodinámica, mecánica,
+eléctrica o de red. Es una penalización interpretativa dentro del marco de la tesis.
+Su propósito es impedir que la comparación territorial dependa exclusivamente
+de la magnitud media de WPD.
+
+                       0 ≤ 𝐸(𝑢𝑠𝑎𝑏𝑙𝑒,𝑧) (𝑇) ≤ 𝐸(𝑓𝑟𝑒𝑒,𝑧) (𝑇)                 (4.12)
+
+
+
+
+                       𝜕𝐸𝑢𝑠𝑎𝑏𝑙𝑒,𝑧 (𝑇)
+                                      = −𝐸𝑓𝑟𝑒𝑒,𝑧 (𝑇) ≤ 0                   (4.13)
+                       𝜕𝐹𝑁𝑅𝑅𝑧 (𝑇)
+
+Las ecuaciones (4.11) y (4.12) garantizan que la modulación no crea energía y
+que, para una energía integrada fija, el indicador disminuye de forma monótona
+al aumentar la irregularidad. Sin embargo, el orden territorial final depende de
+ambas variables. Una zona con FNRR alto puede conservar el mayor 𝐸𝑢𝑠𝑎𝑏𝑙𝑒 si su
+energía integrada es suficientemente elevada; por eso no existe una regla general
+según la cual mayor WPD deba implicar menor energía modulada.
+
+
+
+
+               Tabla 4.3. Niveles de interpretación energética del Capítulo 4.
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                                105
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+      Magnitud          Expresión                Representa                       No representa
+                                               Potencia media
+                                                                                Generación de un
+ 𝑾𝑷𝑫 𝒂𝒏𝒖𝒂𝒍 𝑻𝑫𝑸          ̅̅̅̅̅̅̅̅
+                        WPDz (T)            agregada por unidad
+                                                                                      equipo
+                                                   de área
+                       ̅̅̅̅̅̅̅̅
+                       WPDz (T)HT          Indicador anualizado de                 Energía libre
+       𝑬𝒇𝒓𝒆𝒆
+                            1000              energía integrada                   termodinámica
+                                                Complemento
+                                                                                 Probabilidad de
+         𝑪              1 − FNRR               operacional de
+                                                                                  funcionamiento
+                                                 irregularidad
+                                           Penalización estructural
+      𝜟𝑬𝒔𝒕𝒓𝒖𝒄𝒕         FNRR ∙ Efree                                            Pérdida técnica real
+                                                del indicador
+                                            Indicador energético               Energía garantizada o
+      𝑬𝒖𝒔𝒂𝒃𝒍𝒆            C ∙ Efree
+                                                  modulado                          factibilidad
+
+
+4.5    Escenarios e incertidumbre multianual
+
+En el Capítulo 3, los PI90 fueron calibrados y evaluados dentro de ventanas de
+prueba horarias. El módulo multianual del Capítulo 4 genera también límites
+inferiores y superiores al proyectar las series trimestrales en escala logarítmica. En
+términos generales:
+
+                   𝑃𝐼90𝑧 (𝑡) = [𝑊𝑃𝐷(𝑧,𝑙𝑜) (𝑡), 𝑊𝑃𝐷𝑧,ℎ𝑖 (𝑡)]                           (4.14)
+
+                                        ∑𝑡∈𝑇 𝑊𝑃𝐷𝑧,𝑙𝑜 (𝑡)𝐻𝑡
+                     𝐸𝑓𝑟𝑒𝑒,𝑧,𝑙𝑜 (𝑇) =                                                 (4.15)
+                                              1000
+
+                                        ∑𝑡∈𝑇 𝑊𝑃𝐷𝑧,𝑐 (𝑡)𝐻𝑡
+                      𝐸𝑓𝑟𝑒𝑒,𝑧,𝑐 (𝑇) =                                                 (4.16)
+                                              1000
+
+                                        ∑𝑡∈𝑇 𝑊𝑃𝐷𝑧,ℎ𝑖 (𝑡)𝐻𝑡
+                     𝐸𝑓𝑟𝑒𝑒,𝑧,ℎ𝑖 (𝑇) =                                                 (4.17)
+                                              1000
+
+        𝐸𝑢𝑠𝑎𝑏𝑙𝑒,𝑧,𝑠 (𝑇) = [1 − 𝐹𝑁𝑅𝑅𝑧 (𝑇)]𝐸𝑓𝑟𝑒𝑒,𝑧,𝑠 (𝑇),      𝑠 ∈ {𝑙𝑜, 𝑐, ℎ𝑖}          (4.18)
+

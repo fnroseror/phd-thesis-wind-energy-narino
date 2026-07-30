@@ -1,0 +1,46 @@
+  64         ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS PARA
+                    LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES EÓLICAS
+
+
+La comparación entre modelos se realizó bajo condiciones homogéneas por zona
+y horizonte. En consecuencia, cada modelo fue evaluado frente al mismo
+conjunto de prueba dentro de una combinación específica (𝑧, ℎ). Esta estrategia
+permite comparar el desempeño de modelos con distinta naturaleza matemática
+sin alterar la base de evaluación. Así, los resultados no se interpretan como una
+competencia abstracta entre algoritmos, sino como una evaluación controlada
+de su capacidad para anticipar la WPD bajo condiciones regionales y temporales
+específicas [27], [29], [31].
+
+          Tabla 3.1. Diseño experimental general del modelado predictivo de WPD.
+
+                                Definición
+        Elemento                                         Función en el capítulo
+                           metodológica
+  Unidad espacial         Zona z ∈ {1,2,3,4}      Capturar heterogeneidad regional
+                                                   Representar potencial energético
+  Variable objetivo        yz (t) = WPDz (t)
+                                                              instantáneo
+                                                   Evaluar predicción corta, media y
+       Horizontes            h = 1,12,72
+                                                               extendida
+       Entrada del                              Integrar memoria temporal y covariables
+                                   Φz (t)
+        modelo                                                 disponibles
+ Salida del modelo              ŷz,m (t + h)              Estimar WPD futura
+                          Entrenamiento-
+                         validación-prueba
+        Partición                               Organizar el flujo de ajuste y evaluación
+                        temporal (protocolo
+                            declarado)
+                           Ventana final          Describir el desempeño del pipeline
+       Evaluación
+                           denominada           aprobado; su independencia se delimita
+        principal
+                                 prueba           mediante auditoría complementaria
+ Comparación base           Persistencia        Determinar ganancia predictiva efectiva
+       Evaluación         PI90 y cobertura
+                                                 Verificar calibración de incertidumbre
+    probabilística              empírica
+       Diagnóstico      Residuos, Ljung-Box,      Evaluar estructura de error y robustez
+  complementario          Diebold-Mariano                      estadística
+

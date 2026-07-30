@@ -1,32 +1,29 @@
 # 01_THESIS
 
-This folder contains the central thesis document and the contextual files that define the scientific scope, contribution, structure, and citation information of the doctoral work.
+This folder is the formal entry layer of the doctoral repository associated with:
+
+**Estudio de la velocidad de viento e inclusión de parámetros físicos para la predicción de energía eléctrica producida por fuentes eólicas**  
+**Author:** Favio Nicolás Rosero Rodríguez  
+**Program:** Doctorado en Ciencias - Física  
+**Institution:** Universidad Nacional de Colombia, Sede Manizales  
+**Year:** 2026
 
 ## Contents
 
-- `Tesis Doctoral - 1053833697.pdf`  
-  Main doctoral thesis document.
+- `01_repository_scope.md` - Scope, purpose, limits, and interpretation rules.
+- `02_contributions_summary.md` - Frozen summary of the doctoral contributions.
+- `03_repository_map.md` - Alignment between the thesis, repository folders, canonical results, appendices, and reproducibility support.
+- `04_citation.md` - Citation guidance for the thesis and repository.
+- `05_version_control_and_hashes.md` - Authority hierarchy, canonical SHA-256 record, and superseded-version control.
+- `06_thesis_pdf_publication_status.md` - Temporary publication rule for the full thesis PDF.
+- `canonical_thesis_reference.txt` - External authority reference for the exact corrected PDF held outside the public repository until institutional similarity processing is complete. It is not part of the repository-file manifest while the PDF is withheld.
 
-- `01_repository_scope.md`  
-  Defines the purpose, scope, limits, and intended use of the repository as scientific support for the thesis.
+## Scientific authority
 
-- `02_contributions_summary.md`  
-  Summarizes the main doctoral contributions, including the physical–statistical characterization of wind, predictive modeling, uncertainty analysis, FNRR, and regional energy projection.
+The repository documents the thesis as submitted after corrections. It does not create a new scientific version of the dissertation. The scientific content is frozen: repository changes are limited to organization, traceability, reproducibility, file validation, and public presentation.
 
-- `03_repository_map.md`  
-  Maps the thesis chapters to the corresponding folders, code, results, appendices, products, and reproducibility material.
+The thesis PDF is the academic authority. Canonical repository outputs must be consistent with that PDF and with the final response letters sent to the three jurors.
 
-- `04_citation.md`  
-  Provides recommended citation formats for both the thesis and the repository.
+## Temporary PDF restriction
 
-## Role of this folder
-
-This folder is the conceptual entry point of the repository. It allows reviewers to understand:
-
-- what the thesis is about,
-- what the repository supports,
-- how the computational evidence is organized,
-- how the doctoral contribution is framed,
-- and how the material should be cited.
-
-The thesis PDF remains the main academic document. The repository acts as its structured computational, methodological, and reproducibility support environment.
+The full thesis PDF is intentionally not included in this public package while institutional similarity analysis may still be active. This prevents premature indexing and possible self-matching. Its checksum is preserved so that the exact file can be verified and added later without ambiguity.

@@ -1,0 +1,17 @@
+STATIC PRODUCTS PRESERVATION VALIDATION PASSED
+
+Original source files: 129
+Original source files copied exactly: 129
+Original source files omitted: 0
+Original source files anonymized: 0
+Original source files renamed: 0
+Original source files modified: 0
+Additional documentary/index files: 7
+Largest file: 01_articles/article_01_energy_reports/02_results/map_boundaries/gadm/gadm41_COL_2_pk.rds
+Largest file size: 29916893 bytes
+Files above 100 MB: 0
+Python files added: 0
+R/RStudio validator: validate_products.R
+
+Important:
+The package intentionally contains complete, unredacted evidence.

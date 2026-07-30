@@ -1,0 +1,14 @@
+annex,repository_path,role
+A,../02_DATA_METADATA/,Metadatos canónicos y política de acceso
+A,../04_RESULTS_COMPLETE/01_physical_characterization/,Resultados físicos legibles por máquina
+B,../04_RESULTS_COMPLETE/07_FIGURES/verified_source_exports/chapter_2/,Figuras fuente verificadas del Capítulo 2
+C,../03_CODE/03_classical_models/,Modelos clásicos
+C,../03_CODE/04_machine_learning/,Modelos ML
+C,../03_CODE/05_deep_learning/,Modelos LSTM
+C,../03_CODE/06_hybrid_tdq/,Integración final TDQ–PIESS/KFAS
+D,../04_RESULTS_COMPLETE/02_model_comparison/,Resultados aprobados del Capítulo 3
+E,../04_RESULTS_COMPLETE/06_extended_results/,Resultados complementarios separados
+F,../03_CODE/06_hybrid_tdq/,Uso de I_TDQ en pipeline horario
+F,../03_CODE/07_energy_projection/,Implementación de FNRR trimestral
+G,../04_RESULTS_COMPLETE/05_energy_projection/,Resultados canónicos Capítulo 4
+H,../07_REPRODUCIBILITY/,"Validación global, manifiestos y entorno"

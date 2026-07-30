@@ -1,0 +1,8 @@
+Folders: 7/7
+Figures: 31/31
+Tables: 25/25
+Stations: 16
+Zones: 4
+Products: 19/19
+Preserved product evidence: 129/129
+VALIDATION PASSED

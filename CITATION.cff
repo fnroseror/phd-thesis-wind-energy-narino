@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Si utiliza este repositorio, cite la tesis doctoral y el repositorio."
+title: "Repositorio doctoral: pronóstico físico-estadístico de energía eólica en Nariño, Colombia"
+type: software
+authors:
+  - family-names: "Rosero Rodríguez"
+    given-names: "Favio Nicolás"
+version: "1.0.0-rc1"
+date-released: 2026-07-30
+repository-code: "https://github.com/fnroseror/phd-thesis-wind-energy-narino"
+url: "https://github.com/fnroseror/phd-thesis-wind-energy-narino"
+abstract: >-
+  Repositorio reproducible asociado con la tesis doctoral Estudio de la
+  velocidad de viento e inclusión de parámetros físicos para la predicción
+  de energía eléctrica producida por fuentes eólicas. Integra metadatos,
+  código R, resultados canónicos, figuras, tablas, anexos, productos,
+  evidencias y validación SHA-256.
+keywords:
+  - "wind power density"
+  - "wind energy"
+  - "physical-statistical modeling"
+  - "forecasting"
+  - "prediction intervals"
+  - "FNRR"
+  - "Nariño"
+  - "R"
+  - "reproducibility"

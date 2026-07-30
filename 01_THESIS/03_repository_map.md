@@ -1,118 +1,158 @@
 # Repository Map and Thesis Alignment
 
-This document describes how the doctoral thesis is structurally connected to the repository. It provides a clear mapping between the conceptual components of the thesis and the corresponding computational, data, and reproducibility elements.
+## Authority hierarchy
 
-## 1. Thesis Document
+Repository interpretation follows this order:
 
-- Main file:
-  - `01_THESIS/Tesis Doctoral - 1053833697.pdf`
+1. Exact corrected thesis PDF submitted after juror review.
+2. Three final response letters actually sent to the jurors.
+3. Corrected repository with the accepted observations applied.
+4. Observation matrix as historical control.
 
-This document contains the full theoretical, methodological, and analytical development of the research.
+Intermediate drafts and similarly named files are not sources of authority.
 
----
+## Repository structure
 
-## 2. Data and Metadata
+```text
+phd-thesis-wind-energy-narino/
+├── 01_THESIS/
+├── 02_DATA_METADATA/
+├── 03_CODE/
+├── 04_RESULTS_COMPLETE/
+├── 05_APPENDICES_SUPPORT/
+├── 06_PRODUCTS/
+├── 07_REPRODUCIBILITY/
+├── .gitignore
+└── README.md
+```
 
-- Folder: `02_DATA_METADATA/`
+The top-level structure is retained. Internal changes are limited to those required to separate canonical evidence, complementary analyses, superseded objects, and reproducibility controls.
 
-Contains:
-- Dataset description
-- Variable definitions
-- Station information
-- Zoning strategy
-- Data availability and limitations
+## 01_THESIS
 
-Purpose:
-To provide traceability and understanding of the data used in the thesis.
+Role: formal entry point, scientific scope, contribution summary, version control, checksum record, citation, and temporary PDF-publication status.
 
----
+The public package does not include the full thesis PDF until institutional similarity analysis is confirmed as complete. The exact PDF checksum is retained for future verification.
 
-## 3. Computational Implementation
+## 02_DATA_METADATA
 
-- Folder: `03_CODE/`
+Role: observational foundation and data contract.
 
-Contains:
-- Preprocessing scripts
-- Physical–statistical analysis
-- Classical forecasting models
-- Machine learning models
-- Deep learning models
-- Utility functions
+Required contents include:
 
-Purpose:
-To document the full computational workflow used to generate results.
+- IDEAM source and access conditions;
+- 8,175,686 raw records;
+- 2,218,605 valid wind-speed records;
+- 365,512 analytical station-hour records;
+- 16-station inventory and four-zone mapping;
+- effective availability through 1 July 2022;
+- variable dictionary;
+- missingness, zero-value, plausibility, and air-density-source controls;
+- explicit statement that the public repository may not redistribute the complete raw database.
 
----
+Primary thesis alignment: Chapter 2 and Annex A.
 
-## 4. Results and Scientific Evidence
+## 03_CODE
 
-- Folder: `04_RESULTS_COMPLETE/`
+Role: executable methodology organized by scientific stage.
 
-Contains:
-- `FIGURES/`: All figures generated in the thesis (by chapter)
-- `TABLES/`: All tables generated in the thesis (by chapter)
+Expected retained structure:
 
-Purpose:
-To centralize all graphical and tabular evidence used in the doctoral analysis.
+```text
+03_CODE/
+├── 01_preprocessing/
+├── 02_physical_characterization/
+├── 03_classical_models/
+├── 04_machine_learning/
+├── 05_deep_learning/
+├── 06_hybrid_tdq/
+├── 07_energy_projection/
+└── 08_utils/
+```
 
----
+The code layer must distinguish:
 
-## 5. Appendices and Technical Support
+- historical approved pipelines;
+- final canonical integration;
+- complementary strict-chronology robustness analyses;
+- scripts used only for figures, audits, or packaging.
 
-- Folder: `05_APPENDICES_SUPPORT/`
+Primary thesis alignment: Chapters 2-4 and Annexes B-H.
 
-Contains:
-- Physical and mathematical formulation of the model
-- Formal definition and derivation of FNRR
-- Extended methodological explanations
-- Additional supporting material
+## 04_RESULTS_COMPLETE
 
-Purpose:
-To provide rigorous technical support that complements the thesis without overloading the main document.
+Role: canonical evidence layer.
 
----
+It must contain:
 
-## 6. Derived Academic Products
+- canonical numerical outputs;
+- evidence for 31 scientific figures;
+- evidence for 25 scientific tables;
+- predictive outputs for twelve zone-horizon combinations;
+- PI90 and residual evidence;
+- FNRR and quarterly/annual scenario outputs;
+- explicit separation of complementary and superseded results.
 
-- Folder: `06_PRODUCTS/`
+Recommended internal separation:
 
-Contains:
-- Articles (in preparation or submission)
-- Patent documentation
-- Book material
-- Presentations
-- Directed theses and academic extensions
+```text
+04_RESULTS_COMPLETE/
+├── 01_physical_characterization/
+├── 02_model_comparison/
+├── 03_pi90_uncertainty/
+├── 04_fnrr_outputs/
+├── 05_energy_projection/
+├── 06_extended_results/
+├── 07_FIGURES/
+├── 08_TABLES/
+├── 09_CANONICAL_MANIFEST/
+└── 99_SUPERSEDED_ARCHIVE/   # only when retention is justified
+```
 
-Purpose:
-To organize the scientific and academic outputs derived from the doctoral work.
+The superseded archive must never be referenced as the source of final thesis figures or metrics.
 
----
+## 05_APPENDICES_SUPPORT
 
-## 7. Reproducibility
+Role: digital annex layer corresponding to the final thesis map.
 
-- Folder: `07_REPRODUCIBILITY/`
+Expected alignment:
 
-Contains:
-- Execution pipeline
-- Software environment information
-- Session configuration
-- Reproducibility instructions
+- Annex A - Data traceability and quality control.
+- Annex B - Extended physical-statistical characterization.
+- Annex C - Configurations and approved predictive-pipeline results.
+- Annex D - Chapter 3 freezing and reproducibility.
+- Annex E - Complementary robustness analysis; does not replace body results.
+- Annex F - Distinction between `I_TDQ` and FNRR.
+- Annex G - Canonical Chapter 4 package, identities, hashes, and superseded-file registry.
+- Annex H - Computational reproducibility, scripts, software environment, manifests, and repository structure.
 
-Purpose:
-To ensure that results can be reproduced and verified independently.
+## 06_PRODUCTS
 
----
+Role: derivative-product layer, not core doctoral evidence.
 
-## Final Note
+Articles, software/dashboard work, presentations, directed theses, book material, patent-oriented notes, and professorial-project evidence must be labeled by verifiable status. Product materials must not be used to overwrite thesis-level statements or canonical outputs.
 
-This repository is designed as a structured extension of the doctoral thesis. Each folder corresponds to a specific layer of the research:
+## 07_REPRODUCIBILITY
 
-- Conceptual (Thesis)
-- Data (Metadata)
-- Computational (Code)
-- Evidence (Results)
-- Support (Appendices)
-- Projection (Products)
-- Validation (Reproducibility)
+Role: validation and execution-control layer.
 
-This organization reduces informational entropy and allows external evaluators to navigate the work with clarity, coherence, and scientific rigor.
+Required contents include:
+
+- data contract;
+- execution order;
+- environment and software versions;
+- session information;
+- canonical manifest;
+- file hashes;
+- link and path checks;
+- final validator;
+- validation log ending in `VALIDATION PASSED`;
+- clean-download validation instructions.
+
+## Closure relation
+
+The repository is closed only when the following relation is verified:
+
+`submitted thesis <-> canonical results <-> code <-> figures and tables <-> README`
+
+The final test must be performed on a clean download or clone of the public GitHub repository.

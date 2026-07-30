@@ -1,0 +1,20 @@
+product_id,type,title,venue_or_institution,identifier,documented_status,status_date_or_period,relationship
+A01,Scientific article,"Physical–statistical characterization of wind power density in complex Andean terrain: A multi-station study in Nariño, Colombia",Energy Reports,EGYR-D-26-02665,With Editor,2026-06-27,Direct thesis derivative
+A02,Scientific article,A Hybrid Physical–Statistical Framework for Regional Wind Power Forecasting with Calibrated Uncertainty,Energy Informatics,,Advanced preparation; writing closure,2026,Direct thesis derivative
+A03,Scientific article,Probabilistic Projection of Wind Power Density under Structural Variability: A Case Study in Southern Colombia,,,In preparation,2026,Direct thesis derivative
+B01,Published article,Photocatalytic reduction of Cr(VI) in wastewater using TiO₂ coatings synthesized by plasma electrolytic oxidation (PEO): Influence of duty cycle and EDTA addition,Next Materials,10.1016/j.nxmate.2026.101727,Published,2026,Doctoral trajectory
+B02,Preprint,"Massive Synthesis of ZnO Nanowires, Assisted by Microwaves",SSRN,10.2139/ssrn.4247615,Published preprint,2022,Doctoral trajectory
+C01,Technology concept,Sistema adaptativo de conversión eólica basado en parametrización estructural regional,,,Conceptual development; not filed,2026,Technology/IP
+C02,Dashboard,Power BI meteorological dashboard,Microsoft Power BI,,Available and undergoing improvement,2026,Applied product
+C03,Scientific repository,phd-thesis-wind-energy-narino,GitHub,fnroseror/phd-thesis-wind-energy-narino,Final consolidation,2026,Reproducibility
+C04,Book project,"Proyección eólica del departamento de Nariño: fundamentos físicos, modelado predictivo y optimización energética",,,In preparation,2026,Editorial projection
+D01,Conference presentation,Estudio de la velocidad de viento e inclusión de parámetros físicos para la predicción de energía eléctrica producida por fuentes eólicas,Encuentro Internacional de Ciencia para la Paz y el Desarrollo,,Presented,2022,Social appropriation
+D02,Conference presentation,Inteligencia artificial aplicada al estudio del fenómeno físico de la velocidad del viento en el departamento de Nariño,"I Congreso Internacional de Ciencia, Innovación y Cultura",,Presented,2022,Social appropriation
+D03,Conference presentation,Estudio de la velocidad de viento e inclusión de parámetros físicos para la predicción de energía eléctrica producida por fuentes eólicas,VII Congreso Nacional de Ingeniería Física / II APEIC,,Presented,2023,Social appropriation
+D04,Conference presentation,Estudio de la velocidad de viento e inclusión de parámetros físicos para la predicción de energía eléctrica producida por fuentes eólicas,II Congreso Internacional de Ciencia e Ingeniería,,Presented,2023,Social appropriation
+E01,Directed degree project,EOSOL: Aplicación que impulsa la implementación de energía solar y eólica en el departamento de Nariño,Universidad Mariana,,Completed,2026,Human-resource training
+E02,Directed degree project,Ecosistema científico de Nariño: exploración y categorización de estudios,Universidad Mariana,,In closure,2026,Human-resource training
+E03,Directed degree project,Plataforma inteligente de soporte a decisiones para la evaluación del potencial eólico regional mediante modelos predictivos meteorológicos y sistemas de analítica avanzada,Universidad Mariana,,In execution,2026,Human-resource training
+F01,Institutional project,Estudio de la velocidad de viento e inclusión de parámetros físicos para la predicción de energía eléctrica producida por fuentes eólicas en el departamento de Nariño,Universidad Mariana,,In closure,2026,Associated institutional project
+G01,Linked publication without doctoral-author authorship,Modelamiento de un ciclo Rankine ideal con recalentamiento en E.E.S.,Scientia et Technica,10.22517/23447214.25773,Published,2025,Linked product; no authorship attributed
+G02,Scientific committee / peer review,Aportes de la investigación y aplicación en ciencia e ingeniería,Editorial Unimar,10.31948/editorialunimar.316,Participation documented,2025,Linked participation

@@ -1,0 +1,42 @@
+ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS                      89
+PARA LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES
+EÓLICAS
+
+
+
+
+   Tabla 3.10. Resumen del diagnóstico residual del modelo final por zona y horizonte.
+
+ Zona    Horizonte    MAE residual      RMSE residual     Asimetría    Curtosis exceso
+   1       Corto          8.768            56.214          65.487          5251.42
+   1      Medio           7.719            55.741          72.761          6022.76
+   1       Largo          6.283            55.618          75.213           6281.2
+   2       Corto          0.852             1.504           1.215           14.537
+   2      Medio           0.577             1.019           1.379           14.912
+   2       Largo          0.647             1.151           1.425           14.894
+   3       Corto          2.056              3.03           1.913           34.452
+   3      Medio           0.521              0.98           2.447           46.769
+   3       Largo          0.542             1.027           2.405           45.49
+   4       Corto          8.363            15.816           1.218           20.012
+   4      Medio            0.6              1.315           1.853           26.541
+   4       Largo          0.594             1.306           1.834           26.343
+
+
+
+
+Los resultados residuales confirman que el comportamiento del error no es
+homogéneo entre zonas. La Zona 1 presenta una asimetría residual muy superior a
+la observada en las demás zonas, con valores de asimetría entre 65.487 y 75.213, y
+curtosis en exceso superior a 5000 en los tres horizontes. Este resultado indica que
+la distribución residual está fuertemente afectada por eventos extremos o
+episodios energéticos altamente concentrados. Por tanto, aunque el modelo
+presenta una mejora clara frente a persistencia en términos de Skill-RMSE, la Zona
+1 debe interpretarse como una región con alta irregularidad residual y baja
+capacidad explicativa global.
+
+En contraste, la Zona 2 presenta el comportamiento residual más estable. Sus
+valores de asimetría se mantienen entre 1.215 y 1.425, con errores residuales bajos
+y consistentes entre horizontes. Esta evidencia es coherente con los altos valores
+de 𝑅 2, el bajo RMSE y los elevados Skill-RMSE reportados en la sección anterior. La
+Zona 3 presenta un comportamiento intermedio: el horizonte corto mantiene una
+

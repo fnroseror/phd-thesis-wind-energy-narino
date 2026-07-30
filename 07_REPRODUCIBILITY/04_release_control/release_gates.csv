@@ -1,0 +1,12 @@
+gate_id,gate,requirement,current_status
+G01,All folders 01-07 present,Required,Pending until copied to local Git
+G02,Root README and .gitignore present,Required,Prepared in 00_ROOT_final.zip; pending local copy
+G03,31 figures and 25 tables validated,Required,Prepared
+G04,16 stations and four zones validated,Required,Prepared
+G05,129/129 original product evidence files preserved,Required,Prepared
+G06,No executable Python validator in code/reproducibility scope,Required,Prepared
+G07,No single file above 100 MB,Required,Prepared
+G08,Corrected thesis PDF identity confirmed,Required before PDF release,Pending author confirmation
+G09,Institutional similarity review complete,Required before PDF release,Pending confirmation
+G10,Power BI link manually checked,Recommended before release,Pending manual check
+G11,Clean GitHub clone passes exact global validation,Required for closure,Pending publication

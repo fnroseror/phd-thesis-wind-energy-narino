@@ -1,0 +1,3 @@
+ROOT=E:/Academia/UNAL/DOCTORADO/Versión Final Tesis
+CANONICAL_DIR=E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/Correcciones/Cap4_Paquete_Canonico_Cierre_20260723_081516
+OUT_DIR=E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/Correcciones/Cap4_Paquete_Canonico_Editorial_20260723_083035

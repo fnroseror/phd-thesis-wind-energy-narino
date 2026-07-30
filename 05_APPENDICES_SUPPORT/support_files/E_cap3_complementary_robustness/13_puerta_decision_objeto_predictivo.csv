@@ -1,0 +1,8 @@
+﻿control,aprobado,evidencia
+dataset_canonico_certificado,TRUE,365512 filas; 16 estaciones; 4 zonas; WPD no negativa
+universo_estaciones_identico_preprueba_prueba,FALSE,2 de 4 zonas conservan universo idéntico
+sin_estacion_ausente_dominante_preprueba,FALSE,Z1:51025060=99.76%; Z2:52055160=67.82%
+al_menos_una_estacion_elegible_por_zona,TRUE,4 de 4 zonas con estaciones elegibles
+persistencia_t_h_igual_WPD_t,TRUE,La persistencia usa WPD del origen t para target t+h
+muestras_sin_imputacion,TRUE,Se requieren observaciones exactas en origen y target; no hay relleno
+recomendacion_modelado_estacion_pareada,TRUE,Estaciones elegibles totales: 10

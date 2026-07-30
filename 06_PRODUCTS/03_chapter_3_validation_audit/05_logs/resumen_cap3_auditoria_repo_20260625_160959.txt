@@ -1,0 +1,45 @@
+CAPÍTULO 3 — AUDITORÍA INICIAL DEL REPOSITORIO
+============================================================
+Repositorio: E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/phd-thesis-wind-energy-narino
+Salida: E:/Academia/UNAL/DOCTORADO/Versión Final Tesis/phd-thesis-wind-energy-narino/06_PRODUCTS/03_chapter_3_validation_audit
+
+Archivos inventariados: 110
+Scripts inspeccionados: 25
+Archivos de datos candidatos: 84
+Estructuras de datos detectadas: 79
+Candidatos prioritarios: 57
+
+Rutas recomendadas:
+             categoria
+ predicciones_obs_pred
+      metricas_modelos
+       intervalos_PI90
+                  FNRR
+      scripts_modelado
+                                                                                                  archivo_recomendado_1
+                                                                                                                   <NA>
+                                                     04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_TABLA_GLOBAL.csv
+ 06_PRODUCTS/01_articles/article_01_energy_reports/04_tables/supplementary/Table_S1_QC_scenario_comparison_by_zone.xlsx
+                                                     04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_FINAL_TABLA_GLOBAL.csv
+                                                                     03_CODE/06_hybrid_tdq/01_cap3_tdq_piess_pipeline.R
+                                                         archivo_recomendado_2
+                                                                          <NA>
+   04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_TABLA_GLOBAL_MEJORADA.csv
+ 04_RESULTS_COMPLETE/01_physical_characterization/VV_Descriptivos_por_Zona.csv
+   04_RESULTS_COMPLETE/08_TABLES/chapter_3/TDQ_PIESS_TABLA_GLOBAL_MEJORADA.csv
+                               03_CODE/04_machine_learning/01_cap3_ml_models.R
+                                                   observacion
+ Debe contener fecha/zona/horizonte/modelo/observado/predicho.
+            Debe contener RMSE, MAE, R2, Skill o equivalentes.
+      Debe contener lower/upper PI90 o cuantiles equivalentes.
+                 Debe contener FNRR o insumos para calcularlo.
+   Scripts con mayor coincidencia de contenido del Capítulo 3.
+
+Pásame para verificar:
+1. El log generado en 05_logs.
+2. Tabla_Cap3_AUD02_Archivos_Candidatos_Cap3.csv/xlsx.
+3. Tabla_Cap3_AUD03_Estructura_Archivos_Datos_Candidatos.csv/xlsx.
+4. Tabla_Cap3_AUD05_Rutas_Recomendadas_Siguiente_Paso.csv/xlsx.
+
+Siguiente script:
+Con la tabla real de predicciones se calcularán Diebold-Mariano, Ljung-Box, residuos, cobertura empírica, CRPS, Log Score y calibración probabilística.

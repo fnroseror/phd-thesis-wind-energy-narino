@@ -1,0 +1,10 @@
+﻿control,aprobado,evidencia
+365512_filas,TRUE,365512
+4_zonas,TRUE,4
+16_estaciones,TRUE,16
+sin_duplicados_estacion_hora,TRUE,0
+WPD_formula_100pct,TRUE,100%
+WPD_no_negativa,TRUE,0
+rho_positiva,TRUE,0
+panel_sin_imputacion,TRUE,No se aplicó imputación a WPD_zone
+agregacion_cubo_antes_de_promedio,TRUE,WPD estación-hora fue agregada después de aplicar v^3

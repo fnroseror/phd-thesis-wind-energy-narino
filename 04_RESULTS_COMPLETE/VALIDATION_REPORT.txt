@@ -1,0 +1,4 @@
+RESULTS VALIDATOR MIGRATED TO R
+Expected result in RStudio: RESULTS VALIDATION PASSED
+Figures expected: 31/31
+Tables expected: 25/25

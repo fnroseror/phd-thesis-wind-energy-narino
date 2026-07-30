@@ -1,0 +1,9 @@
+annex,document,scope,local_support_path
+A,Anexo_A_Trazabilidad_Datos_Control_Calidad.md,"Datos, estaciones, cobertura, control de calidad, rho y WPD",support_files/A_data_quality
+B,Anexo_B_Resultados_Extendidos_Caracterizacion.md,Resultados extendidos Capítulo 2,support_files/B_extended_characterization
+C,Anexo_C_Configuraciones_Resultados_Pipeline_Predictivo.md,Pipeline horario y salidas aprobadas,support_files/C_predictive_pipeline_approved
+D,Anexo_D_Congelamiento_Reproducibilidad_Capitulo_3.md,Congelamiento y reconciliación Capítulo 3,support_files/D_cap3_freeze
+E,Anexo_E_Analisis_Complementario_Robustez_Capitulo_3.md,Auditorías complementarias,support_files/E_cap3_complementary_robustness
+F,Anexo_F_Distincion_I_TDQ_FNRR.md,Separación conceptual y matemática,
+G,Anexo_G_Paquete_Canonico_Capitulo_4.md,Paquete canónico y auditoría editorial Capítulo 4,support_files/G_cap4_canonical_audit
+H,Anexo_H_Reproducibilidad_Computacional.md,Entorno y flujo R/RStudio,support_files/H_environment

@@ -1,0 +1,9 @@
+﻿campo,valor
+global_start_utc,2017-01-01 05:00:00 UTC
+validation_start_utc,2020-04-19 09:00:00 UTC
+test_start_utc,2021-05-25 19:00:00 UTC
+global_end_utc,2022-07-01 05:00:00 UTC
+global_start_local,2017-01-01 00:00:00 -05
+validation_start_local,2020-04-19 04:00:00 -05
+test_start_local,2021-05-25 14:00:00 -05
+global_end_local,2022-07-01 00:00:00 -05

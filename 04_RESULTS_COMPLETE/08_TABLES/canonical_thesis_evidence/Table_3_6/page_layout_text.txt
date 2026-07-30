@@ -1,0 +1,41 @@
+  78       ESTUDIO DE LA VELOCIDAD DE VIENTO E INCLUSIÓN DE PARÁMETROS FÍSICOS PARA
+                  LA PREDICCIÓN DE ENERGÍA ELÉCTRICA PRODUCIDA POR FUENTES EÓLICAS
+
+
+ Figura 3.4. Comparación agregada del Skill-RMSE medio frente a persistencia para WPD
+                               por familia de modelos.
+
+La comparación agregada es descriptiva y debe leerse con cautela, porque
+resume combinaciones zona-horizonte heterogéneas. Los modelos clásicos
+aportan referencia lineal; los ensambles de árboles exploran no linealidad; LSTM
+evalúa memoria secuencial; y TDQ-PIESS/KFAS integra estado-espacio, predicción
+puntual e incertidumbre. El valor agregado negativo de LSTM no invalida todos sus
+casos: evidencia sensibilidad a zona y horizonte y confirma que la complejidad no
+garantiza desempeño uniforme [35], [39], [42].
+
+ Tabla 3.6. Modelos candidatos ganadores por zona y horizonte para WPD en la etapa
+                               comparativa aprobada.
+
+ Zona     Horizonte    h      Modelo candidato ganador         Skill-RMSE      R²
+   1        Corto      1              XGB_Bayes                  0.2951      0.00618
+   1       Medio      12              XGB_Bayes                  0.2951      0.00618
+   1        Largo     72              XGB_Bayes                  0.2951      0.00619
+   2        Corto      1           LSTM_TDQ_BAYES                0.214       0.4671
+   2       Medio      12                 XGB                     0.622       0.7416
+   2        Largo     72                 XGB                     0.5756      0.7416
+   3        Corto      1           LSTM_TDQ_BAYES                0.357       0.7598
+   3       Medio      12                 XGB                     0.6787      0.7933
+   3        Largo     72                 XGB                     0.6017      0.7988
+   4        Corto      1           LSTM_TDQ_BAYES                0.2466      0.5323
+   4       Medio      12                ARIMAX                   0.572       0.6572
+   4        Largo     72                ARIMAX                   0.5184      0.6586
+
+
+
+
+La Tabla 3.6 conserva los resultados deterministas de la primera versión aprobada.
+La Zona 1 favoreció XGB_Bayes, aunque con baja varianza explicada; las Zonas 2
+y 3 favorecieron XGBoost en horizontes medio y largo; y la Zona 4 favoreció ARIMAX
+en esos mismos horizontes. Estos resultados documentan la comparación de
+candidatos y no deben confundirse con la salida integrada posterior.
+
