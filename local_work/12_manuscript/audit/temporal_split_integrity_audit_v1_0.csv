@@ -1,0 +1,7 @@
+Check,Violations,Status
+Development target strictly before T0,0,PASS
+Test origin at/after T0,0,PASS
+Test target within evaluation end,0,PASS
+All boundary-crossing pairs purged,0,PASS
+No non-crossing pairs purged,0,PASS
+Exact target-origin horizon alignment,0,PASS

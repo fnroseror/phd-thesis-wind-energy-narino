@@ -1,0 +1,19 @@
+horizon_h,Metric,Model_A,Model_B,Delta_A_minus_B,CI95_low,CI95_high,Interpretation,72,168,336
+1,MAE,RF,LSTM,0.0292118817389873,-0.011885016433337,0.0657709110609121,CI includes zero,CI includes zero,CI includes zero,CI includes zero
+1,MAE,RF,XGBoost,0.0963470424738579,0.0739896565164384,0.11524121926602,XGBoost better,XGBoost better,XGBoost better,XGBoost better
+1,MAE,XGBoost,LSTM,-0.0671351607348707,-0.106853038960518,-0.0306533934959472,XGBoost better,XGBoost better,XGBoost better,XGBoost better
+1,RMSE,RF,LSTM,-0.045319826581693,-0.122450786606339,0.0243177256270939,CI includes zero,CI includes zero,CI includes zero,CI includes zero
+1,RMSE,RF,XGBoost,0.0283893843237664,-0.0341320560265518,0.0849516535893587,CI includes zero,CI includes zero,CI includes zero,CI includes zero
+1,RMSE,XGBoost,LSTM,-0.0737092109054593,-0.165677712474861,0.0109032799840826,CI includes zero,XGBoost better,CI includes zero,CI includes zero
+12,MAE,RF,LSTM,-0.00690511686014883,-0.0836942475871717,0.069575409027135,CI includes zero,CI includes zero,CI includes zero,CI includes zero
+12,MAE,RF,XGBoost,-0.001629323196779,-0.069865026807472,0.0660264307715812,CI includes zero,CI includes zero,CI includes zero,CI includes zero
+12,MAE,XGBoost,LSTM,-0.00527579366336983,-0.0984664915470184,0.0857572475796098,CI includes zero,CI includes zero,CI includes zero,CI includes zero
+12,RMSE,RF,LSTM,-0.270538415012304,-0.439155254724549,-0.118142851998624,RF better,RF better,RF better,RF better
+12,RMSE,RF,XGBoost,-0.110856973879994,-0.203934443469627,-0.0254866321291638,RF better,RF better,RF better,RF better
+12,RMSE,XGBoost,LSTM,-0.15968144113231,-0.346724262235635,0.0144636715815098,CI includes zero,CI includes zero,CI includes zero,CI includes zero
+72,MAE,RF,LSTM,0.129372398972847,-0.0455968585261481,0.285525849538572,CI includes zero,CI includes zero,CI includes zero,CI includes zero
+72,MAE,RF,XGBoost,0.178543493043253,0.0358221773801977,0.30610687946833,XGBoost better,XGBoost better,XGBoost better,CI includes zero
+72,MAE,XGBoost,LSTM,-0.049171094070406,-0.226039092116275,0.134189903942706,CI includes zero,CI includes zero,CI includes zero,CI includes zero
+72,RMSE,RF,LSTM,-0.0396817347638336,-0.360214702266723,0.265805067100272,CI includes zero,CI includes zero,CI includes zero,CI includes zero
+72,RMSE,RF,XGBoost,-0.133035646445313,-0.442609165227106,0.11482813159881,CI includes zero,CI includes zero,CI includes zero,CI includes zero
+72,RMSE,XGBoost,LSTM,0.0933539116814792,-0.304501195746591,0.568455951080232,CI includes zero,CI includes zero,CI includes zero,CI includes zero

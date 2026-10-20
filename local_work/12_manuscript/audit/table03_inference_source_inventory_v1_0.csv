@@ -1,0 +1,7 @@
+file,basename,extension,size_bytes
+C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/local_work/10_final_comparison/article02_final_performance_exact_v1_0.csv,article02_final_performance_exact_v1_0.csv,csv,2465
+C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/local_work/10_final_comparison/article02_master_external_predictions_v1_0.rds,article02_master_external_predictions_v1_0.rds,rds,14897164
+C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/local_work/10_final_comparison/article02_mbb168_bootstrap_5000_v1_0.rds,article02_mbb168_bootstrap_5000_v1_0.rds,rds,3676524
+C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/local_work/10_final_comparison/article02_pairwise_mbb168_5000_v1_0.csv,article02_pairwise_mbb168_5000_v1_0.csv,csv,8006
+C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/local_work/10_final_comparison/article02_persistence_block_stability_v1_0.csv,article02_persistence_block_stability_v1_0.csv,csv,1991
+C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/local_work/10_final_comparison/article02_top3_block_stability_v1_0.csv,article02_top3_block_stability_v1_0.csv,csv,1242

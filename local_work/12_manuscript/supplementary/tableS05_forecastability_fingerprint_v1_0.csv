@@ -1,0 +1,16 @@
+Horizon (h),Model,RMSE skill (%),MAE skill (%),|Coverage deviation| (pp),PINAW90,Interval score,|Tail imbalance| (pp),RMSE evidence,MAE evidence,Point response
+1,ARIMA,5.2,-5.6,2.2,0.13,26.75,2.22,Improvement,Deterioration,Loss-function dependent / deterioration
+1,KFAS,5.5,0.8,2.12,0.127,26.13,0.24,Improvement,Unresolved,Partially resolved
+1,RF,11.7,5.7,1.99,0.123,24.73,0.18,Improvement,Improvement,Robust improvement
+1,XGBoost,12.1,8.6,2.12,0.121,24.7,0.58,Improvement,Improvement,Robust improvement
+1,LSTM,11.1,6.6,1.96,0.121,24.72,0.34,Improvement,Improvement,Robust improvement
+12,ARIMA,30,25.6,2.16,0.181,45.23,6.96,Improvement,Improvement,Robust improvement
+12,KFAS,28.2,32.5,2.33,0.2,46.21,1.01,Improvement,Improvement,Robust improvement
+12,RF,47.1,48.1,1.73,0.162,35.13,0.12,Improvement,Improvement,Robust improvement
+12,XGBoost,46.6,48.1,2.02,0.164,35.65,0.55,Improvement,Improvement,Robust improvement
+12,LSTM,45.7,48,1.46,0.159,35.73,0.13,Improvement,Improvement,Robust improvement
+72,ARIMA,3.8,-19.5,2.27,0.201,47.33,7.15,Unresolved,Deterioration,Loss-function dependent / deterioration
+72,KFAS,2,1.8,1.4,0.201,49.23,0.19,Improvement,Improvement,Robust improvement
+72,RF,21.9,8.4,1.33,0.186,39.19,0.81,Improvement,Improvement,Robust improvement
+72,XGBoost,21.1,11,1.54,0.186,40.1,0.37,Improvement,Improvement,Robust improvement
+72,LSTM,21.7,10.3,0.72,0.18,40.8,0.57,Improvement,Improvement,Robust improvement

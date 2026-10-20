@@ -1,0 +1,4 @@
+Candidate,Fits,Converged,Complete,Predictions,Negative_before_clipping,Negative_pct
+LL,90,90,90,239496,0,0
+LLT,90,90,90,239496,50299,21.0020209105789
+D24,90,90,90,239496,30731,12.8315295453786

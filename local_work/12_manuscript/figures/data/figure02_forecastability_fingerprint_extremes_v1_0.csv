@@ -1,0 +1,4 @@
+horizon_h,Highest_RMSE_skill,Highest_MAE_skill,Closest_calibration,Lowest_PINAW,Lowest_interval_score,Lowest_tail_imbalance
+1,XGBoost,XGBoost,LSTM,LSTM,XGBoost,RF
+12,RF,RF,LSTM,LSTM,RF,RF
+72,RF,XGBoost,LSTM,LSTM,RF,KFAS

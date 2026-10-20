@@ -1,0 +1,31 @@
+horizon_h,Metric,Model_A,Model_B,72,168,336
+1,MAE,Persistence,ARIMA,Persistence better,Persistence better,Persistence better
+1,MAE,Persistence,KFAS,CI includes zero,CI includes zero,CI includes zero
+1,MAE,Persistence,LSTM,LSTM better,LSTM better,LSTM better
+1,MAE,Persistence,RF,RF better,RF better,RF better
+1,MAE,Persistence,XGBoost,XGBoost better,XGBoost better,XGBoost better
+1,RMSE,Persistence,ARIMA,ARIMA better,ARIMA better,ARIMA better
+1,RMSE,Persistence,KFAS,KFAS better,KFAS better,KFAS better
+1,RMSE,Persistence,LSTM,LSTM better,LSTM better,LSTM better
+1,RMSE,Persistence,RF,RF better,RF better,RF better
+1,RMSE,Persistence,XGBoost,XGBoost better,XGBoost better,XGBoost better
+12,MAE,Persistence,ARIMA,ARIMA better,ARIMA better,ARIMA better
+12,MAE,Persistence,KFAS,KFAS better,KFAS better,KFAS better
+12,MAE,Persistence,LSTM,LSTM better,LSTM better,LSTM better
+12,MAE,Persistence,RF,RF better,RF better,RF better
+12,MAE,Persistence,XGBoost,XGBoost better,XGBoost better,XGBoost better
+12,RMSE,Persistence,ARIMA,ARIMA better,ARIMA better,ARIMA better
+12,RMSE,Persistence,KFAS,KFAS better,KFAS better,KFAS better
+12,RMSE,Persistence,LSTM,LSTM better,LSTM better,LSTM better
+12,RMSE,Persistence,RF,RF better,RF better,RF better
+12,RMSE,Persistence,XGBoost,XGBoost better,XGBoost better,XGBoost better
+72,MAE,Persistence,ARIMA,Persistence better,Persistence better,Persistence better
+72,MAE,Persistence,KFAS,KFAS better,KFAS better,KFAS better
+72,MAE,Persistence,LSTM,LSTM better,LSTM better,LSTM better
+72,MAE,Persistence,RF,RF better,RF better,RF better
+72,MAE,Persistence,XGBoost,XGBoost better,XGBoost better,XGBoost better
+72,RMSE,Persistence,ARIMA,CI includes zero,CI includes zero,CI includes zero
+72,RMSE,Persistence,KFAS,KFAS better,KFAS better,KFAS better
+72,RMSE,Persistence,LSTM,LSTM better,LSTM better,LSTM better
+72,RMSE,Persistence,RF,RF better,RF better,RF better
+72,RMSE,Persistence,XGBoost,XGBoost better,XGBoost better,XGBoost better

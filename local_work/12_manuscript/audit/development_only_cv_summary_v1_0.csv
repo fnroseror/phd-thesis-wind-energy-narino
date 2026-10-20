@@ -1,0 +1,4 @@
+horizon_h,N_folds,earliest_boundary,latest_validation_end,N_validation_at_or_after_T0
+1,30,2018-10-31T00:00:00Z,2021-05-25T18:00:00Z,0
+12,30,2018-11-01T07:00:00Z,2021-05-25T18:00:00Z,0
+72,30,2018-10-29T10:00:00Z,2021-05-25T18:00:00Z,0

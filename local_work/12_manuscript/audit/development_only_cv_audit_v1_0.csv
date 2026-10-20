@@ -1,0 +1,9 @@
+Check,Violations,Status
+Exactly 90 CV folds,0,PASS
+Exactly 30 station-horizon combinations,0,PASS
+Exactly 3 folds per station-horizon,0,PASS
+All validation periods end before T0,0,PASS
+All fold intervals have boundary < validation_end,0,PASS
+Fold numbering is 1-2-3,0,PASS
+Fold boundaries increase chronologically,0,PASS
+Validation ends increase chronologically,0,PASS

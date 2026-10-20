@@ -1,0 +1,4 @@
+horizon_h,Fits,Predictions,Best_epoch_min,Best_epoch_median,Best_epoch_max,Inner_purged,Negative_before_clipping,Negative_pct
+1,30,82943,2,9,15,30,2365,2.85135575033457
+12,30,80353,1,4.5,13,353,1440,1.79209239231889
+72,30,76200,1,3,14,2111,332,0.435695538057743

@@ -1,0 +1,3 @@
+C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/local_work/02_article02_dataset/article02_analytical_dataset_v1_0.rds 5537851b629275f766340447032195a8
+C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/local_work/02_article02_dataset/article02_analytical_dataset_v1_0.csv 32dbdaac699ebf671ef0d16b1f2fea73
+C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/local_work/02_article02_dataset/article02_dataset_audit_v1_0.csv fe2baecd986ed8bda9505a4844b39593

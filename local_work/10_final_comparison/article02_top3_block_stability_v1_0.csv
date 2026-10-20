@@ -1,0 +1,19 @@
+horizon_h,Metric,Model_A,Model_B,72,168,336
+1,MAE,RF,LSTM,CI includes zero,CI includes zero,CI includes zero
+1,MAE,RF,XGBoost,XGBoost better,XGBoost better,XGBoost better
+1,MAE,XGBoost,LSTM,XGBoost better,XGBoost better,XGBoost better
+1,RMSE,RF,LSTM,CI includes zero,CI includes zero,CI includes zero
+1,RMSE,RF,XGBoost,CI includes zero,CI includes zero,CI includes zero
+1,RMSE,XGBoost,LSTM,XGBoost better,CI includes zero,CI includes zero
+12,MAE,RF,LSTM,CI includes zero,CI includes zero,CI includes zero
+12,MAE,RF,XGBoost,CI includes zero,CI includes zero,CI includes zero
+12,MAE,XGBoost,LSTM,CI includes zero,CI includes zero,CI includes zero
+12,RMSE,RF,LSTM,RF better,RF better,RF better
+12,RMSE,RF,XGBoost,RF better,RF better,RF better
+12,RMSE,XGBoost,LSTM,CI includes zero,CI includes zero,CI includes zero
+72,MAE,RF,LSTM,CI includes zero,CI includes zero,CI includes zero
+72,MAE,RF,XGBoost,XGBoost better,XGBoost better,CI includes zero
+72,MAE,XGBoost,LSTM,CI includes zero,CI includes zero,CI includes zero
+72,RMSE,RF,LSTM,CI includes zero,CI includes zero,CI includes zero
+72,RMSE,RF,XGBoost,CI includes zero,CI includes zero,CI includes zero
+72,RMSE,XGBoost,LSTM,CI includes zero,CI includes zero,CI includes zero

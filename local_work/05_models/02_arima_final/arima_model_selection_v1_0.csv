@@ -1,0 +1,2 @@
+model_family,selected_variant,primary_metric,secondary_metric,selection_dataset,external_test_used_for_selection,n_validation_predictions,rationale
+ARIMA,RAW,RMSE,MAE,development rolling-origin CV,FALSE,239496,"ARIMA_RAW achieved the lowest RMSE at all three horizons and the lowest pooled RMSE, while maintaining substantially lower overall bias than LOG1P_MEDIAN. LOG1P_MEDIAN retained as sensitivity analysis."

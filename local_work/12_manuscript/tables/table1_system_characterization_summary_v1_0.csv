@@ -1,0 +1,2 @@
+stations,zones,valid_station_hours,earliest_observation,latest_observation,VV_median,WPD_median,WPD_P90
+10,4,262739,2017-01-01T05:00:00Z,2022-07-01T05:00:00Z,1.6,1.86577500643509,32.62545

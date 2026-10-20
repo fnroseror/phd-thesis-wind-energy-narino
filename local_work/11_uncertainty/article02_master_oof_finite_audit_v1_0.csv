@@ -1,0 +1,6 @@
+model,finite,nonfinite
+ARIMA,239496,0
+RF,239496,0
+XGBoost,239496,0
+KFAS,239496,0
+LSTM,239496,0

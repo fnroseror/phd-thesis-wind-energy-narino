@@ -1,0 +1,31 @@
+Check,N,Comparable,Both_NA,NA_mismatch,Value_mismatch,Max_abs_diff,Status
+No duplicate analytical station-hour rows,262739,262739,,0,0,,PASS
+Historical origin features invariant across horizons,262072,262072,,0,0,,PASS
+WPD_t == WPD(origin_time),262072,262072,0,0,0,0,PASS
+VV_t == VV(origin_time),262072,262072,0,0,0,0,PASS
+rho_t == rho(origin_time),262072,262072,0,0,0,0,PASS
+WPD_lag_1 == WPD(t-1h),262072,257778,4294,0,0,0,PASS
+WPD_lag_3 == WPD(t-3h),262072,253436,8636,0,0,0,PASS
+WPD_lag_6 == WPD(t-6h),262072,250184,11888,0,0,0,PASS
+WPD_lag_12 == WPD(t-12h),262072,246646,15426,0,0,0,PASS
+WPD_lag_24 == WPD(t-24h),262072,246688,15384,0,0,0,PASS
+WPD_lag_48 == WPD(t-48h),262072,243784,18288,0,0,0,PASS
+WPD_lag_72 == WPD(t-72h),262072,241180,20892,0,0,0,PASS
+WPD_mean_3 == exact trailing 3-hour mean,262072,253636,19,8417,0,4.44089209850063e-16,FAIL
+WPD_mean_6 == exact trailing 6-hour mean,262072,244058,46,17968,0,7.105427357601e-15,FAIL
+WPD_mean_12 == exact trailing 12-hour mean,262072,231429,100,30543,0,2.8421709430404e-14,FAIL
+WPD_mean_24 == exact trailing 24-hour mean,262072,216389,206,45477,0,1.4210854715202e-14,FAIL
+target_time-origin_time == horizon_h,747095,747095,0,0,0,0,PASS
+persistence == WPD_origin,747095,747095,0,0,0,0,PASS
+WPD_origin == analytical WPD at origin,747095,747095,0,0,0,0,PASS
+WPD_target == analytical WPD at exact target,747095,747095,0,0,0,0,PASS
+origin_hour_sin uses America/Bogota,262072,262072,0,0,0,0,PASS
+origin_hour_cos uses America/Bogota,262072,262072,0,0,0,0,PASS
+origin_doy_sin uses local DOY / 365.25,262072,262072,0,0,0,0,PASS
+origin_doy_cos uses local DOY / 365.25,262072,262072,0,0,0,0,PASS
+target_hour uses America/Bogota,747095,747095,0,0,0,0,PASS
+target_doy uses America/Bogota,747095,747095,0,0,0,0,PASS
+target_hour_sin uses local hour,747095,747095,0,0,0,0,PASS
+target_hour_cos uses local hour,747095,747095,0,0,0,0,PASS
+target_doy_sin uses local DOY / 365.25,747095,747095,0,0,0,0,PASS
+target_doy_cos uses local DOY / 365.25,747095,747095,0,0,0,0,PASS
