@@ -1,0 +1,180 @@
+============================================================
+R1-08 V2 CORE / LOSO / GAP AUDIT — SUMMARY FOR CHATGPT
+============================================================
+
+============================================================
+V2 VALIDATION AGAINST R1-07 ARCHITECTURE C
+============================================================
+   reference_rows v2_rows matched_rows max_abs_VV_difference max_abs_WPD_difference max_abs_rho_difference
+            <int>   <int>        <int>                 <num>                  <num>                  <num>
+1:         137811  137811       137811                     0                      0                      0
+   station_count_match
+                <lgcl>
+1:                TRUE
+
+============================================================
+V2 DESCRIPTIVE SUMMARY
+============================================================
+Clave <zone>
+     zone n_zone_hours  mean_VV median_VV    sd_VV    p05_VV   p95_VV   p99_VV    max_VV mean_WPD median_WPD
+   <char>        <int>    <num>     <num>    <num>     <num>    <num>    <num>     <num>    <num>      <num>
+1:      1        43033 1.218369 0.9101667 1.218179 0.1666667 3.016667 6.956424 17.483333 31.95914  0.6233255
+2:      2        43618 2.612520 2.3833333 1.384742 0.9000000 5.200000 7.120333 12.291667 30.43975  7.6731810
+3:      3        42416 2.503744 2.3388889 1.271504 0.8055556 4.838889 6.250000 12.566667 26.29786  9.4725000
+4:      4         8744 2.699503 2.5166667 1.325422 0.9166667 5.300000 6.476167  8.466667 18.68293  8.5939098
+      sd_WPD     p05_WPD   p95_WPD  p99_WPD   max_WPD median_n_stations min_n_stations max_n_stations
+       <num>       <num>     <num>    <num>     <num>             <num>          <num>          <num>
+1: 164.13630 0.003187114  21.78377 981.0817 2670.6920                 2              1              5
+2:  82.28273 0.340003079 143.21965 455.4981 1507.4788                 2              1              4
+3:  58.59196 0.267456876  99.47617 272.8974 1550.1712                 3              1              5
+4:  27.02305 0.366530440  72.05544 128.9639  287.4476                 1              1              2
+
+============================================================
+STATION COMPOSITION BY ZONE
+============================================================
+Clave <zone>
+     zone n_zone_hours pct_one_station pct_two_or_more pct_three_or_more median_n_stations mean_n_stations
+   <char>        <int>           <num>           <num>             <num>             <num>           <num>
+1:      1        43033       23.932796        76.06720          42.47438                 2        2.279669
+2:      2        43618       19.751020        80.24898          34.46971                 2        2.248498
+3:      3        42416        5.231516        94.76848          68.41286                 3        2.899613
+4:      4         8744       70.128088        29.87191           0.00000                 1        1.298719
+   min_n_stations max_n_stations
+            <num>          <num>
+1:              1              5
+2:              1              4
+3:              1              5
+4:              1              2
+
+============================================================
+STATION-COUNT DISTRIBUTION
+============================================================
+      zone n_stations     N pct_zone_hours
+    <char>      <int> <int>          <num>
+ 1:      1          1 10299     23.9327958
+ 2:      1          2 14456     33.5928241
+ 3:      1          3 14631     33.9994888
+ 4:      1          4  3238      7.5244580
+ 5:      1          5   409      0.9504334
+ 6:      2          1  8615     19.7510202
+ 7:      2          2 19968     45.7792654
+ 8:      2          3 10616     24.3385758
+ 9:      2          4  4419     10.1311385
+10:      3          1  2219      5.2315164
+11:      3          2 11179     26.3556205
+12:      3          3 22845     53.8593927
+13:      3          4   987      2.3269521
+14:      3          5  5186     12.2265183
+15:      4          1  6132     70.1280878
+16:      4          2  2612     29.8719122
+
+============================================================
+V2 LOSO RESULTS
+============================================================
+      zone removed_station baseline_zone_hours loso_zone_hours pct_baseline_hours_retained baseline_mean_VV
+    <char>          <char>               <int>           <int>                       <num>            <num>
+ 1:      1        51025060               43033           40178                    93.36556         1.218369
+ 2:      1        51025080               43033           41374                    96.14482         1.218369
+ 3:      1        51025090               43033           40304                    93.65836         1.218369
+ 4:      1        51035020               43033           42577                    98.94035         1.218369
+ 5:      1      5102500128               43033           40433                    93.95813         1.218369
+ 6:      2        52055160               43618           43618                   100.00000         2.612520
+ 7:      2        52055230               43618           36560                    83.81861         2.612520
+ 8:      2        52055220               43618           42276                    96.92329         2.612520
+ 9:      2        52055170               43618           43403                    99.50708         2.612520
+10:      3        52055150               42416           42355                    99.85619         2.503744
+11:      3        52055210               42416           42296                    99.71709         2.503744
+12:      3        52045080               42416           42410                    99.98585         2.503744
+13:      3        47015100               42416           41848                    98.66088         2.503744
+14:      3      5205500123               42416           40952                    96.54847         2.503744
+15:      4        52040050                8744            2650                    30.30650         2.699503
+16:      4        52035040                8744            8706                    99.56542         2.699503
+    mean_VV_loso pct_change_mean_VV baseline_mean_WPD mean_WPD_loso pct_change_mean_WPD
+           <num>              <num>             <num>         <num>               <num>
+ 1:     1.139530         -6.4708445          31.95914      2.323300          -92.730407
+ 2:     1.120279         -8.0508986          31.95914     47.192765           47.665922
+ 3:     1.374592         12.8223137          31.95914     42.498657           32.978082
+ 4:     1.231779          1.1006338          31.95914     39.318008           23.025847
+ 5:     1.347179         10.5723065          31.95914     35.277506           10.383137
+ 6:     2.379962         -8.9017015          30.43975     11.918493          -60.845621
+ 7:     2.860871          9.5061699          30.43975     41.579442           36.595895
+ 8:     2.736905          4.7610840          30.43975     37.817698           24.237894
+ 9:     2.618198          0.2173369          30.43975     36.693362           20.544249
+10:     1.821426        -27.2519314          26.29786      6.682516          -74.589127
+11:     2.906255         16.0763726          26.29786     38.779379           47.462099
+12:     2.819243         12.6010658          26.29786     33.412424           27.053769
+13:     2.540519          1.4688032          26.29786     27.546946            4.749757
+14:     2.452058         -2.0643663          26.29786     25.929484           -1.400789
+15:     3.170636         17.4525735          18.68293     24.900947           33.281822
+16:     2.550417         -5.5227251          18.68293     16.590937          -11.197341
+
+============================================================
+V2 LOSO ZONE SUMMARY
+============================================================
+     zone n_stations_tested min_pct_change_mean_WPD max_pct_change_mean_WPD max_abs_pct_change_mean_WPD
+   <char>             <int>                   <num>                   <num>                       <num>
+1:      1                 5               -92.73041                47.66592                    92.73041
+2:      2                 4               -60.84562                36.59589                    60.84562
+3:      3                 5               -74.58913                47.46210                    74.58913
+4:      4                 2               -11.19734                33.28182                    33.28182
+   station_causing_max_abs_WPD_change min_pct_change_mean_VV max_pct_change_mean_VV
+                               <char>                  <num>                  <num>
+1:                           51025060              -8.050899               12.82231
+2:                           52055160              -8.901701                9.50617
+3:                           52055150             -27.251931               16.07637
+4:                           52040050              -5.522725               17.45257
+   max_abs_pct_change_mean_VV min_hours_retained_pct
+                        <num>                  <num>
+1:                   12.82231               93.36556
+2:                    9.50617               83.81861
+3:                   27.25193               96.54847
+4:                   17.45257               30.30650
+
+============================================================
+V2 DAILY GAP SUMMARY
+============================================================
+     zone total_calendar_days observed_days missing_days pct_observed_days n_missing_runs
+   <char>               <int>         <int>        <int>             <num>          <int>
+1:      1                2007          1881          126          93.72197             22
+2:      2                2007          1895          112          94.41953             36
+3:      3                2007          1795          212          89.43697             15
+4:      4                2007           378         1629          18.83408             12
+   max_missing_gap_days median_missing_gap_days n_internal_gaps max_internal_gap_days
+                  <int>                   <num>           <int>                 <int>
+1:                   36                     1.5              21                    36
+2:                   11                     2.0              36                    11
+3:                  116                     3.0              15                   116
+4:                  818                     3.5              11                   552
+   median_internal_gap_days n_internal_gaps_le_7 n_internal_gaps_gt_7 leading_gap_days trailing_gap_days
+                      <num>                <int>                <int>            <int>             <int>
+1:                        1                   17                    4               17                 0
+2:                        2                   33                    3                0                 0
+3:                        3                   11                    4                0                 0
+4:                        1                    7                    4              818                 0
+
+============================================================
+V2 SHORT-GAP INTERPOLATION SUMMARY
+============================================================
+Clave <zone>
+     zone total_calendar_days original_observed_days newly_interpolated_days pct_interpolated_total_calendar
+   <char>               <int>                  <int>                   <int>                           <num>
+1:      1                2007                   1881                      30                       1.4947683
+2:      2                2007                   1895                      82                       4.0857000
+3:      3                2007                   1795                      29                       1.4449427
+4:      4                2007                    378                      12                       0.5979073
+   remaining_missing_days pct_remaining_missing max_remaining_gap_days
+                    <int>                 <num>                  <int>
+1:                     96              4.783259                     36
+2:                     30              1.494768                     11
+3:                    183              9.118087                    116
+4:                   1617             80.568012                    818
+
+============================================================
+DECISION RULE
+============================================================
+Freeze V2 only if the Architecture-C reconstruction is exact and the station-composition/LOSO results can be transparently reported. Large LOSO sensitivity does not automatically invalidate V2, but it requires the zones to be framed as analytical aggregation units rather than homogeneous wind-resource classes. Maximum daily gaps must be reported explicitly in the revised temporal-methods section.
+
+Canonical V2 file:
+C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results/R1_V2_CANONICAL_zone_hour_dataset.rds 
+
+R1-08 COMPLETED SUCCESSFULLY

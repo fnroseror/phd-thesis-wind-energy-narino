@@ -1,0 +1,7 @@
+2026-10-20 16:13:12 | Starting R1-08 V2 core / LOSO / gap audit. 
+2026-10-20 16:13:13 | V1 checksum PASSED. 
+2026-10-20 16:13:13 | Reading restricted raw IDEAM source. 
+2026-10-20 16:14:01 | V2 exactly reproduces R1-07 Architecture C. 
+2026-10-20 16:15:06 | R1-08 completed successfully. 
+2026-10-20 16:15:06 | Canonical V2: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results/R1_V2_CANONICAL_zone_hour_dataset.rds 
+2026-10-20 16:15:06 | Summary to upload: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results/R1_08_UPLOAD_THIS_TO_CHAT.txt 

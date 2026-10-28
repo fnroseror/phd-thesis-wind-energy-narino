@@ -1,0 +1,15 @@
+2026-10-20 15:17:42 | Starting R1-05 zoning/station sensitivity analysis. 
+2026-10-20 15:17:42 | Restricted raw source: E:/Academia/UNAL/DOCTORADO/Fase 2/Productos/Articulo 1/Proceso/Datos.txt 
+2026-10-20 15:17:43 | Frozen V1 checksum: PASSED. 
+2026-10-20 15:17:43 | Reading raw IDEAM source. This is the slowest I/O step. 
+2026-10-20 15:17:45 | Raw rows read: 8175686 
+2026-10-20 15:17:49 | Raw VV rows retained before datetime restriction: 2218605 
+2026-10-20 15:17:49 | Stations present: 16 
+2026-10-20 15:17:49 | Parsing VV datetimes using DMY correction logic. 
+2026-10-20 15:18:15 | Datetime parsing valid rows: 2218605 of 2218605 (100%) 
+2026-10-20 15:18:16 | VV rows inside study period: 2218605 
+2026-10-20 15:18:16 | Stations inside study period: 16 
+2026-10-20 15:18:16 | Zone-hour reconstruction audit completed. 
+2026-10-20 15:18:16 | Zone-hour reconstruction validation: PASSED. 
+2026-10-20 15:18:18 | R1-05 completed successfully. 
+2026-10-20 15:18:18 | Summary to upload: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results/R1_05_UPLOAD_THIS_TO_CHAT.txt 

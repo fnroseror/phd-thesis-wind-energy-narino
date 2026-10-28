@@ -1,0 +1,120 @@
+============================================================
+R1-03 ZONAL STATISTICAL TESTS — SUMMARY FOR CHATGPT
+============================================================
+
+============================================================
+V1 SCIENTIFIC CHECKSUM
+============================================================
+Clave <zone>
+     zone     n  mean_VV  mean_WPD n_expected mean_WPD_expected n_match WPD_abs_difference
+   <char> <int>    <num>     <num>      <int>             <num>  <lgcl>              <num>
+1:      1 42706 2.434099 140.75903      42706         140.75903    TRUE       4.140546e-06
+2:      2 43618 2.619652  15.81935      43618          15.81935    TRUE       1.587858e-06
+3:      3 42416 2.500219  12.96353      42416          12.96353    TRUE       3.076777e-06
+4:      4  8744 2.694986  16.94948       8744          16.94948    TRUE       2.442887e-06
+
+============================================================
+RECORD-LEVEL DESCRIPTIVE STATISTICS
+============================================================
+     zone     n  VV_mean VV_median   VV_IQR  WPD_mean WPD_median   WPD_IQR
+   <char> <int>    <num>     <num>    <num>     <num>      <num>     <num>
+1:      1 42706 2.434099  0.975000 1.290441 140.75903  0.4783597  3.230264
+2:      2 43618 2.619652  2.383333 1.816667  15.81935  5.8462843 14.856489
+3:      3 42416 2.500219  2.333333 1.711111  12.96353  5.5660864 13.306690
+4:      4  8744 2.694986  2.516667 1.650000  16.94948  7.5258022 15.686693
+
+============================================================
+GLOBAL KRUSKAL-WALLIS TESTS + EFFECT SIZE
+============================================================
+         analysis_level variable      N groups         H    df p_value_formatted epsilon_squared
+                 <char>   <char>  <int>  <int>     <num> <int>            <char>           <num>
+1: Article_record_level       VV 137484      4 21531.133     3         <2.22e-16       0.1565910
+2: Article_record_level      WPD 137484      4 19471.969     3         <2.22e-16       0.1416131
+3:      Daily_zone_mean       VV   5930      4  1437.462     3         <2.22e-16       0.2420624
+4:      Daily_zone_mean      WPD   5930      4  1247.503     3         <2.22e-16       0.2100072
+
+============================================================
+VV vs WPD GLOBAL SEPARATION COMPARISON
+============================================================
+Clave <analysis_level>
+         analysis_level        VV       WPD delta_epsilon2_WPD_minus_VV stronger_global_separation
+                 <char>     <num>     <num>                       <num>                     <char>
+1: Article_record_level 0.1565910 0.1416131                 -0.01497791                         VV
+2:      Daily_zone_mean 0.2420624 0.2100072                 -0.03205520                         VV
+
+============================================================
+PAIRWISE DUNN-HOLM — ARTICLE RECORD LEVEL
+============================================================
+    variable group1 group2           z       p_holm significant_0_05 rank_biserial abs_rank_biserial
+      <char> <char> <char>       <num>        <num>           <lgcl>         <num>             <num>
+ 1:       VV      1      2 -127.587372 0.000000e+00             TRUE   -0.49830440        0.49830440
+ 2:       VV      1      3 -119.341362 0.000000e+00             TRUE   -0.48009349        0.48009349
+ 3:       VV      1      4  -80.131713 0.000000e+00             TRUE   -0.52112038        0.52112038
+ 4:       VV      2      3    7.399599 2.731922e-13             TRUE    0.03402903        0.03402903
+ 5:       VV      2      4   -6.147542 7.869283e-10             TRUE   -0.04992225        0.04992225
+ 6:       VV      3      4  -10.429403 5.460856e-25             TRUE   -0.08422710        0.08422710
+ 7:      WPD      1      2 -120.075823 0.000000e+00             TRUE   -0.47087755        0.47087755
+ 8:      WPD      1      3 -112.980670 0.000000e+00             TRUE   -0.45498181        0.45498181
+ 9:      WPD      1      4  -79.768924 0.000000e+00             TRUE   -0.50790609        0.50790609
+10:      WPD      2      3    6.295079 3.072432e-10             TRUE    0.02873609        0.02873609
+11:      WPD      2      4  -10.148238 6.747973e-24             TRUE   -0.08264121        0.08264121
+12:      WPD      3      4  -13.779360 1.017800e-42             TRUE   -0.11195754        0.11195754
+          direction
+             <char>
+ 1: Zone 1 < Zone 2
+ 2: Zone 1 < Zone 3
+ 3: Zone 1 < Zone 4
+ 4: Zone 2 > Zone 3
+ 5: Zone 2 < Zone 4
+ 6: Zone 3 < Zone 4
+ 7: Zone 1 < Zone 2
+ 8: Zone 1 < Zone 3
+ 9: Zone 1 < Zone 4
+10: Zone 2 > Zone 3
+11: Zone 2 < Zone 4
+12: Zone 3 < Zone 4
+
+============================================================
+PAIRWISE DUNN-HOLM — DAILY-ZONE MEAN ROBUSTNESS
+============================================================
+    variable group1 group2          z        p_holm significant_0_05 rank_biserial abs_rank_biserial
+      <char> <char> <char>      <num>         <num>           <lgcl>         <num>             <num>
+ 1:       VV      1      2 -32.398721 1.716537e-229             TRUE   -0.61451906        0.61451906
+ 2:       VV      1      3 -30.691189 3.730761e-206             TRUE   -0.59883771        0.59883771
+ 3:       VV      1      4 -21.739994 3.436438e-104             TRUE   -0.62206964        0.62206964
+ 4:       VV      2      3   1.284456  1.989825e-01            FALSE    0.02923334        0.02923334
+ 5:       VV      2      4  -3.002805  5.350069e-03             TRUE   -0.14270425        0.14270425
+ 6:       VV      3      4  -3.738228  5.559663e-04             TRUE   -0.16451479        0.16451479
+ 7:      WPD      1      2 -29.872213 2.711424e-195             TRUE   -0.56581262        0.56581262
+ 8:      WPD      1      3 -28.022607 4.309239e-172             TRUE   -0.55586771        0.55586771
+ 9:      WPD      1      4 -21.617489 4.919549e-103             TRUE   -0.58615652        0.58615652
+10:      WPD      2      3   1.459878  1.443235e-01            FALSE    0.03704983        0.03704983
+11:      WPD      2      4  -4.342159  2.821782e-05             TRUE   -0.20182408        0.20182408
+12:      WPD      3      4  -5.173888  6.878165e-07             TRUE   -0.22852413        0.22852413
+          direction
+             <char>
+ 1: Zone 1 < Zone 2
+ 2: Zone 1 < Zone 3
+ 3: Zone 1 < Zone 4
+ 4: Zone 2 > Zone 3
+ 5: Zone 2 < Zone 4
+ 6: Zone 3 < Zone 4
+ 7: Zone 1 < Zone 2
+ 8: Zone 1 < Zone 3
+ 9: Zone 1 < Zone 4
+10: Zone 2 > Zone 3
+11: Zone 2 < Zone 4
+12: Zone 3 < Zone 4
+
+============================================================
+INTERPRETATION RULE
+============================================================
+Do not infer stronger separation from p-values alone. Compare epsilon-squared and pairwise rank-biserial effect sizes.
+
+============================================================
+OUTPUT LOCATIONS
+============================================================
+Tables : C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/02_tables 
+Results: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results 
+
+R1-03 COMPLETED SUCCESSFULLY

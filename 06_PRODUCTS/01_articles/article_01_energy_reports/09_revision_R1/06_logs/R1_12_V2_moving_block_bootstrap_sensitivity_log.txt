@@ -1,0 +1,63 @@
+2026-10-20 18:43:48 | Starting R1-12 moving-block bootstrap sensitivity. 
+2026-10-20 18:43:49 | Preparing zone 1 block length 7 
+2026-10-20 18:44:07 | Zone 1 L= 7 bootstrap 250 / 1000 
+2026-10-20 18:44:24 | Zone 1 L= 7 bootstrap 500 / 1000 
+2026-10-20 18:44:42 | Zone 1 L= 7 bootstrap 750 / 1000 
+2026-10-20 18:45:00 | Zone 1 L= 7 bootstrap 1000 / 1000 
+2026-10-20 18:45:00 | Preparing zone 1 block length 30 
+2026-10-20 18:45:18 | Zone 1 L= 30 bootstrap 250 / 1000 
+2026-10-20 18:45:36 | Zone 1 L= 30 bootstrap 500 / 1000 
+2026-10-20 18:45:54 | Zone 1 L= 30 bootstrap 750 / 1000 
+2026-10-20 18:46:12 | Zone 1 L= 30 bootstrap 1000 / 1000 
+2026-10-20 18:46:12 | Preparing zone 1 block length 90 
+2026-10-20 18:46:30 | Zone 1 L= 90 bootstrap 250 / 1000 
+2026-10-20 18:46:49 | Zone 1 L= 90 bootstrap 500 / 1000 
+2026-10-20 18:47:08 | Zone 1 L= 90 bootstrap 750 / 1000 
+2026-10-20 18:47:26 | Zone 1 L= 90 bootstrap 1000 / 1000 
+2026-10-20 18:47:27 | Preparing zone 2 block length 7 
+2026-10-20 18:47:44 | Zone 2 L= 7 bootstrap 250 / 1000 
+2026-10-20 18:48:01 | Zone 2 L= 7 bootstrap 500 / 1000 
+2026-10-20 18:48:19 | Zone 2 L= 7 bootstrap 750 / 1000 
+2026-10-20 18:48:36 | Zone 2 L= 7 bootstrap 1000 / 1000 
+2026-10-20 18:48:36 | Preparing zone 2 block length 30 
+2026-10-20 18:48:54 | Zone 2 L= 30 bootstrap 250 / 1000 
+2026-10-20 18:49:11 | Zone 2 L= 30 bootstrap 500 / 1000 
+2026-10-20 18:49:28 | Zone 2 L= 30 bootstrap 750 / 1000 
+2026-10-20 18:49:45 | Zone 2 L= 30 bootstrap 1000 / 1000 
+2026-10-20 18:49:45 | Preparing zone 2 block length 90 
+2026-10-20 18:50:02 | Zone 2 L= 90 bootstrap 250 / 1000 
+2026-10-20 18:50:19 | Zone 2 L= 90 bootstrap 500 / 1000 
+2026-10-20 18:50:37 | Zone 2 L= 90 bootstrap 750 / 1000 
+2026-10-20 18:50:54 | Zone 2 L= 90 bootstrap 1000 / 1000 
+2026-10-20 18:50:54 | Preparing zone 3 block length 7 
+2026-10-20 18:51:11 | Zone 3 L= 7 bootstrap 250 / 1000 
+2026-10-20 18:51:27 | Zone 3 L= 7 bootstrap 500 / 1000 
+2026-10-20 18:51:43 | Zone 3 L= 7 bootstrap 750 / 1000 
+2026-10-20 18:52:00 | Zone 3 L= 7 bootstrap 1000 / 1000 
+2026-10-20 18:52:00 | Preparing zone 3 block length 30 
+2026-10-20 18:52:16 | Zone 3 L= 30 bootstrap 250 / 1000 
+2026-10-20 18:52:32 | Zone 3 L= 30 bootstrap 500 / 1000 
+2026-10-20 18:52:48 | Zone 3 L= 30 bootstrap 750 / 1000 
+2026-10-20 18:53:04 | Zone 3 L= 30 bootstrap 1000 / 1000 
+2026-10-20 18:53:04 | Preparing zone 3 block length 90 
+2026-10-20 18:53:20 | Zone 3 L= 90 bootstrap 250 / 1000 
+2026-10-20 18:53:36 | Zone 3 L= 90 bootstrap 500 / 1000 
+2026-10-20 18:53:52 | Zone 3 L= 90 bootstrap 750 / 1000 
+2026-10-20 18:54:07 | Zone 3 L= 90 bootstrap 1000 / 1000 
+2026-10-20 18:54:07 | Preparing zone 4 block length 7 
+2026-10-20 18:54:11 | Zone 4 L= 7 bootstrap 250 / 1000 
+2026-10-20 18:54:14 | Zone 4 L= 7 bootstrap 500 / 1000 
+2026-10-20 18:54:18 | Zone 4 L= 7 bootstrap 750 / 1000 
+2026-10-20 18:54:21 | Zone 4 L= 7 bootstrap 1000 / 1000 
+2026-10-20 18:54:21 | Preparing zone 4 block length 30 
+2026-10-20 18:54:25 | Zone 4 L= 30 bootstrap 250 / 1000 
+2026-10-20 18:54:28 | Zone 4 L= 30 bootstrap 500 / 1000 
+2026-10-20 18:54:32 | Zone 4 L= 30 bootstrap 750 / 1000 
+2026-10-20 18:54:35 | Zone 4 L= 30 bootstrap 1000 / 1000 
+2026-10-20 18:54:35 | Preparing zone 4 block length 90 
+2026-10-20 18:54:39 | Zone 4 L= 90 bootstrap 250 / 1000 
+2026-10-20 18:54:42 | Zone 4 L= 90 bootstrap 500 / 1000 
+2026-10-20 18:54:46 | Zone 4 L= 90 bootstrap 750 / 1000 
+2026-10-20 18:54:49 | Zone 4 L= 90 bootstrap 1000 / 1000 
+2026-10-20 18:54:50 | R1-12 completed successfully. 
+2026-10-20 18:54:50 | Summary to upload: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results/R1_12_UPLOAD_THIS_TO_CHAT.txt 

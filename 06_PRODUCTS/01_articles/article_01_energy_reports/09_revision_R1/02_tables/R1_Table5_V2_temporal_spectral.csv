@@ -1,0 +1,5 @@
+Zone,Observed calendar (%),Interpolated calendar (%),Maximum missing gap (d),Maximum internal gap (d),Lag-1 WPD observed,Lag-1 WPD interpolated,First |r| < 0.2 observed (d),Continuous FFT segment (d),Dominant FFT period (d),Largest spectral band,Largest band fraction
+Zone 1,93.72,1.49,36,36,0.835,0.837,,1531,765.5,>365 d,0.609
+Zone 2,94.42,4.09,11,11,0.899,0.9,54,1291,645.5,120-365 d,0.341
+Zone 3,89.44,1.44,116,116,0.733,0.734,12,1427,356.8,2-10 d,0.3
+Zone 4,18.83,0.6,818,552,0.565,0.567,3,246,246,2-10 d,0.522

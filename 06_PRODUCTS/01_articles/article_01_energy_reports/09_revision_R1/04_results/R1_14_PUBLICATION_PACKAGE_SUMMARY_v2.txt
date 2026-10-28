@@ -1,0 +1,23 @@
+R1-14 V2 PUBLICATION RESULTS PACKAGE
+
+MAIN MANUSCRIPT TABLES:
+Table 2 — Descriptive statistics and dependence-aware WPD uncertainty.
+Table 3 — Weibull/Rayleigh fit metrics and Weibull k uncertainty.
+Table 4 — Kruskal-Wallis global comparisons and effect sizes.
+Table 5 — Temporal coverage, interpolation sensitivity and spectral summary.
+
+MAIN MANUSCRIPT FIGURES:
+Monthly VV/WPD time series.
+Empirical CDF with Weibull/Rayleigh fits.
+Station contribution to zonal mean WPD.
+ACF interpolation-sensitivity comparison.
+WPD spectral-band composition.
+
+SUPPLEMENTARY:
+Full Dunn-Holm pairwise results.
+Detailed station contribution and LOSO sensitivity.
+Bootstrap sensitivity at 7, 30 and 90 days.
+Full FFT band-energy fractions.
+
+Interpretation remains conditional on the observed station network.
+No output in this package is an area-weighted continuous wind-resource estimate.

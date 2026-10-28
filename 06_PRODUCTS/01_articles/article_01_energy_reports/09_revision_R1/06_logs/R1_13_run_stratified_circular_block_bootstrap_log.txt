@@ -1,0 +1,63 @@
+2026-10-21 14:17:55 | Starting R1-13 run-stratified circular block bootstrap. 
+2026-10-21 14:17:56 | Zone 1 requested block 7 
+2026-10-21 14:18:19 | Zone 1 L= 7 bootstrap 250 / 1000 
+2026-10-21 14:18:41 | Zone 1 L= 7 bootstrap 500 / 1000 
+2026-10-21 14:19:03 | Zone 1 L= 7 bootstrap 750 / 1000 
+2026-10-21 14:19:26 | Zone 1 L= 7 bootstrap 1000 / 1000 
+2026-10-21 14:19:26 | Zone 1 requested block 30 
+2026-10-21 14:19:49 | Zone 1 L= 30 bootstrap 250 / 1000 
+2026-10-21 14:20:13 | Zone 1 L= 30 bootstrap 500 / 1000 
+2026-10-21 14:20:35 | Zone 1 L= 30 bootstrap 750 / 1000 
+2026-10-21 14:20:58 | Zone 1 L= 30 bootstrap 1000 / 1000 
+2026-10-21 14:20:58 | Zone 1 requested block 90 
+2026-10-21 14:21:20 | Zone 1 L= 90 bootstrap 250 / 1000 
+2026-10-21 14:21:41 | Zone 1 L= 90 bootstrap 500 / 1000 
+2026-10-21 14:22:02 | Zone 1 L= 90 bootstrap 750 / 1000 
+2026-10-21 14:22:24 | Zone 1 L= 90 bootstrap 1000 / 1000 
+2026-10-21 14:22:24 | Zone 2 requested block 7 
+2026-10-21 14:22:51 | Zone 2 L= 7 bootstrap 250 / 1000 
+2026-10-21 14:23:18 | Zone 2 L= 7 bootstrap 500 / 1000 
+2026-10-21 14:23:45 | Zone 2 L= 7 bootstrap 750 / 1000 
+2026-10-21 14:24:10 | Zone 2 L= 7 bootstrap 1000 / 1000 
+2026-10-21 14:24:10 | Zone 2 requested block 30 
+2026-10-21 14:24:36 | Zone 2 L= 30 bootstrap 250 / 1000 
+2026-10-21 14:25:02 | Zone 2 L= 30 bootstrap 500 / 1000 
+2026-10-21 14:25:27 | Zone 2 L= 30 bootstrap 750 / 1000 
+2026-10-21 14:25:53 | Zone 2 L= 30 bootstrap 1000 / 1000 
+2026-10-21 14:25:53 | Zone 2 requested block 90 
+2026-10-21 14:26:18 | Zone 2 L= 90 bootstrap 250 / 1000 
+2026-10-21 14:26:44 | Zone 2 L= 90 bootstrap 500 / 1000 
+2026-10-21 14:27:09 | Zone 2 L= 90 bootstrap 750 / 1000 
+2026-10-21 14:27:34 | Zone 2 L= 90 bootstrap 1000 / 1000 
+2026-10-21 14:27:34 | Zone 3 requested block 7 
+2026-10-21 14:27:54 | Zone 3 L= 7 bootstrap 250 / 1000 
+2026-10-21 14:28:13 | Zone 3 L= 7 bootstrap 500 / 1000 
+2026-10-21 14:28:33 | Zone 3 L= 7 bootstrap 750 / 1000 
+2026-10-21 14:28:53 | Zone 3 L= 7 bootstrap 1000 / 1000 
+2026-10-21 14:28:53 | Zone 3 requested block 30 
+2026-10-21 14:29:13 | Zone 3 L= 30 bootstrap 250 / 1000 
+2026-10-21 14:29:33 | Zone 3 L= 30 bootstrap 500 / 1000 
+2026-10-21 14:29:52 | Zone 3 L= 30 bootstrap 750 / 1000 
+2026-10-21 14:30:12 | Zone 3 L= 30 bootstrap 1000 / 1000 
+2026-10-21 14:30:12 | Zone 3 requested block 90 
+2026-10-21 14:30:31 | Zone 3 L= 90 bootstrap 250 / 1000 
+2026-10-21 14:30:51 | Zone 3 L= 90 bootstrap 500 / 1000 
+2026-10-21 14:31:11 | Zone 3 L= 90 bootstrap 750 / 1000 
+2026-10-21 14:31:31 | Zone 3 L= 90 bootstrap 1000 / 1000 
+2026-10-21 14:31:31 | Zone 4 requested block 7 
+2026-10-21 14:31:37 | Zone 4 L= 7 bootstrap 250 / 1000 
+2026-10-21 14:31:43 | Zone 4 L= 7 bootstrap 500 / 1000 
+2026-10-21 14:31:49 | Zone 4 L= 7 bootstrap 750 / 1000 
+2026-10-21 14:31:55 | Zone 4 L= 7 bootstrap 1000 / 1000 
+2026-10-21 14:31:55 | Zone 4 requested block 30 
+2026-10-21 14:32:01 | Zone 4 L= 30 bootstrap 250 / 1000 
+2026-10-21 14:32:07 | Zone 4 L= 30 bootstrap 500 / 1000 
+2026-10-21 14:32:13 | Zone 4 L= 30 bootstrap 750 / 1000 
+2026-10-21 14:32:19 | Zone 4 L= 30 bootstrap 1000 / 1000 
+2026-10-21 14:32:19 | Zone 4 requested block 90 
+2026-10-21 14:32:25 | Zone 4 L= 90 bootstrap 250 / 1000 
+2026-10-21 14:32:31 | Zone 4 L= 90 bootstrap 500 / 1000 
+2026-10-21 14:32:37 | Zone 4 L= 90 bootstrap 750 / 1000 
+2026-10-21 14:32:43 | Zone 4 L= 90 bootstrap 1000 / 1000 
+2026-10-21 14:32:43 | R1-13 completed successfully. 
+2026-10-21 14:32:43 | Summary to upload: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results/R1_13_UPLOAD_THIS_TO_CHAT.txt 

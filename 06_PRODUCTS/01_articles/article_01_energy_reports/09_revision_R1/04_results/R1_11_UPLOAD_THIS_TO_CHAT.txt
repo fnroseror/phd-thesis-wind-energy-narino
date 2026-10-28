@@ -1,0 +1,312 @@
+============================================================
+R1-11 V2 TEMPORAL / SPECTRAL CORE — SUMMARY FOR CHATGPT
+============================================================
+
+============================================================
+V2 CHECKSUM
+============================================================
+Clave <zone>
+     zone     n  mean_VV mean_WPD n_expected mean_WPD_expected n_match mean_WPD_abs_difference
+   <char> <int>    <num>    <num>      <int>             <num>  <lgcl>                   <num>
+1:      1 43033 1.218369 31.95914      43033          31.95914    TRUE            1.154211e-07
+2:      2 43618 2.612520 30.43975      43618          30.43974    TRUE            1.903204e-07
+3:      3 42416 2.503744 26.29786      42416          26.29786    TRUE            3.514902e-07
+4:      4  8744 2.699503 18.68293       8744          18.68293    TRUE            1.066810e-07
+
+============================================================
+DAILY GAP SUMMARY
+============================================================
+     zone total_calendar_days observed_days missing_days pct_observed_days n_missing_runs
+   <char>               <int>         <int>        <int>             <num>          <int>
+1:      1                2007          1881          126          93.72197             22
+2:      2                2007          1895          112          94.41953             36
+3:      3                2007          1795          212          89.43697             15
+4:      4                2007           378         1629          18.83408             12
+   max_missing_gap_days median_missing_gap_days n_internal_gaps max_internal_gap_days n_internal_gaps_le_7
+                  <int>                   <num>           <int>                 <int>                <int>
+1:                   36                     1.5              21                    36                   17
+2:                   11                     2.0              36                    11                   33
+3:                  116                     3.0              15                   116                   11
+4:                  818                     3.5              11                   552                    7
+   n_internal_gaps_gt_7 leading_gap_days trailing_gap_days
+                  <int>            <int>             <int>
+1:                    4               17                 0
+2:                    3                0                 0
+3:                    4                0                 0
+4:                    4              818                 0
+
+============================================================
+SHORT-GAP INTERPOLATION SUMMARY
+============================================================
+Clave <zone>
+     zone total_calendar_days original_observed_days newly_interpolated_days pct_interpolated_total_calendar
+   <char>               <int>                  <int>                   <int>                           <num>
+1:      1                2007                   1881                      30                       1.4947683
+2:      2                2007                   1895                      82                       4.0857000
+3:      3                2007                   1795                      29                       1.4449427
+4:      4                2007                    378                      12                       0.5979073
+   remaining_missing_days pct_remaining_missing max_remaining_gap_days
+                    <int>                 <num>                  <int>
+1:                     96              4.783259                     36
+2:                     30              1.494768                     11
+3:                    183              9.118087                    116
+4:                   1617             80.568012                    818
+
+============================================================
+CALENDAR-PRESERVING LAG CORRELATION SUMMARY
+============================================================
+Índice: <variable>
+      zone variable                             scenario lag1_correlation lag1_n_pairs
+    <char>   <char>                               <char>            <num>        <int>
+ 1:      1       VV              Observed_calendar_pairs        0.9079297         1859
+ 2:      1       VV Short_gap_interp_max7_calendar_pairs        0.9090313         1906
+ 3:      1      WPD              Observed_calendar_pairs        0.8352628         1859
+ 4:      1      WPD Short_gap_interp_max7_calendar_pairs        0.8369001         1906
+ 5:      2       VV              Observed_calendar_pairs        0.8642358         1858
+ 6:      2       VV Short_gap_interp_max7_calendar_pairs        0.8702067         1973
+ 7:      2      WPD              Observed_calendar_pairs        0.8994873         1858
+ 8:      2      WPD Short_gap_interp_max7_calendar_pairs        0.9001455         1973
+ 9:      3       VV              Observed_calendar_pairs        0.8084401         1779
+10:      3       VV Short_gap_interp_max7_calendar_pairs        0.8100412         1819
+11:      3      WPD              Observed_calendar_pairs        0.7329228         1779
+12:      3      WPD Short_gap_interp_max7_calendar_pairs        0.7340930         1819
+13:      4       VV              Observed_calendar_pairs        0.6133999          366
+14:      4       VV Short_gap_interp_max7_calendar_pairs        0.6147269          385
+15:      4      WPD              Observed_calendar_pairs        0.5651188          366
+16:      4      WPD Short_gap_interp_max7_calendar_pairs        0.5671168          385
+    first_abs_corr_below_0_2 max_abs_corr_lag1_90
+                       <int>                <num>
+ 1:                       NA            0.9079297
+ 2:                       NA            0.9090313
+ 3:                       NA            0.8352628
+ 4:                       NA            0.8369001
+ 5:                       59            0.8642358
+ 6:                       60            0.8702067
+ 7:                       54            0.8994873
+ 8:                       54            0.9001455
+ 9:                       84            0.8084401
+10:                       84            0.8100412
+11:                       12            0.7329228
+12:                       12            0.7340930
+13:                        3            0.6133999
+14:                        3            0.6147269
+15:                        3            0.5651188
+16:                        3            0.5671168
+
+============================================================
+INTERPOLATION SENSITIVITY — LAG 1
+============================================================
+Clave <zone, variable>
+     zone variable lag1_correlation_Observed_calendar_pairs
+   <char>   <char>                                    <num>
+1:      1       VV                                0.9079297
+2:      1      WPD                                0.8352628
+3:      2       VV                                0.8642358
+4:      2      WPD                                0.8994873
+5:      3       VV                                0.8084401
+6:      3      WPD                                0.7329228
+7:      4       VV                                0.6133999
+8:      4      WPD                                0.5651188
+   lag1_correlation_Short_gap_interp_max7_calendar_pairs delta_lag1_interp_minus_observed
+                                                   <num>                            <num>
+1:                                             0.9090313                     0.0011016696
+2:                                             0.8369001                     0.0016373629
+3:                                             0.8702067                     0.0059708954
+4:                                             0.9001455                     0.0006582418
+5:                                             0.8100412                     0.0016010983
+6:                                             0.7340930                     0.0011702036
+7:                                             0.6147269                     0.0013270222
+8:                                             0.5671168                     0.0019979768
+   first_abs_corr_below_0_2_Observed_calendar_pairs
+                                              <int>
+1:                                               NA
+2:                                               NA
+3:                                               59
+4:                                               54
+5:                                               84
+6:                                               12
+7:                                                3
+8:                                                3
+   first_abs_corr_below_0_2_Short_gap_interp_max7_calendar_pairs
+                                                           <int>
+1:                                                            NA
+2:                                                            NA
+3:                                                            60
+4:                                                            54
+5:                                                            84
+6:                                                            12
+7:                                                             3
+8:                                                             3
+
+============================================================
+LONGEST CONTINUOUS SEGMENTS AFTER MAXGAP7
+============================================================
+Índice: <variable>
+     zone variable start_date   end_date segment_length_days n_interpolated_days_in_segment
+   <char>   <char>     <Date>     <Date>               <int>                          <int>
+1:      1       VV 2017-01-31 2021-04-10                1531                             22
+2:      1      WPD 2017-01-31 2021-04-10                1531                             22
+3:      2       VV 2017-01-31 2020-08-13                1291                              6
+4:      2      WPD 2017-01-31 2020-08-13                1291                              6
+5:      3       VV 2017-01-31 2020-12-27                1427                             13
+6:      3      WPD 2017-01-31 2020-12-27                1427                             13
+7:      4       VV 2021-05-03 2022-01-03                 246                              9
+8:      4      WPD 2021-05-03 2022-01-03                 246                              9
+   pct_interpolated_days_in_segment
+                              <num>
+1:                        1.4369693
+2:                        1.4369693
+3:                        0.4647560
+4:                        0.4647560
+5:                        0.9110021
+6:                        0.9110021
+7:                        3.6585366
+8:                        3.6585366
+
+============================================================
+STANDARD ACF ON LONGEST CONTINUOUS SEGMENT
+============================================================
+     zone variable segment_start segment_end segment_length_days pct_interpolated_days_in_segment  lag1_acf
+   <char>   <char>        <Date>      <Date>               <int>                            <num>     <num>
+1:      1       VV    2017-01-31  2021-04-10                1531                        1.4369693 0.9000595
+2:      1      WPD    2017-01-31  2021-04-10                1531                        1.4369693 0.8290112
+3:      2       VV    2017-01-31  2020-08-13                1291                        0.4647560 0.8791500
+4:      2      WPD    2017-01-31  2020-08-13                1291                        0.4647560 0.8964103
+5:      3       VV    2017-01-31  2020-12-27                1427                        0.9110021 0.7587210
+6:      3      WPD    2017-01-31  2020-12-27                1427                        0.9110021 0.7136942
+7:      4       VV    2021-05-03  2022-01-03                 246                        3.6585366 0.6209518
+8:      4      WPD    2021-05-03  2022-01-03                 246                        3.6585366 0.5367215
+   first_abs_acf_below_0_2 approximate_95pct_white_noise_bound
+                     <int>                               <num>
+1:                      NA                          0.05009201
+2:                      NA                          0.05009201
+3:                      56                          0.05454977
+4:                      52                          0.05454977
+5:                      22                          0.05188527
+6:                       9                          0.05188527
+7:                       3                          0.12496504
+8:                       3                          0.12496504
+
+============================================================
+FFT SUMMARY
+============================================================
+     zone variable eligible_fft segment_start segment_end segment_length_days
+   <char>   <char>       <lgcl>        <Date>      <Date>               <int>
+1:      1       VV         TRUE    2017-01-31  2021-04-10                1531
+2:      1      WPD         TRUE    2017-01-31  2021-04-10                1531
+3:      2       VV         TRUE    2017-01-31  2020-08-13                1291
+4:      2      WPD         TRUE    2017-01-31  2020-08-13                1291
+5:      3       VV         TRUE    2017-01-31  2020-12-27                1427
+6:      3      WPD         TRUE    2017-01-31  2020-12-27                1427
+7:      4       VV         TRUE    2021-05-03  2022-01-03                 246
+8:      4      WPD         TRUE    2021-05-03  2022-01-03                 246
+   pct_interpolated_days_in_segment dominant_period_days dominant_frequency_per_day total_one_sided_power
+                              <num>                <num>                      <num>                 <num>
+1:                        1.4369693            1531.0000               0.0006531679          7.074737e+05
+2:                        1.4369693             765.5000               0.0013063357          1.000285e+10
+3:                        0.4647560             430.3333               0.0023237800          6.227258e+05
+4:                        0.4647560             645.5000               0.0015491867          3.209164e+09
+5:                        0.9110021             356.7500               0.0028030834          7.010830e+05
+6:                        0.9110021             356.7500               0.0028030834          2.269199e+09
+7:                        3.6585366             246.0000               0.0040650407          1.585419e+04
+8:                        3.6585366             246.0000               0.0040650407          6.305292e+06
+
+============================================================
+FFT BAND ENERGY FRACTIONS
+============================================================
+      zone variable segment_length_days      band n_frequency_bins   band_power energy_fraction
+    <char>   <char>               <int>    <char>            <int>        <num>           <num>
+ 1:      1       VV                1531   10-30 d              102 4.090276e+04      0.05781524
+ 2:      1       VV                1531 120-365 d                8 1.470293e+04      0.02078230
+ 3:      1       VV                1531    2-10 d              612 8.812960e+04      0.12456943
+ 4:      1       VV                1531  30-120 d               39 6.901728e+04      0.09755455
+ 5:      1       VV                1531    >365 d                4 4.947212e+05      0.69927848
+ 6:      1      WPD                1531   10-30 d              102 6.881112e+08      0.06879150
+ 7:      1      WPD                1531 120-365 d                8 2.501153e+08      0.02500440
+ 8:      1      WPD                1531    2-10 d              612 1.923939e+09      0.19233902
+ 9:      1      WPD                1531  30-120 d               39 1.047053e+09      0.10467547
+10:      1      WPD                1531    >365 d                4 6.093634e+09      0.60918962
+11:      2       VV                1291   10-30 d               86 1.081747e+05      0.17371153
+12:      2       VV                1291 120-365 d                7 1.759571e+05      0.28255958
+13:      2       VV                1291    2-10 d              516 8.685313e+04      0.13947250
+14:      2       VV                1291  30-120 d               33 9.826617e+04      0.15780006
+15:      2       VV                1291    >365 d                3 1.534747e+05      0.24645634
+16:      2      WPD                1291   10-30 d               86 3.084089e+08      0.09610257
+17:      2      WPD                1291 120-365 d                7 1.093274e+09      0.34067241
+18:      2      WPD                1291    2-10 d              516 3.781789e+08      0.11784344
+19:      2      WPD                1291  30-120 d               33 6.159684e+08      0.19194047
+20:      2      WPD                1291    >365 d                3 8.133341e+08      0.25344111
+21:      3       VV                1427   10-30 d               95 1.479285e+05      0.21099999
+22:      3       VV                1427 120-365 d                8 2.096548e+05      0.29904420
+23:      3       VV                1427    2-10 d              571 1.878886e+05      0.26799769
+24:      3       VV                1427  30-120 d               36 9.732528e+04      0.13882135
+25:      3       VV                1427    >365 d                3 5.828578e+04      0.08313678
+26:      3      WPD                1427   10-30 d               95 6.291100e+08      0.27723886
+27:      3      WPD                1427 120-365 d                8 4.676090e+08      0.20606791
+28:      3      WPD                1427    2-10 d              571 6.816919e+08      0.30041089
+29:      3      WPD                1427  30-120 d               36 4.036376e+08      0.17787672
+30:      3      WPD                1427    >365 d                3 8.715001e+07      0.03840563
+31:      4       VV                 246   10-30 d               16 2.499098e+03      0.15763013
+32:      4       VV                 246 120-365 d                2 2.593024e+03      0.16355449
+33:      4       VV                 246    2-10 d               99 7.409023e+03      0.46732279
+34:      4       VV                 246  30-120 d                6 3.353043e+03      0.21149258
+35:      4       VV                 246    >365 d                0 0.000000e+00      0.00000000
+36:      4      WPD                 246   10-30 d               16 1.091927e+06      0.17317634
+37:      4      WPD                 246 120-365 d                2 7.225788e+05      0.11459878
+38:      4      WPD                 246    2-10 d               99 3.294508e+06      0.52249897
+39:      4      WPD                 246  30-120 d                6 1.196277e+06      0.18972591
+40:      4      WPD                 246    >365 d                0 0.000000e+00      0.00000000
+      zone variable segment_length_days      band n_frequency_bins   band_power energy_fraction
+    <char>   <char>               <int>    <char>            <int>        <num>           <num>
+
+============================================================
+WPD REVIEWER TEMPORAL TABLE
+============================================================
+Clave <zone>
+     zone                             scenario lag1_correlation lag1_n_pairs first_abs_corr_below_0_2
+   <char>                               <char>            <num>        <int>                    <int>
+1:      1              Observed_calendar_pairs        0.8352628         1859                       NA
+2:      1 Short_gap_interp_max7_calendar_pairs        0.8369001         1906                       NA
+3:      2              Observed_calendar_pairs        0.8994873         1858                       54
+4:      2 Short_gap_interp_max7_calendar_pairs        0.9001455         1973                       54
+5:      3              Observed_calendar_pairs        0.7329228         1779                       12
+6:      3 Short_gap_interp_max7_calendar_pairs        0.7340930         1819                       12
+7:      4              Observed_calendar_pairs        0.5651188          366                        3
+8:      4 Short_gap_interp_max7_calendar_pairs        0.5671168          385                        3
+   segment_start segment_end segment_length_days n_interpolated_days_in_segment
+          <Date>      <Date>               <int>                          <int>
+1:    2017-01-31  2021-04-10                1531                             22
+2:    2017-01-31  2021-04-10                1531                             22
+3:    2017-01-31  2020-08-13                1291                              6
+4:    2017-01-31  2020-08-13                1291                              6
+5:    2017-01-31  2020-12-27                1427                             13
+6:    2017-01-31  2020-12-27                1427                             13
+7:    2021-05-03  2022-01-03                 246                              9
+8:    2021-05-03  2022-01-03                 246                              9
+   pct_interpolated_days_in_segment pct_observed_days max_missing_gap_days max_internal_gap_days
+                              <num>             <num>                <int>                 <int>
+1:                        1.4369693          93.72197                   36                    36
+2:                        1.4369693          93.72197                   36                    36
+3:                        0.4647560          94.41953                   11                    11
+4:                        0.4647560          94.41953                   11                    11
+5:                        0.9110021          89.43697                  116                   116
+6:                        0.9110021          89.43697                  116                   116
+7:                        3.6585366          18.83408                  818                   552
+8:                        3.6585366          18.83408                  818                   552
+   n_internal_gaps_le_7 n_internal_gaps_gt_7
+                  <int>                <int>
+1:                   17                    4
+2:                   17                    4
+3:                   33                    3
+4:                   33                    3
+5:                   11                    4
+6:                   11                    4
+7:                    7                    4
+8:                    7                    4
+
+============================================================
+INTERPRETATION RULE
+============================================================
+Use calendar-preserving lag correlations to discuss the effect of interpolation because they preserve actual calendar spacing. Use standard ACF/PACF and FFT only on explicitly reported longest continuous segments after interpolation of internal gaps <=7 days. Zone 4 must be strongly qualified if its long missing intervals remain large relative to the analyzed calendar.
+
+R1-11 COMPLETED SUCCESSFULLY

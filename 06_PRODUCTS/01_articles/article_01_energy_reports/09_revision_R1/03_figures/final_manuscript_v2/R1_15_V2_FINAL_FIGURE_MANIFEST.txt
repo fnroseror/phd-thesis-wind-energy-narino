@@ -1,0 +1,35 @@
+ENERGY REPORTS — V2 FINAL MANUSCRIPT FIGURE PACKAGE
+
+Generated: 2026-10-26 11:31:33
+Canonical V2 rows: 137811
+
+FIGURE PLAN
+Figure 1 — Wind capacity (revision figure already frozen).
+Figure 2 — Study area / IDEAM network / analytical units.
+             Retain map only if station grouping and station locations are unchanged.
+             Caption MUST use 'analytical aggregation units' framing.
+Figure 3 — Methodological framework V2 (frozen).
+Figure 4 — Monthly VV and WPD from canonical V2.
+Figure 5 — Empirical CDF + Weibull/Rayleigh from canonical V2/R1-10.
+Figure 6 — Station contribution from frozen R1-09 output.
+Figure 7 — ACF sensitivity from R1-11.
+Figure 8 — WPD spectral bands from R1-11.
+Figure S1 — Empirical density + Weibull/Rayleigh, retained as
+            direct evidence for Reviewer 2 comment 7.
+
+V1 ANALYTICAL FIGURES MUST NOT BE USED IN THE REVISED MANUSCRIPT.
+
+RESULT FIGURE CHECK
+Figure_04_V2_Monthly_VV_WPD.png : TRUE
+Figure_05_V2_CDF_Weibull_Rayleigh.png : TRUE
+Figure_06_V2_Station_WPD_Contribution.png : TRUE
+Figure_07_V2_ACF_Interpolation_Sensitivity.png : TRUE
+Figure_08_V2_WPD_Spectral_Bands.png : TRUE
+
+Figure 1 frozen files copied: 3
+Figure 3 frozen files copied: 3
+
+Figure 2 is intentionally not regenerated here because it is a
+study-area/network map rather than a V1 analytical result. It should
+be retained only after visual/content verification against the same
+16-station grouping used in V2.

@@ -1,0 +1,105 @@
+============================================================
+R1-02 BOOTSTRAP UNCERTAINTY — SUMMARY FOR CHATGPT
+============================================================
+
+BOOTSTRAP DESIGN
+Replicates: 2000 
+CI level: 0.95 
+Unit: calendar-day cluster
+Seed: 20261020 
+
+============================================================
+V1 SCIENTIFIC CHECKSUM
+============================================================
+Clave <zone>
+     zone     n  mean_VV  mean_WPD n_expected mean_WPD_expected n_match WPD_abs_difference
+   <char> <int>    <num>     <num>      <int>             <num>  <lgcl>              <num>
+1:      1 42706 2.434099 140.75903      42706         140.75903    TRUE       4.140546e-06
+2:      2 43618 2.619652  15.81935      43618          15.81935    TRUE       1.587858e-06
+3:      3 42416 2.500219  12.96353      42416          12.96353    TRUE       3.076777e-06
+4:      4  8744 2.694986  16.94948       8744          16.94948    TRUE       2.442887e-06
+
+============================================================
+WEIBULL MLE VALIDATION
+============================================================
+     zone fitdistrplus_k fast_mle_k abs_difference_k fitdistrplus_scale fast_mle_scale abs_difference_scale
+   <char>          <num>      <num>            <num>              <num>          <num>                <num>
+1:      1      0.7880893  0.7880909     1.605329e-06           2.058123       2.058066         5.645064e-05
+2:      2      1.9841502  1.9840928     5.746579e-05           2.967818       2.968035         2.165465e-04
+3:      3      2.0888799  2.0891504     2.705104e-04           2.831368       2.831428         5.937859e-05
+4:      4      2.1638745  2.1638807     6.142645e-06           3.051806       3.051741         6.523238e-05
+
+============================================================
+POINT ESTIMATES
+============================================================
+     zone n_records n_days n_positive_VV  mean_WPD Weibull_k Weibull_scale
+   <char>     <int>  <int>         <int>     <num>     <num>         <num>
+1:      1     42706   1876         42679 140.75903 0.7880893      2.058123
+2:      2     43618   1886         43618  15.81935 1.9841502      2.967818
+3:      3     42416   1790         42416  12.96353 2.0888799      2.831368
+4:      4      8744    378          8744  16.94948 2.1638745      3.051806
+
+============================================================
+BOOTSTRAP QUALITY AUDIT
+============================================================
+     zone n_replicates valid_mean_WPD valid_Weibull_k valid_Weibull_scale min_resampled_records
+   <char>        <int>          <int>           <int>               <int>                 <int>
+1:      1         2000           2000            2000                2000                 42269
+2:      2         2000           2000            2000                2000                 43200
+3:      3         2000           2000            2000                2000                 42153
+4:      4         2000           2000            2000                2000                  8498
+   median_resampled_records max_resampled_records
+                      <num>                 <int>
+1:                  42706.5                 43115
+2:                  43622.0                 44028
+3:                  42417.0                 42628
+4:                   8747.0                  8932
+
+============================================================
+95% BOOTSTRAP CONFIDENCE INTERVALS
+============================================================
+Clave <zone>
+     zone n_records n_days  mean_WPD mean_WPD_boot_SE mean_WPD_CI_low mean_WPD_CI_high Weibull_k
+   <char>     <int>  <int>     <num>            <num>           <num>            <num>     <num>
+1:      1     42706   1876 140.75903        7.8768017       125.94262        156.34297 0.7880893
+2:      2     43618   1886  15.81935        0.5995810        14.71608         17.03855 1.9841502
+3:      3     42416   1790  12.96353        0.3815760        12.21699         13.74869 2.0888799
+4:      4      8744    378  16.94948        0.7539167        15.47007         18.41572 2.1638745
+   Weibull_k_boot_SE Weibull_k_CI_low Weibull_k_CI_high Weibull_scale Weibull_scale_CI_low
+               <num>            <num>             <num>         <num>                <num>
+1:        0.00683565        0.7751929          0.802268      2.058123             1.945488
+2:        0.02415059        1.9372030          2.032586      2.967818             2.914901
+3:        0.02396127        2.0437480          2.136428      2.831368             2.784316
+4:        0.03685378        2.0955890          2.241493      3.051806             2.959440
+   Weibull_scale_CI_high
+                   <num>
+1:              2.178674
+2:              3.023505
+3:              2.879590
+4:              3.140896
+
+============================================================
+UNCERTAINTY DIAGNOSTICS
+============================================================
+Clave <zone>
+     zone  mean_WPD mean_WPD_CI_low mean_WPD_CI_high mean_WPD_relative_CI_width_pct Weibull_k
+   <char>     <num>           <num>            <num>                          <num>     <num>
+1:      1 140.75903       125.94262        156.34297                       21.59744 0.7880893
+2:      2  15.81935        14.71608         17.03855                       14.68123 1.9841502
+3:      3  12.96353        12.21699         13.74869                       11.81547 2.0888799
+4:      4  16.94948        15.47007         18.41572                       17.37896 2.1638745
+   Weibull_k_CI_low Weibull_k_CI_high Weibull_k_relative_CI_width_pct
+              <num>             <num>                           <num>
+1:        0.7751929          0.802268                        3.435537
+2:        1.9372030          2.032586                        4.807269
+3:        2.0437480          2.136428                        4.436818
+4:        2.0955890          2.241493                        6.742707
+
+============================================================
+OUTPUT LOCATIONS
+============================================================
+Tables : C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/02_tables 
+Figures: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/03_figures 
+Results: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results 
+
+R1-02 COMPLETED SUCCESSFULLY

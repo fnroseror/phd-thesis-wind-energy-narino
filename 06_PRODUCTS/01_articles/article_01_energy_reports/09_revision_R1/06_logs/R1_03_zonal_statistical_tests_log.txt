@@ -1,0 +1,5 @@
+2026-10-20 15:05:59 | Starting R1-03 zonal statistical tests. 
+2026-10-20 15:05:59 | Input dataset: E:/Academia/UNAL/DOCTORADO/Fase 2/Productos/Articulo 1/Proceso/01_data_processed/02E_article_main_wpd_dataset_after_qc.rds 
+2026-10-20 15:05:59 | V1 scientific checksum: PASSED. 
+2026-10-20 15:06:02 | R1-03 completed successfully. 
+2026-10-20 15:06:02 | Summary to upload: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results/R1_03_UPLOAD_THIS_TO_CHAT.txt 

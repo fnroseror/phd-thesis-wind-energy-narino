@@ -1,0 +1,205 @@
+============================================================
+R1-07 PHYSICAL ARCHITECTURE COMPARISON — SUMMARY FOR CHATGPT
+============================================================
+
+============================================================
+V1 CHECKSUM
+============================================================
+Clave <zone>
+     zone     n  mean_VV  mean_WPD n_expected mean_WPD_expected n_match WPD_abs_difference
+   <char> <int>    <num>     <num>      <int>             <num>  <lgcl>              <num>
+1:      1 42706 2.434099 140.75903      42706         140.75903    TRUE       4.140546e-06
+2:      2 43618 2.619652  15.81935      43618          15.81935    TRUE       1.587858e-06
+3:      3 42416 2.500219  12.96353      42416          12.96353    TRUE       3.076777e-06
+4:      4  8744 2.694986  16.94948       8744          16.94948    TRUE       2.442887e-06
+
+============================================================
+CANDIDATE TIME-SUPPORT AUDIT
+============================================================
+   n_station_hours_before_candidate_support n_station_hours_on_candidate_support
+                                      <int>                                <int>
+1:                                   365512                               335833
+   pct_station_hours_on_candidate_support
+                                    <num>
+1:                               91.88016
+
+============================================================
+STATION-HOUR QC20 RETENTION
+============================================================
+      zone    station n_station_hours n_retained_QC20 pct_retained_QC20 mean_VV_before median_VV_before
+    <char>     <char>           <int>           <int>             <num>          <num>            <num>
+ 1:      1   51025090           26311           26295          99.93919      0.8009876        0.6380000
+ 2:      1   51025060           20750           15473          74.56867     11.0734261        0.6166667
+ 3:      1   51025080           27153           27153         100.00000      1.7222799        1.5666667
+ 4:      1   51035020           12762           12762         100.00000      1.5883504        1.3500000
+ 5:      1 5102500128           16418           16418         100.00000      0.6187386        0.5166667
+ 6:      2   52055220           36120           36120         100.00000      2.4443820        2.1500000
+ 7:      2   52055170           31387           31387         100.00000      2.6091000        2.5500000
+ 8:      2   52055230           24309           24309         100.00000      2.1087871        1.6333333
+ 9:      2   52055160            6273            6259          99.77682      8.3353621        8.0000000
+10:      3   52055210           33766           33766         100.00000      1.7161916        1.6000000
+11:      3   52055150           27768           27764          99.98559      4.7687004        4.2666667
+12:      3   52045080           31164           31164         100.00000      1.4408634        1.3000000
+13:      3   47015100           18513           18513         100.00000      2.0557418        1.7666667
+14:      3 5205500123           11783           11783         100.00000      2.9370117        2.5666667
+15:      4   52035040            2650            2650         100.00000      3.1706358        3.3166667
+16:      4   52040050            8706            8706         100.00000      2.5504170        2.2333333
+    mean_VV_after_QC20 median_VV_after_QC20
+                 <num>                <num>
+ 1:          0.7831231            0.6373333
+ 2:          2.3276779            0.3833333
+ 3:          1.7222799            1.5666667
+ 4:          1.5883504            1.3500000
+ 5:          0.6187386            0.5166667
+ 6:          2.4443820            2.1500000
+ 7:          2.6091000            2.5500000
+ 8:          2.1087871            1.6333333
+ 9:          8.3057440            7.9800000
+10:          1.7161916            1.6000000
+11:          4.7662382            4.2666667
+12:          1.4408634            1.3000000
+13:          2.0557418            1.7666667
+14:          2.9370117            2.5666667
+15:          3.1706358            3.3166667
+16:          2.5504170            2.2333333
+
+============================================================
+RHO JOIN AUDIT
+============================================================
+Clave <zone>
+     zone n_station_hours n_with_rho pct_with_rho
+   <char>           <int>      <int>        <num>
+1:      1           98101      98101          100
+2:      2           98075      98075          100
+3:      3          122990     122990          100
+4:      4           11356      11356          100
+
+============================================================
+ARCHITECTURE SUMMARY
+============================================================
+Índice: <architecture>
+                                            architecture   zone n_zone_hours  mean_VV median_VV    sd_VV
+                                                  <char> <char>        <int>    <num>     <num>    <num>
+ 1:                             A_V1_submitted_reference      1        42706 2.434099 0.9750000 3.801688
+ 2:     B_stationhour_QC20_equal_station_meanVV_then_WPD      1        43033 1.218369 0.9101667 1.218179
+ 3: C_stationhour_QC20_WPD_first_then_equal_station_mean      1        43033 1.218369 0.9101667 1.218179
+ 4:                             A_V1_submitted_reference      2        43618 2.619652 2.3833333 1.407277
+ 5:     B_stationhour_QC20_equal_station_meanVV_then_WPD      2        43618 2.612520 2.3833333 1.384742
+ 6: C_stationhour_QC20_WPD_first_then_equal_station_mean      2        43618 2.612520 2.3833333 1.384742
+ 7:                             A_V1_submitted_reference      3        42416 2.500219 2.3333333 1.271463
+ 8:     B_stationhour_QC20_equal_station_meanVV_then_WPD      3        42416 2.503744 2.3388889 1.271504
+ 9: C_stationhour_QC20_WPD_first_then_equal_station_mean      3        42416 2.503744 2.3388889 1.271504
+10:                             A_V1_submitted_reference      4         8744 2.694986 2.5166667 1.324410
+11:     B_stationhour_QC20_equal_station_meanVV_then_WPD      4         8744 2.699503 2.5166667 1.325422
+12: C_stationhour_QC20_WPD_first_then_equal_station_mean      4         8744 2.699503 2.5166667 1.325422
+       p95_VV    p99_VV    max_VV   mean_WPD median_WPD    sd_WPD   p95_WPD   p99_WPD   max_WPD
+        <num>     <num>     <num>      <num>      <num>     <num>     <num>     <num>     <num>
+ 1: 12.147250 16.974450 19.991667 140.759034  0.4783597 494.63110 979.78091 2670.4970 4485.7192
+ 2:  3.016667  6.956424 17.483333   7.190209  0.3921246  39.80537  14.81850  185.2032 2670.6920
+ 3:  3.016667  6.956424 17.483333  31.959144  0.6233255 164.13630  21.78377  981.0817 2670.6920
+ 4:  5.241667  7.294444 14.046154  15.819348  5.8462843  33.39303  61.25195  162.8127 1171.0063
+ 5:  5.200000  7.120333 12.291667  15.359836  5.8462843  30.07670  60.14471  152.7266  790.0717
+ 6:  5.200000  7.120333 12.291667  30.439745  7.6731810  82.28273 143.21965  455.4981 1507.4788
+ 7:  4.825000  6.244028 12.566667  12.963533  5.5660864  23.59534  49.17268  106.4399  870.6870
+ 8:  4.838889  6.250000 12.566667  12.987134  5.6016240  23.29008  49.55806  106.7037  870.6870
+ 9:  4.838889  6.250000 12.566667  26.297862  9.4725000  58.59196  99.47617  272.8974 1550.1712
+10:  5.300000  6.476167  8.466667  16.949478  7.5258022  26.65143  71.14683  128.9639  287.4476
+11:  5.300000  6.476167  8.466667  17.008166  7.5743876  26.65233  71.14683  128.9639  287.4476
+12:  5.300000  6.476167  8.466667  18.682928  8.5939098  27.02305  72.05544  128.9639  287.4476
+    median_n_stations min_n_stations max_n_stations
+                <num>          <num>          <num>
+ 1:                NA             NA             NA
+ 2:                 2              1              5
+ 3:                 2              1              5
+ 4:                NA             NA             NA
+ 5:                 2              1              4
+ 6:                 2              1              4
+ 7:                NA             NA             NA
+ 8:                 3              1              5
+ 9:                 3              1              5
+10:                NA             NA             NA
+11:                 1              1              2
+12:                 1              1              2
+
+============================================================
+COMPARISON VERSUS V1
+============================================================
+Clave <zone>
+      zone                                         architecture n_zone_hours pct_change_n_vs_V1  mean_VV
+    <char>                                               <char>        <int>              <num>    <num>
+ 1:      1                             A_V1_submitted_reference        42706          0.0000000 2.434099
+ 2:      1     B_stationhour_QC20_equal_station_meanVV_then_WPD        43033          0.7657004 1.218369
+ 3:      1 C_stationhour_QC20_WPD_first_then_equal_station_mean        43033          0.7657004 1.218369
+ 4:      2                             A_V1_submitted_reference        43618          0.0000000 2.619652
+ 5:      2     B_stationhour_QC20_equal_station_meanVV_then_WPD        43618          0.0000000 2.612520
+ 6:      2 C_stationhour_QC20_WPD_first_then_equal_station_mean        43618          0.0000000 2.612520
+ 7:      3                             A_V1_submitted_reference        42416          0.0000000 2.500219
+ 8:      3     B_stationhour_QC20_equal_station_meanVV_then_WPD        42416          0.0000000 2.503744
+ 9:      3 C_stationhour_QC20_WPD_first_then_equal_station_mean        42416          0.0000000 2.503744
+10:      4                             A_V1_submitted_reference         8744          0.0000000 2.694986
+11:      4     B_stationhour_QC20_equal_station_meanVV_then_WPD         8744          0.0000000 2.699503
+12:      4 C_stationhour_QC20_WPD_first_then_equal_station_mean         8744          0.0000000 2.699503
+    pct_change_mean_VV_vs_V1   mean_WPD pct_change_mean_WPD_vs_V1 median_WPD   p95_WPD
+                       <num>      <num>                     <num>      <num>     <num>
+ 1:                0.0000000 140.759034                 0.0000000  0.4783597 979.78091
+ 2:              -49.9457957   7.190209               -94.8918316  0.3921246  14.81850
+ 3:              -49.9457957  31.959144               -77.2951382  0.6233255  21.78377
+ 4:                0.0000000  15.819348                 0.0000000  5.8462843  61.25195
+ 5:               -0.2722220  15.359836                -2.9047500  5.8462843  60.14471
+ 6:               -0.2722220  30.439745                92.4209797  7.6731810 143.21965
+ 7:                0.0000000  12.963533                 0.0000000  5.5660864  49.17268
+ 8:                0.1409967  12.987134                 0.1820528  5.6016240  49.55806
+ 9:                0.1409967  26.297862               102.8602966  9.4725000  99.47617
+10:                0.0000000  16.949478                 0.0000000  7.5258022  71.14683
+11:                0.1676212  17.008166                 0.3462562  7.5743876  71.14683
+12:                0.1676212  18.682928                10.2271609  8.5939098  72.05544
+
+============================================================
+ZONAL RANKINGS
+============================================================
+                                            architecture   zone  mean_VV   mean_WPD rank_mean_VV
+                                                  <char> <char>    <num>      <num>        <int>
+ 1:                             A_V1_submitted_reference      1 2.434099 140.759034            4
+ 2:                             A_V1_submitted_reference      4 2.694986  16.949478            1
+ 3:                             A_V1_submitted_reference      2 2.619652  15.819348            2
+ 4:                             A_V1_submitted_reference      3 2.500219  12.963533            3
+ 5:     B_stationhour_QC20_equal_station_meanVV_then_WPD      4 2.699503  17.008166            1
+ 6:     B_stationhour_QC20_equal_station_meanVV_then_WPD      2 2.612520  15.359836            2
+ 7:     B_stationhour_QC20_equal_station_meanVV_then_WPD      3 2.503744  12.987134            3
+ 8:     B_stationhour_QC20_equal_station_meanVV_then_WPD      1 1.218369   7.190209            4
+ 9: C_stationhour_QC20_WPD_first_then_equal_station_mean      1 1.218369  31.959144            4
+10: C_stationhour_QC20_WPD_first_then_equal_station_mean      2 2.612520  30.439745            2
+11: C_stationhour_QC20_WPD_first_then_equal_station_mean      3 2.503744  26.297862            3
+12: C_stationhour_QC20_WPD_first_then_equal_station_mean      4 2.699503  18.682928            1
+    rank_mean_WPD
+            <int>
+ 1:             1
+ 2:             2
+ 3:             3
+ 4:             4
+ 5:             1
+ 6:             2
+ 7:             3
+ 8:             4
+ 9:             1
+10:             2
+11:             3
+12:             4
+
+============================================================
+NONLINEARITY / ORDER-OF-OPERATIONS DIAGNOSTIC
+============================================================
+Clave <zone>
+     zone mean_WPD_B median_WPD_B mean_WPD_C median_WPD_C ratio_mean_C_over_B pct_difference_C_vs_B
+   <char>      <num>        <num>      <num>        <num>               <num>                 <num>
+1:      1   7.190209    0.3921246   31.95914    0.6233255            4.444815            344.481464
+2:      2  15.359836    5.8462843   30.43975    7.6731810            1.981775             98.177542
+3:      3  12.987134    5.6016240   26.29786    9.4725000            2.024917            102.491655
+4:      4  17.008166    7.5743876   18.68293    8.5939098            1.098468              9.846809
+
+============================================================
+DECISION RULE
+============================================================
+Architecture C is physically preferred if the manuscript intends to characterize average local available wind power density, because the cubic transformation is applied before spatial averaging. Architecture B preserves a zone-hour wind-speed representation but does not preserve the mean of local kinetic power density. No architecture should be selected because it reproduces a desired zonal ranking.
+
+R1-07 COMPLETED SUCCESSFULLY

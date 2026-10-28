@@ -1,0 +1,138 @@
+============================================================
+R1-01 TEMPORAL ROBUSTNESS — SUMMARY FOR CHATGPT
+============================================================
+
+V1 SCIENTIFIC CHECKSUM
+Clave <zone>
+     zone     n  mean_VV  mean_WPD n_expected mean_WPD_expected n_match WPD_abs_difference
+   <char> <int>    <num>     <num>      <int>             <num>  <lgcl>              <num>
+1:      1 42706 2.434099 140.75903      42706         140.75903    TRUE       4.140546e-06
+2:      2 43618 2.619652  15.81935      43618          15.81935    TRUE       1.587858e-06
+3:      3 42416 2.500219  12.96353      42416          12.96353    TRUE       3.076777e-06
+4:      4  8744 2.694986  16.94948       8744          16.94948    TRUE       2.442887e-06
+
+============================================================
+DAILY COVERAGE / INTERPOLATION
+============================================================
+Clave <zone>
+     zone total_calendar_days observed_VV_days observed_VV_pct interpolated_VV_days
+   <char>               <int>            <int>           <num>                <int>
+1:      1                2007             1876          93.473                   34
+2:      2                2007             1886          93.971                   92
+3:      3                2007             1790          89.188                   34
+4:      4                2007              378          18.834                   10
+   interpolated_VV_pct_total remaining_missing_VV_days remaining_missing_VV_pct observed_WPD_days
+                       <num>                     <int>                    <num>             <int>
+1:                     1.694                        97                    4.833              1876
+2:                     4.584                        29                    1.445              1886
+3:                     1.694                       183                    9.118              1790
+4:                     0.498                      1619                   80.668               378
+   observed_WPD_pct interpolated_WPD_days interpolated_WPD_pct_total remaining_missing_WPD_days
+              <num>                 <int>                      <num>                      <int>
+1:           93.473                    34                      1.694                         97
+2:           93.971                    92                      4.584                         29
+3:           89.188                    34                      1.694                        183
+4:           18.834                    10                      0.498                       1619
+   remaining_missing_WPD_pct
+                       <num>
+1:                     4.833
+2:                     1.445
+3:                     9.118
+4:                    80.668
+
+============================================================
+V1 ACF REPRODUCTION CHECK
+============================================================
+Clave <zone>
+     zone manuscript_lag1 manuscript_first_below_0_2 recalculated_lag1 recalculated_first_below_0_2
+   <char>           <num>                      <int>             <num>                        <int>
+1:      1           0.884                         NA         0.8841733                           NA
+2:      2           0.862                         54         0.8624960                           54
+3:      3           0.757                         22         0.7566655                           22
+4:      4           0.575                         13         0.5746009                           13
+   lag1_difference lag1_match_3dec
+             <num>          <lgcl>
+1:    0.0001732990            TRUE
+2:    0.0004960319            TRUE
+3:   -0.0003344613            TRUE
+4:   -0.0003990548            TRUE
+
+============================================================
+WPD ACF SENSITIVITY SUMMARY
+============================================================
+Clave <variable, zone, scenario>
+    variable   zone                                        scenario      lag1      lag7     lag30
+      <char> <char>                                          <char>     <num>     <num>     <num>
+ 1:      WPD      1                            Legacy_V1_compressed 0.8841733 0.7949166 0.7123585
+ 2:      WPD      1 Longest_contiguous_after_shortgap_interpolation 0.8790792 0.7856336 0.6983537
+ 3:      WPD      1              Observed_calendar_no_interpolation 0.8836385 0.7983921 0.7115695
+ 4:      WPD      1              Shortgap_interp_calendar_preserved 0.8842085 0.7949613 0.7125583
+ 5:      WPD      2                            Legacy_V1_compressed 0.8624960 0.5818153 0.3996550
+ 6:      WPD      2 Longest_contiguous_after_shortgap_interpolation 0.8603835 0.5690814 0.3751434
+ 7:      WPD      2              Observed_calendar_no_interpolation 0.8606005 0.5706908 0.3952975
+ 8:      WPD      2              Shortgap_interp_calendar_preserved 0.8626429 0.5816489 0.3998920
+ 9:      WPD      3                            Legacy_V1_compressed 0.7566655 0.3280513 0.2830545
+10:      WPD      3 Longest_contiguous_after_shortgap_interpolation 0.7353858 0.2698257 0.2246530
+11:      WPD      3              Observed_calendar_no_interpolation 0.7559282 0.3212627 0.2781738
+12:      WPD      3              Shortgap_interp_calendar_preserved 0.7568983 0.3260494 0.2750564
+13:      WPD      4                            Legacy_V1_compressed 0.5746009 0.2693378 0.1424208
+14:      WPD      4 Longest_contiguous_after_shortgap_interpolation 0.5331225 0.2425263 0.1256182
+15:      WPD      4              Observed_calendar_no_interpolation 0.5781473 0.3112187 0.1567624
+16:      WPD      4              Shortgap_interp_calendar_preserved 0.5798831 0.2954961 0.1451859
+          lag60        lag90 first_lag_abs_corr_below_0_2 n_pairs_lag1
+          <num>        <num>                        <int>        <int>
+ 1: 0.653879186  0.546194350                           NA         1910
+ 2: 0.635779821  0.521891349                           NA         1531
+ 3: 0.654661185  0.548144271                           NA         1850
+ 4: 0.655745053  0.547163930                           NA         1905
+ 5: 0.105376829  0.050476147                           54         1978
+ 6: 0.061390979  0.002777277                           53         1291
+ 7: 0.100551381  0.040707629                           54         1842
+ 8: 0.104952520  0.049251831                           54         1974
+ 9: 0.080359629  0.003668609                           22         1824
+10: 0.002356907 -0.073254245                           12         1427
+11: 0.066060764 -0.021632735                           21         1769
+12: 0.071426904 -0.011933828                           21         1819
+13: 0.073059359  0.031286518                           13          388
+14: 0.005076991 -0.085698043                            4          246
+15: 0.111886625 -0.010051957                           13          368
+16: 0.108049981 -0.015812654                           13          383
+
+============================================================
+INTERPOLATION EFFECT
+============================================================
+     zone lag1_observed lag1_interpolated   delta_lag1 lag7_observed lag7_interpolated   delta_lag7
+   <char>         <num>             <num>        <num>         <num>             <num>        <num>
+1:      1     0.8836385         0.8842085 0.0005700041     0.7983921         0.7949613 -0.003430793
+2:      2     0.8606005         0.8626429 0.0020423887     0.5706908         0.5816489  0.010958085
+3:      3     0.7559282         0.7568983 0.0009700648     0.3212627         0.3260494  0.004786690
+4:      4     0.5781473         0.5798831 0.0017358156     0.3112187         0.2954961 -0.015722569
+   lag30_observed lag30_interpolated  delta_lag30
+            <num>              <num>        <num>
+1:      0.7115695          0.7125583  0.000988826
+2:      0.3952975          0.3998920  0.004594485
+3:      0.2781738          0.2750564 -0.003117365
+4:      0.1567624          0.1451859 -0.011576533
+
+============================================================
+LONGEST CONTIGUOUS SEGMENTS
+============================================================
+     zone variable segment_days segment_start segment_end
+   <char>   <char>        <int>        <Date>      <Date>
+1:      1       VV         1531    2017-01-31  2021-04-10
+2:      1      WPD         1531    2017-01-31  2021-04-10
+3:      2       VV         1291    2017-01-31  2020-08-13
+4:      2      WPD         1291    2017-01-31  2020-08-13
+5:      3       VV         1427    2017-01-31  2020-12-27
+6:      3      WPD         1427    2017-01-31  2020-12-27
+7:      4       VV          246    2021-05-03  2022-01-03
+8:      4      WPD          246    2021-05-03  2022-01-03
+
+============================================================
+OUTPUT FILES
+============================================================
+Tables : C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/02_tables 
+Figures: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/03_figures 
+Results: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results 
+
+R1-01 COMPLETED SUCCESSFULLY

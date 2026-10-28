@@ -1,0 +1,8 @@
+2026-10-20 14:51:36 | Starting R1-01 temporal robustness analysis. 
+2026-10-20 14:51:36 | Main dataset: E:/Academia/UNAL/DOCTORADO/Fase 2/Productos/Articulo 1/Proceso/01_data_processed/02E_article_main_wpd_dataset_after_qc.rds 
+2026-10-20 14:51:36 | Revision root: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1 
+2026-10-20 14:51:36 | Rows loaded: 137484 
+2026-10-20 14:51:36 | Date range: 2017-01-01 to 2022-06-30 
+2026-10-20 14:51:36 | V1 scientific checksum: PASSED. 
+2026-10-20 14:51:39 | R1-01 completed successfully. 
+2026-10-20 14:51:39 | Summary to upload: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results/R1_01_UPLOAD_THIS_TO_CHAT.txt 

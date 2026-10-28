@@ -1,0 +1,150 @@
+============================================================
+R1-04 WEIBULL FIT ADEQUACY — SUMMARY FOR CHATGPT
+============================================================
+
+============================================================
+V1 SCIENTIFIC CHECKSUM
+============================================================
+Clave <zone>
+     zone     n  mean_VV  mean_WPD n_expected mean_WPD_expected n_match WPD_abs_difference
+   <char> <int>    <num>     <num>      <int>             <num>  <lgcl>              <num>
+1:      1 42706 2.434099 140.75903      42706         140.75903    TRUE       4.140546e-06
+2:      2 43618 2.619652  15.81935      43618          15.81935    TRUE       1.587858e-06
+3:      3 42416 2.500219  12.96353      42416          12.96353    TRUE       3.076777e-06
+4:      4  8744 2.694986  16.94948       8744          16.94948    TRUE       2.442887e-06
+
+============================================================
+WEIBULL PARAMETERS + BOOTSTRAP CI FOR k
+============================================================
+Clave <zone>
+     zone n_fit Weibull_k Weibull_scale       AIC       BIC Weibull_k_CI_low Weibull_k_CI_high
+   <char> <int>     <num>         <num>     <num>     <num>            <num>             <num>
+1:      1 42679 0.7880893      2.058123 155909.44 155926.77        0.7751929          0.802268
+2:      2 43618 1.9841502      2.967818 145163.72 145181.09        1.9372030          2.032586
+3:      3 42416 2.0888799      2.831368 134634.44 134651.75        2.0437480          2.136428
+4:      4  8744 2.1638745      3.051806  28620.32  28634.47        2.0955890          2.241493
+
+============================================================
+FULL FIT METRICS
+============================================================
+Índice: <distribution>
+     zone distribution n_fit KS_statistic   KS_p_value RMSE_density MAE_density    RMSE_CDF     MAE_CDF
+   <char>       <char> <int>        <num>        <num>        <num>       <num>       <num>       <num>
+1:      1      Weibull 42679   0.15118669 0.000000e+00          Inf         Inf 0.053243845 0.038707369
+2:      1     Rayleigh 42679   0.59726818 0.000000e+00   0.12869008 0.066087486 0.214953207 0.125234051
+3:      2      Weibull 43618   0.04385307 2.770393e-73   0.02083045 0.010529564 0.013640570 0.008704290
+4:      2     Rayleigh 43618   0.04216789 8.601500e-68   0.02087481 0.010558137 0.013950562 0.008964191
+5:      3      Weibull 42416   0.03066522 4.533042e-35   0.01458481 0.006814787 0.008153013 0.005085037
+6:      3     Rayleigh 42416   0.03762005 1.444186e-52   0.01486479 0.007370603 0.008426451 0.004601308
+7:      4      Weibull  8744   0.04372567 6.025578e-15   0.02074942 0.016006531 0.015633835 0.011596931
+8:      4     Rayleigh  8744   0.04061770 5.900838e-13   0.02374690 0.016735604 0.017873047 0.012193099
+
+============================================================
+WINNER BY FIT CRITERION
+============================================================
+      zone    criterion preferred_distribution Weibull_value Rayleigh_value
+    <char>       <char>                 <char>         <num>          <num>
+ 1:      1          AIC                Weibull  1.559094e+05   2.756870e+05
+ 2:      1          BIC                Weibull  1.559268e+05   2.756957e+05
+ 3:      1 KS_statistic                Weibull  1.511867e-01   5.972682e-01
+ 4:      1 RMSE_density               Rayleigh           Inf   1.286901e-01
+ 5:      1  MAE_density               Rayleigh           Inf   6.608749e-02
+ 6:      1     RMSE_CDF                Weibull  5.324385e-02   2.149532e-01
+ 7:      1      MAE_CDF                Weibull  3.870737e-02   1.252341e-01
+ 8:      2          AIC                Weibull  1.451637e+05   1.451669e+05
+ 9:      2          BIC               Rayleigh  1.451811e+05   1.451756e+05
+10:      2 KS_statistic               Rayleigh  4.385307e-02   4.216789e-02
+11:      2 RMSE_density                Weibull  2.083045e-02   2.087481e-02
+12:      2  MAE_density                Weibull  1.052956e-02   1.055814e-02
+13:      2     RMSE_CDF                Weibull  1.364057e-02   1.395056e-02
+14:      2      MAE_CDF                Weibull  8.704290e-03   8.964191e-03
+15:      3          AIC                Weibull  1.346344e+05   1.347721e+05
+16:      3          BIC                Weibull  1.346517e+05   1.347807e+05
+17:      3 KS_statistic                Weibull  3.066522e-02   3.762005e-02
+18:      3 RMSE_density                Weibull  1.458481e-02   1.486479e-02
+19:      3  MAE_density                Weibull  6.814787e-03   7.370603e-03
+20:      3     RMSE_CDF                Weibull  8.153013e-03   8.426451e-03
+21:      3      MAE_CDF               Rayleigh  5.085037e-03   4.601308e-03
+22:      4          AIC                Weibull  2.862032e+04   2.870982e+04
+23:      4          BIC                Weibull  2.863447e+04   2.871690e+04
+24:      4 KS_statistic               Rayleigh  4.372567e-02   4.061770e-02
+25:      4 RMSE_density                Weibull  2.074942e-02   2.374690e-02
+26:      4  MAE_density                Weibull  1.600653e-02   1.673560e-02
+27:      4     RMSE_CDF                Weibull  1.563383e-02   1.787305e-02
+28:      4      MAE_CDF                Weibull  1.159693e-02   1.219310e-02
+      zone    criterion preferred_distribution Weibull_value Rayleigh_value
+    <char>       <char>                 <char>         <num>          <num>
+
+============================================================
+RELATIVE MODEL PREFERENCE SUMMARY
+============================================================
+     zone n_criteria Weibull_wins Rayleigh_wins                            overall_relative_result
+   <char>      <int>        <int>         <int>                                             <char>
+1:      1          7            5             2 Weibull preferred by majority of reported criteria
+2:      2          7            5             2 Weibull preferred by majority of reported criteria
+3:      3          7            6             1 Weibull preferred by majority of reported criteria
+4:      4          7            6             1 Weibull preferred by majority of reported criteria
+
+============================================================
+LOW-WIND / NEAR-ZERO DIAGNOSTICS
+============================================================
+     zone n_total n_positive n_zero pct_VV_eq_0 pct_VV_le_0_5 pct_VV_le_1_0 pct_VV_le_2_0
+   <char>   <int>      <int>  <int>       <num>         <num>         <num>         <num>
+1:      1   42706      42679     27  0.06322297    21.9805180     51.327682      77.50902
+2:      2   43618      43618      0  0.00000000     0.1879958      7.840800      38.86698
+3:      3   42416      42416      0  0.00000000     0.2357601     10.241418      39.73972
+4:      4    8744       8744      0  0.00000000     0.3430924      6.930467      34.06908
+   max_abs_CDF_error_0_1_Weibull max_abs_CDF_error_0_1_Rayleigh max_abs_CDF_error_0_2_Weibull
+                           <num>                          <num>                         <num>
+1:                    0.09165020                     0.46510900                    0.15113201
+2:                    0.04318021                     0.04145707                    0.04318021
+3:                    0.03020553                     0.03703150                    0.03020553
+4:                    0.02230014                     0.03996546                    0.02230014
+   max_abs_CDF_error_0_2_Rayleigh
+                            <num>
+1:                     0.59699373
+2:                     0.04145707
+3:                     0.03703150
+4:                     0.03996546
+
+============================================================
+CONSOLIDATED DIAGNOSTIC
+============================================================
+Clave <zone>
+     zone n_fit Weibull_k Weibull_scale       AIC       BIC Weibull_k_CI_low Weibull_k_CI_high Weibull_KS
+   <char> <int>     <num>         <num>     <num>     <num>            <num>             <num>      <num>
+1:      1 42679 0.7880893      2.058123 155909.44 155926.77        0.7751929          0.802268 0.15118669
+2:      2 43618 1.9841502      2.967818 145163.72 145181.09        1.9372030          2.032586 0.04385307
+3:      3 42416 2.0888799      2.831368 134634.44 134651.75        2.0437480          2.136428 0.03066522
+4:      4  8744 2.1638745      3.051806  28620.32  28634.47        2.0955890          2.241493 0.04372567
+   Weibull_RMSE_density Weibull_RMSE_CDF Rayleigh_KS Rayleigh_RMSE_density Rayleigh_RMSE_CDF n_total
+                  <num>            <num>       <num>                 <num>             <num>   <int>
+1:                  Inf      0.053243845  0.59726818            0.12869008       0.214953207   42706
+2:           0.02083045      0.013640570  0.04216789            0.02087481       0.013950562   43618
+3:           0.01458481      0.008153013  0.03762005            0.01486479       0.008426451   42416
+4:           0.02074942      0.015633835  0.04061770            0.02374690       0.017873047    8744
+   n_positive n_zero pct_VV_eq_0 pct_VV_le_0_5 pct_VV_le_1_0 pct_VV_le_2_0 max_abs_CDF_error_0_1_Weibull
+        <int>  <int>       <num>         <num>         <num>         <num>                         <num>
+1:      42679     27  0.06322297    21.9805180     51.327682      77.50902                    0.09165020
+2:      43618      0  0.00000000     0.1879958      7.840800      38.86698                    0.04318021
+3:      42416      0  0.00000000     0.2357601     10.241418      39.73972                    0.03020553
+4:       8744      0  0.00000000     0.3430924      6.930467      34.06908                    0.02230014
+   max_abs_CDF_error_0_1_Rayleigh max_abs_CDF_error_0_2_Weibull max_abs_CDF_error_0_2_Rayleigh n_criteria
+                            <num>                         <num>                          <num>      <int>
+1:                     0.46510900                    0.15113201                     0.59699373          7
+2:                     0.04145707                    0.04318021                     0.04145707          7
+3:                     0.03703150                    0.03020553                     0.03703150          7
+4:                     0.03996546                    0.02230014                     0.03996546          7
+   Weibull_wins Rayleigh_wins                            overall_relative_result
+          <int>         <int>                                             <char>
+1:            5             2 Weibull preferred by majority of reported criteria
+2:            5             2 Weibull preferred by majority of reported criteria
+3:            6             1 Weibull preferred by majority of reported criteria
+4:            6             1 Weibull preferred by majority of reported criteria
+
+============================================================
+INTERPRETATION RULE
+============================================================
+Relative preference and absolute fit adequacy must be reported separately. A model can outperform another model while still showing substantial absolute lack of fit.
+
+R1-04 COMPLETED SUCCESSFULLY

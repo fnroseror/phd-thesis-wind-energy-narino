@@ -1,0 +1,9 @@
+2026-10-20 15:28:00 | Starting R1-06 station-level QC sensitivity audit. 
+2026-10-20 15:28:00 | Frozen V1 checksum: PASSED. 
+2026-10-20 15:28:00 | Reading restricted raw IDEAM source. 
+2026-10-20 15:28:06 | Raw VV rows retained: 2218605 
+2026-10-20 15:28:43 | VV rows inside study period: 2218605 
+2026-10-20 15:28:43 | Stations: 16 
+2026-10-20 15:28:59 | Raw baseline reconstruction: PASSED. 
+2026-10-20 15:30:24 | R1-06 completed successfully. 
+2026-10-20 15:30:24 | Summary to upload: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results/R1_06_UPLOAD_THIS_TO_CHAT.txt 

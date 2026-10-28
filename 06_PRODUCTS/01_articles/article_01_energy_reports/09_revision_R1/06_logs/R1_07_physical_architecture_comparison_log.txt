@@ -1,0 +1,8 @@
+2026-10-20 16:05:27 | V1 checksum PASSED. 
+2026-10-20 16:05:27 | Reading restricted raw IDEAM source. 
+2026-10-20 16:06:01 | VV raw rows in study period: 2218605 
+2026-10-20 16:06:01 | Stations: 16 
+2026-10-20 16:06:01 | Station-hours restricted to frozen Article-1 candidate time support: 335833 of 365512 
+2026-10-20 16:06:01 | Station-hours before QC20: 335833 | after QC20: 330522 
+2026-10-20 16:06:26 | R1-07 completed successfully. 
+2026-10-20 16:06:26 | Summary to upload: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results/R1_07_UPLOAD_THIS_TO_CHAT.txt 

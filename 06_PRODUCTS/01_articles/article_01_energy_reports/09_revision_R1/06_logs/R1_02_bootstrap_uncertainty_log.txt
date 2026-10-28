@@ -1,0 +1,51 @@
+2026-10-20 14:59:05 | Starting R1-02 bootstrap uncertainty analysis. 
+2026-10-20 14:59:05 | Input dataset: E:/Academia/UNAL/DOCTORADO/Fase 2/Productos/Articulo 1/Proceso/01_data_processed/02E_article_main_wpd_dataset_after_qc.rds 
+2026-10-20 14:59:05 | Bootstrap replicates: 2000 
+2026-10-20 14:59:05 | Bootstrap unit: calendar day cluster. 
+2026-10-20 14:59:05 | Random seed: 20261020 
+2026-10-20 14:59:05 | V1 scientific checksum: PASSED. 
+2026-10-20 14:59:06 | Weibull MLE validation table: 
+2026-10-20 14:59:06 |      zone fitdistrplus_k fast_mle_k abs_difference_k fitdistrplus_scale fast_mle_scale abs_difference_scale |    <char>          <num>      <num>            <num>              <num>          <num>                <num> | 1:      1      0.7880893  0.7880909     1.605329e-06           2.058123       2.058066         5.645064e-05 | 2:      2      1.9841502  1.9840928     5.746579e-05           2.967818       2.968035         2.165465e-04 | 3:      3      2.0888799  2.0891504     2.705104e-04           2.831368       2.831428         5.937859e-05 | 4:      4      2.1638745  2.1638807     6.142645e-06           3.051806       3.051741         6.523238e-05 
+2026-10-20 14:59:06 | Fast Weibull profile-MLE validation: ACCEPTED. 
+2026-10-20 14:59:07 | Starting bootstrap for Zone 1 
+2026-10-20 14:59:16 | Zone 1 - completed 250 of 2000 bootstrap replicates. 
+2026-10-20 14:59:25 | Zone 1 - completed 500 of 2000 bootstrap replicates. 
+2026-10-20 14:59:33 | Zone 1 - completed 750 of 2000 bootstrap replicates. 
+2026-10-20 14:59:42 | Zone 1 - completed 1000 of 2000 bootstrap replicates. 
+2026-10-20 14:59:50 | Zone 1 - completed 1250 of 2000 bootstrap replicates. 
+2026-10-20 14:59:58 | Zone 1 - completed 1500 of 2000 bootstrap replicates. 
+2026-10-20 15:00:07 | Zone 1 - completed 1750 of 2000 bootstrap replicates. 
+2026-10-20 15:00:15 | Zone 1 - completed 2000 of 2000 bootstrap replicates. 
+2026-10-20 15:00:15 | Completed bootstrap for Zone 1 
+2026-10-20 15:00:15 | Starting bootstrap for Zone 2 
+2026-10-20 15:00:23 | Zone 2 - completed 250 of 2000 bootstrap replicates. 
+2026-10-20 15:00:30 | Zone 2 - completed 500 of 2000 bootstrap replicates. 
+2026-10-20 15:00:38 | Zone 2 - completed 750 of 2000 bootstrap replicates. 
+2026-10-20 15:00:46 | Zone 2 - completed 1000 of 2000 bootstrap replicates. 
+2026-10-20 15:00:53 | Zone 2 - completed 1250 of 2000 bootstrap replicates. 
+2026-10-20 15:01:01 | Zone 2 - completed 1500 of 2000 bootstrap replicates. 
+2026-10-20 15:01:08 | Zone 2 - completed 1750 of 2000 bootstrap replicates. 
+2026-10-20 15:01:16 | Zone 2 - completed 2000 of 2000 bootstrap replicates. 
+2026-10-20 15:01:16 | Completed bootstrap for Zone 2 
+2026-10-20 15:01:16 | Starting bootstrap for Zone 3 
+2026-10-20 15:01:23 | Zone 3 - completed 250 of 2000 bootstrap replicates. 
+2026-10-20 15:01:30 | Zone 3 - completed 500 of 2000 bootstrap replicates. 
+2026-10-20 15:01:37 | Zone 3 - completed 750 of 2000 bootstrap replicates. 
+2026-10-20 15:01:45 | Zone 3 - completed 1000 of 2000 bootstrap replicates. 
+2026-10-20 15:01:52 | Zone 3 - completed 1250 of 2000 bootstrap replicates. 
+2026-10-20 15:01:59 | Zone 3 - completed 1500 of 2000 bootstrap replicates. 
+2026-10-20 15:02:06 | Zone 3 - completed 1750 of 2000 bootstrap replicates. 
+2026-10-20 15:02:14 | Zone 3 - completed 2000 of 2000 bootstrap replicates. 
+2026-10-20 15:02:14 | Completed bootstrap for Zone 3 
+2026-10-20 15:02:14 | Starting bootstrap for Zone 4 
+2026-10-20 15:02:15 | Zone 4 - completed 250 of 2000 bootstrap replicates. 
+2026-10-20 15:02:17 | Zone 4 - completed 500 of 2000 bootstrap replicates. 
+2026-10-20 15:02:18 | Zone 4 - completed 750 of 2000 bootstrap replicates. 
+2026-10-20 15:02:20 | Zone 4 - completed 1000 of 2000 bootstrap replicates. 
+2026-10-20 15:02:22 | Zone 4 - completed 1250 of 2000 bootstrap replicates. 
+2026-10-20 15:02:23 | Zone 4 - completed 1500 of 2000 bootstrap replicates. 
+2026-10-20 15:02:25 | Zone 4 - completed 1750 of 2000 bootstrap replicates. 
+2026-10-20 15:02:26 | Zone 4 - completed 2000 of 2000 bootstrap replicates. 
+2026-10-20 15:02:26 | Completed bootstrap for Zone 4 
+2026-10-20 15:02:28 | R1-02 completed successfully. 
+2026-10-20 15:02:28 | Summary to upload: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results/R1_02_UPLOAD_THIS_TO_CHAT.txt 

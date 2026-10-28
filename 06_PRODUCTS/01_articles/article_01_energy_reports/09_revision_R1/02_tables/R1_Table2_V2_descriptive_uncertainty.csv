@@ -1,0 +1,5 @@
+Zone,Zone-hour observations,Observed days,Mean VV (m/s),Median VV (m/s),Mean WPD (W/m2),WPD 95% CI lower,WPD 95% CI upper,Median WPD (W/m2),WPD P95 (W/m2),WPD P99 (W/m2),Max WPD (W/m2),Bootstrap block (d)
+Zone 1,43033,1881,1.22,0.91,31.96,14.92,49.43,0.62,21.78,981.08,2670.69,90
+Zone 2,43618,1895,2.61,2.38,30.44,17.28,48.21,7.67,143.22,455.5,1507.48,90
+Zone 3,42416,1795,2.5,2.34,26.3,21.83,31.18,9.47,99.48,272.9,1550.17,30
+Zone 4,8744,378,2.7,2.52,18.68,16.71,20.88,8.59,72.06,128.96,287.45,7

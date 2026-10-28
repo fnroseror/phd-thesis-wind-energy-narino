@@ -1,0 +1,9 @@
+2026-10-20 15:09:53 | Starting R1-04 Weibull/Rayleigh adequacy analysis. 
+2026-10-20 15:09:53 | Input dataset: E:/Academia/UNAL/DOCTORADO/Fase 2/Productos/Articulo 1/Proceso/01_data_processed/02E_article_main_wpd_dataset_after_qc.rds 
+2026-10-20 15:09:53 | V1 scientific checksum: PASSED. 
+2026-10-20 15:09:53 | Fitting Zone 1 
+2026-10-20 15:09:54 | Fitting Zone 2 
+2026-10-20 15:09:54 | Fitting Zone 3 
+2026-10-20 15:09:55 | Fitting Zone 4 
+2026-10-20 15:09:56 | R1-04 completed successfully. 
+2026-10-20 15:09:56 | Summary to upload: C:/Users/UMARIANA/Documents/GitHub/phd-thesis-wind-energy-narino/06_PRODUCTS/01_articles/article_01_energy_reports/09_revision_R1/04_results/R1_04_UPLOAD_THIS_TO_CHAT.txt 

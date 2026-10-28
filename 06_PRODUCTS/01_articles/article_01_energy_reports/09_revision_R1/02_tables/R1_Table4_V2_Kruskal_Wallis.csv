@@ -1,0 +1,5 @@
+Scale,Variable,N,Groups,H,df,p-value,Epsilon-squared
+Zone-hour,VV,137811,4,41035.88,3, 0.00e+00,0.298
+Zone-hour,WPD,137811,4,33621.28,3, 0.00e+00,0.244
+Daily-zone mean,VV,5949,4,2436.95,3, 0.00e+00,0.409
+Daily-zone mean,WPD,5949,4,1263.19,3,1.43e-273,0.212
