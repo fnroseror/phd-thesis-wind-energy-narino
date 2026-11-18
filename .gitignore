@@ -41,3 +41,6 @@ secrets.json
 # Do not add broad exclusions for .RData, .Rhistory, .log, .zip, .pbix,
 # .docx, .xlsx, .pptx, .pdf, or evidence folders. Those file types may be
 # intentional doctoral evidence.
+
+# Local Article-2 working artifacts — never publish raw/local objects
+/local_work/

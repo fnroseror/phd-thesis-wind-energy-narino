@@ -1,0 +1,21 @@
+ENERGY REPORTS - RESUBMISSION PACKAGE - EGYR-D-26-02665
+Prepared 3 November 2026. This ZIP is a local organizing container, NOT a manuscript file to submit as such.
+
+01_Manuscript_Clean_Numbered.docx: Clean revised manuscript, 22 pages, continuous line numbers.
+02_Manuscript_Marked.docx: Revised text marked in blue, 23 pages; upload only when journal provides an appropriate category or explicitly requests it.
+03_Response_to_Reviewers.docx: Point-by-point replies, 8 pages, justified paragraphs, real page and continuous-line references.
+04_Cover_Letter.docx: Cover letter supplied by the author, unchanged.
+05_Supplementary_Material.docx: New V2 supplement, unchanged.
+
+IN EDITORIAL MANAGER
+1. Open EGYR-D-26-02665 under Submissions Needing Revision or Incomplete Submissions Being Revised.
+2. UNCHECK the V1 manuscript and any superseded V1 figures or supplements in 'Include in Revision'.
+3. Upload the five updated files individually, assigning their appropriate item types when permitted. Do not force files into an incorrect category.
+4. If a new online review interface appears, follow its required reviewer-response workflow; the system may require replies to be entered online rather than by document attachment.
+5. Confirm title, abstract, keywords, author order, corresponding author, institutional emails, required declarations and authorship confirmations.
+6. If figures are separately required, use the final original V2 graphics rather than old V1 images.
+7. Build PDF for Approval, VIEW it, verify that files, figures, tables, references and line/page numbering are intact, then Approve Revision.
+
+NOTE: The response's page+line references were checked against a 22-page locally rendered PDF of the numbered clean manuscript. Editorial Manager may render differently: check those references in the final compiled PDF before approval.
+NOTE: Both letters remain dated 27 October 2026 as the user supplied them. If the actual submission date should appear, update both consistently.
+NOTE: Author confirmation is a live platform requirement, not something that can be certified from the files.
